@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 24,
+    "recipeRetstackSize": 32,
     "group": "light_polished_emerald_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -36,7 +36,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       }
     ],
     "recipeReturnStack": {
