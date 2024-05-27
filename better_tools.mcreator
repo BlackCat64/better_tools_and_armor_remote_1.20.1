@@ -24757,8 +24757,8 @@
       "registry_name": "electric_staff",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/ElectricStaffItem.java",
-          "src/main/resources/assets/better_tools/models/item/electric_staff.json"
+          "src/main/resources/assets/better_tools/models/item/electric_staff.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ElectricStaffItem.java"
         ]
       },
       "path": "~/Staffs/Lightning"
@@ -25008,8 +25008,8 @@
       "registry_name": "guardian_staff",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianStaffItem.java",
-          "src/main/resources/assets/better_tools/models/item/guardian_staff.json"
+          "src/main/resources/assets/better_tools/models/item/guardian_staff.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianStaffItem.java"
         ]
       },
       "path": "~/Staffs/Guardian"

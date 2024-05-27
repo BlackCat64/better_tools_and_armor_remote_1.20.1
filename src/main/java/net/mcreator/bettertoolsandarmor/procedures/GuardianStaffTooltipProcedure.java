@@ -42,8 +42,8 @@ public class GuardianStaffTooltipProcedure {
 		}
 		if (itemstack.getItem() == BetterToolsModItems.GUARDIAN_STAFF.get()) {
 			tooltip.add(Component.literal("\u00A77Staff Effects:"));
-			tooltip.add(Component.literal(("\u00A72 " + ("" + damage).substring(0, 0) + " Water Pulse Damage")));
-			tooltip.add(Component.literal(("\u00A72 " + ("" + radius).substring(0, 0) + " Block Radius")));
+			tooltip.add(Component.literal(("\u00A72 " + ("" + damage).replace(".0", "") + " Water Pulse Damage")));
+			tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
 		}
 	}
 }
