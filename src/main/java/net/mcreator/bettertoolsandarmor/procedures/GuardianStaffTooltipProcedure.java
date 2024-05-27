@@ -8,8 +8,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -22,25 +22,28 @@ public class GuardianStaffTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
+		double damage = 0;
+		double radius = 0;
+		damage = 6;
+		radius = 3;
+		if (entity.isInWaterRainOrBubble()) {
+			damage = damage * 2;
+			radius = radius * 2;
+		}
 		if (itemstack.getItem() == BetterToolsModItems.GUARDIAN_STAFF.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Staff Effects:"));
-				tooltip.add(Component.literal("\u00A794 Damage"));
-				tooltip.add(Component.literal("\u00A77Range:"));
-				tooltip.add(Component.literal("\u00A792.5 Blocks"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77Staff Effects:"));
+			tooltip.add(Component.literal(("\u00A72 " + ("" + damage).substring(0, 0) + " Water Pulse Damage")));
+			tooltip.add(Component.literal(("\u00A72 " + ("" + radius).substring(0, 0) + " Block Radius")));
 		}
 	}
 }

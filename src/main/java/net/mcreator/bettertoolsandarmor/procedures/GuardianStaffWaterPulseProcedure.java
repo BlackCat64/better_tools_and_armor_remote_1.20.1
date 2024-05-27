@@ -54,12 +54,11 @@ public class GuardianStaffWaterPulseProcedure {
 				}
 			}
 		}
+		range = 6;
+		damage = 6;
 		if (entity.isInWaterRainOrBubble()) {
-			range = 10;
-			damage = 8;
-		} else {
-			range = 5;
-			damage = 4;
+			range = range * 2;
+			damage = damage * 2;
 		}
 		{
 			final Vec3 _center = new Vec3(x, y, z);
