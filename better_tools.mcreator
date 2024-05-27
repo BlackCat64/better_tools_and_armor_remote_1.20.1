@@ -29466,6 +29466,34 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "SwiftCast",
+      "type": "enchantment",
+      "sortid": 1671,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swift_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/enchantment/SwiftCastEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "Ensorcellation",
+      "type": "enchantment",
+      "sortid": 1672,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ensorcellation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/enchantment/EnsorcellationEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -31518,6 +31546,59 @@
       "CUSTOM:CuringCharm",
       "CUSTOM:CrystalliteBowHoney"
     ],
+    "ITEMS:minecraft:tools": [
+      "CUSTOM:NetherDiamondSword",
+      "CUSTOM:NetherDiamondPickaxe",
+      "CUSTOM:NetherDiamondAxe",
+      "CUSTOM:NetherDiamondShovel",
+      "CUSTOM:NetherDiamondHoe",
+      "CUSTOM:BattleAxe",
+      "CUSTOM:WoodDagger",
+      "CUSTOM:StoneDagger",
+      "CUSTOM:IronDagger",
+      "CUSTOM:GoldDagger",
+      "CUSTOM:DiamondDagger",
+      "CUSTOM:NetheriteDagger",
+      "CUSTOM:NetherDiamondDagger",
+      "CUSTOM:FlintDagger",
+      "CUSTOM:FlintSword",
+      "CUSTOM:FlintPickaxe",
+      "CUSTOM:FlintAxe",
+      "CUSTOM:FlintShovel",
+      "CUSTOM:FlintHoe",
+      "CUSTOM:RubyToolsPickaxe",
+      "CUSTOM:RubyToolsAxe",
+      "CUSTOM:RubyToolsSword",
+      "CUSTOM:RubyToolsShovel",
+      "CUSTOM:RubyToolsHoe",
+      "CUSTOM:RubyDagger",
+      "CUSTOM:EndTitaniumSword",
+      "CUSTOM:EndTitaniumPickaxe",
+      "CUSTOM:EndTitaniumAxe",
+      "CUSTOM:EndTitaniumShovel",
+      "CUSTOM:EndTitaniumHoe",
+      "CUSTOM:EndTitaniumDagger",
+      "CUSTOM:SapphireSword",
+      "CUSTOM:SapphirePickaxe",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:SapphireShovel",
+      "CUSTOM:SapphireHoe",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:TopazSword",
+      "CUSTOM:TopazPickaxe",
+      "CUSTOM:TopazAxe",
+      "CUSTOM:TopazShovel",
+      "CUSTOM:TopazHoe",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteSword",
+      "CUSTOM:CrystallitePickaxe",
+      "CUSTOM:CrystalliteAxe",
+      "CUSTOM:CrystalliteShovel",
+      "CUSTOM:CrystalliteHoe",
+      "CUSTOM:CrystalliteDagger",
+      "TAG:better_tools:staffs",
+      "TAG:better_tools:upgraded_crystallite_tools"
+    ],
     "ITEMS:mod:staffs": [
       "CUSTOM:ElectricStaff",
       "CUSTOM:IceStaff",
@@ -31786,6 +31867,7 @@
       "item.minecraft.tipped_arrow.effect.potion_of_decay_long": "Arrow of Decay",
       "advancements.crystallite_gem_adv.descr": "Craft a Crystallite Gem",
       "item.better_tools.mixed_essence": "Mixed Essence",
+      "enchantment.better_tools.swift_cast": "Swift Cast",
       "subtitles.crystallite_shimmer": "Mysterious sparkle",
       "advancements.high_max_hp_adv.descr": "Have at least 30 Max HP",
       "block.better_tools.dark_polished_iron_stairs": "Dark Polished Iron Stairs",
@@ -31908,6 +31990,7 @@
       "item.copper_tools_and_armor.copper_axe": "Copper Axe",
       "item.better_tools.recall_potion": "Recall Potion",
       "advancements.shockwave_adv.descr": "Kill a mob with a shockwave when landing from a fall",
+      "enchantment.better_tools.ensorcellation": "Ensorcellation",
       "item.better_tools.topaz_shovel": "Topaz Shovel",
       "advancements.sugar_clump_adv.title": "Sugar Rush",
       "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",

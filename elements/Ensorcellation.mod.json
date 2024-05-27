@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Ensorcellation",
+    "type": "BOW",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:ElectricStaff"
+      },
+      {
+        "value": "CUSTOM:IceStaff"
+      },
+      {
+        "value": "CUSTOM:FireStaff"
+      },
+      {
+        "value": "CUSTOM:WardenStaff"
+      },
+      {
+        "value": "CUSTOM:GuardianStaff"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

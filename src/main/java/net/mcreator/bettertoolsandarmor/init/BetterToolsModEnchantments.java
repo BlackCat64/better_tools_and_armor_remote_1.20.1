@@ -11,11 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 import net.mcreator.bettertoolsandarmor.enchantment.ThunderShotEnchantment;
+import net.mcreator.bettertoolsandarmor.enchantment.SwiftCastEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.SmeltingTouchEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.LifeAuraEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.KarmaCurseEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.FreezeShotEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.ExperienceEnchEnchantment;
+import net.mcreator.bettertoolsandarmor.enchantment.EnsorcellationEnchantment;
 import net.mcreator.bettertoolsandarmor.enchantment.DesperationEnchantment;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -28,4 +30,6 @@ public class BetterToolsModEnchantments {
 	public static final RegistryObject<Enchantment> LIFE_AURA = REGISTRY.register("life_aura", () -> new LifeAuraEnchantment());
 	public static final RegistryObject<Enchantment> DESPERATION = REGISTRY.register("desperation", () -> new DesperationEnchantment());
 	public static final RegistryObject<Enchantment> SMELTING_TOUCH = REGISTRY.register("smelting_touch", () -> new SmeltingTouchEnchantment());
+	public static final RegistryObject<Enchantment> SWIFT_CAST = REGISTRY.register("swift_cast", () -> new SwiftCastEnchantment());
+	public static final RegistryObject<Enchantment> ENSORCELLATION = REGISTRY.register("ensorcellation", () -> new EnsorcellationEnchantment());
 }
