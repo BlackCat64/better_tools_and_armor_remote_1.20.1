@@ -13703,20 +13703,6 @@
       "path": "~/Polished Gem Blocks/Green"
     },
     {
-      "name": "DarkPolishedEmeraldBlockRecipe",
-      "type": "recipe",
-      "sortid": 990,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_polished_emerald_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/dark_polished_emerald_block_recipe.json"
-        ]
-      },
-      "path": "~/Polished Gem Blocks/Green"
-    },
-    {
       "name": "DarkPolishedEmeraldBlockDyedRecipe",
       "type": "recipe",
       "sortid": 991,

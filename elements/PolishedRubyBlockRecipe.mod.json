@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 24,
+    "recipeRetstackSize": 36,
     "group": "polished_ruby_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -18,7 +18,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -30,7 +30,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"

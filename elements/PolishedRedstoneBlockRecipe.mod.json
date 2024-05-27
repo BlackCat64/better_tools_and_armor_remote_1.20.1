@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.HONEYCOMB"
+        "value": ""
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.HONEYCOMB"
+        "value": ""
       },
       {
         "value": "Items.IRON_INGOT"
@@ -30,7 +30,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.HONEYCOMB"
+        "value": ""
       },
       {
         "value": "Items.IRON_INGOT"

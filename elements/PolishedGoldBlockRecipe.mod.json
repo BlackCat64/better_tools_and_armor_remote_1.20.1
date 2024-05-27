@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
-    "recipeRetstackSize": 24,
+    "recipeRetstackSize": 32,
     "group": "polished_gold_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,

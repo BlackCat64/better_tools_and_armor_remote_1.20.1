@@ -3,9 +3,9 @@
   "group": "polished_nether_diamond_block",
   "category": "misc",
   "pattern": [
-    " aa",
+    "aaa",
     "aba",
-    "aa "
+    "aaa"
   ],
   "key": {
     "a": {
@@ -17,6 +17,6 @@
   },
   "result": {
     "item": "better_tools:polished_nether_diamond_block",
-    "count": 32
+    "count": 48
   }
 }

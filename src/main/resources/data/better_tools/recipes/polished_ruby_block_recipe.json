@@ -3,9 +3,9 @@
   "group": "polished_ruby_block",
   "category": "misc",
   "pattern": [
-    " a ",
+    " aa",
     "aba",
-    " a "
+    "aa "
   ],
   "key": {
     "a": {
@@ -17,6 +17,6 @@
   },
   "result": {
     "item": "better_tools:polished_ruby_block",
-    "count": 24
+    "count": 36
   }
 }
