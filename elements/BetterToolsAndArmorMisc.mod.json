@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Better Tools and Armor - Misc.",
+    "icon": {
+      "value": "CUSTOM:CreativeTabLogo"
+    },
+    "showSearch": false
+  }
+}

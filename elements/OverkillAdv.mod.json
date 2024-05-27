@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Overkill",
+    "achievementDescription": "Deal over 30 damage in a single melee hit",
+    "achievementIcon": {
+      "value": "CUSTOM:BattleAxe"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 50,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:BattleAxeAdv"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"84\" y=\"151\"/></next></block></xml>"
+  }
+}
