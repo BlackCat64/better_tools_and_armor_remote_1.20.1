@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_pickaxe",
+    "better_tools:flint_pickaxe",
+    "better_tools:ruby_pickaxe",
+    "better_tools:end_titanium_pickaxe",
+    "better_tools:sapphire_pickaxe",
+    "better_tools:topaz_pickaxe",
+    "#better_tools:crystallite_pickaxes"
+  ]
+}

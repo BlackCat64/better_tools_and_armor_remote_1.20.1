@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_hoe",
+    "better_tools:flint_hoe",
+    "better_tools:ruby_hoe",
+    "better_tools:end_titanium_hoe",
+    "better_tools:sapphire_hoe",
+    "better_tools:topaz_hoe",
+    "#better_tools:crystallite_hoes"
+  ]
+}

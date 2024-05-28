@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_sword",
+    "better_tools:flint_sword",
+    "better_tools:ruby_sword",
+    "better_tools:end_titanium_sword",
+    "better_tools:sapphire_sword",
+    "better_tools:topaz_sword",
+    "#better_tools:crystallite_swords"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_axe",
+    "better_tools:battle_axe",
+    "better_tools:flint_axe",
+    "better_tools:ruby_axe",
+    "better_tools:end_titanium_axe",
+    "better_tools:sapphire_axe",
+    "better_tools:topaz_axe",
+    "#better_tools:crystallite_axes",
+    "better_tools:crystallite_pickaxe_emerald"
+  ]
+}

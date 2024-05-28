@@ -15,6 +15,7 @@
     "minecraft:quartz",
     "better_tools:crystallite_shards",
     "minecraft:amethyst_shard",
-    "minecraft:copper_ingot"
+    "minecraft:copper_ingot",
+    "minecraft:redstone"
   ]
 }

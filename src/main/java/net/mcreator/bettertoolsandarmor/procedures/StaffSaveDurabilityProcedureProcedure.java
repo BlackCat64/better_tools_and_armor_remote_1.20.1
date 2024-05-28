@@ -11,6 +11,8 @@ public class StaffSaveDurabilityProcedureProcedure {
 			return;
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			(entity instanceof LivingEntity _entUseItem3 ? _entUseItem3.getUseItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _entUseItem1 ? _entUseItem1.getUseItem() : ItemStack.EMPTY).getDamageValue() - 1));
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown((entity instanceof LivingEntity _entUseItem5 ? _entUseItem5.getUseItem() : ItemStack.EMPTY).getItem(), 10);
 		}
 	}
 }
