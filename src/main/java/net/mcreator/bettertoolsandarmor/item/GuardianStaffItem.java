@@ -29,6 +29,11 @@ public class GuardianStaffItem extends Item {
 	}
 
 	@Override
+	public int getEnchantmentValue() {
+		return 16;
+	}
+
+	@Override
 	public int getUseDuration(ItemStack itemstack) {
 		return 72000;
 	}

@@ -10,6 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -34,16 +35,20 @@ public class GuardianStaffTooltipProcedure {
 			return;
 		double damage = 0;
 		double radius = 0;
-		damage = 6;
-		radius = 3;
-		if (entity.isInWaterRainOrBubble()) {
-			damage = damage * 2;
-			radius = radius * 2;
-		}
 		if (itemstack.getItem() == BetterToolsModItems.GUARDIAN_STAFF.get()) {
-			tooltip.add(Component.literal("\u00A77Staff Effects:"));
-			tooltip.add(Component.literal(("\u00A72 " + ("" + damage).replace(".0", "") + " Water Pulse Damage")));
-			tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
+			if (Screen.hasShiftDown()) {
+				damage = 6;
+				radius = 3;
+				if (entity.isInWaterRainOrBubble()) {
+					damage = damage * 2;
+					radius = radius * 2;
+				}
+				tooltip.add(Component.literal("\u00A77Staff Effects:"));
+				tooltip.add(Component.literal(("\u00A72 " + ("" + damage).replace(".0", "") + " Water Pulse Damage")));
+				tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
+			} else {
+				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+			}
 		}
 	}
 }
