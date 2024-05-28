@@ -28,8 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§4Sets the target on fire",
-        "§cCooldown: 10s"
+        "§4Sets the target on fire"
       ]
     },
     "glowCondition": {

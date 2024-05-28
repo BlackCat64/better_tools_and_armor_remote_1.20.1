@@ -28,8 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§bFreezes the target",
-        "§cCooldown: 10s"
+        "§bFreezes the target"
       ]
     },
     "glowCondition": {

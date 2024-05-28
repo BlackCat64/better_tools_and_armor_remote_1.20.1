@@ -30,7 +30,7 @@ public class WardenStaffItem extends Item {
 
 	@Override
 	public int getEnchantmentValue() {
-		return 16;
+		return 12;
 	}
 
 	@Override
@@ -47,8 +47,6 @@ public class WardenStaffItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A73Launches a sonic boom"));
-		list.add(Component.literal("\u00A73Can hit mobs through walls"));
-		list.add(Component.literal("\u00A7cCooldown: 10s"));
 	}
 
 	@Override

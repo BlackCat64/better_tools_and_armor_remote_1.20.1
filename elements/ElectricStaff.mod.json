@@ -28,13 +28,13 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§6Summons lightning at target",
-        "§cCooldown: 15s"
+        "§6Strikes the target with lightning"
       ]
     },
     "glowCondition": {
       "fixedValue": false
     },
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": true,
