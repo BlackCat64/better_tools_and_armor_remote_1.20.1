@@ -40,7 +40,7 @@ public class LightningStaffTooltipProcedure {
 				strikes = 1 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
-				tooltip.add(Component.literal(("\u00A72 " + ("" + strikes).replace(".0", "") + "Lightning Strike" + (strikes > 1 ? "s" : ""))));
+				tooltip.add(Component.literal(("\u00A72 " + ("" + strikes).replace(".0", "") + " Lightning Strike" + (strikes > 1 ? "s" : ""))));
 				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
 				tooltip.add(Component.literal("\u00A76Effect doubles in a thunderstorm"));
 			} else {

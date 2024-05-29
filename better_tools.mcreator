@@ -11938,6 +11938,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -25585,6 +25589,14 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -29518,6 +29530,34 @@
         ]
       },
       "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FireStaffApplyEnchantments",
+      "type": "procedure",
+      "sortid": 1675,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_apply_enchantments",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffApplyEnchantmentsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Fire"
     }
   ],
   "variable_elements": [
@@ -32808,7 +32848,7 @@
   "workspaceSettings": {
     "modid": "better_tools",
     "modName": "Better Tools and Armor",
-    "version": "11.0.1",
+    "version": "11.1",
     "description": "Adds many new ores and resources which improve the progression and exploration in Minecraft. Also adds many misc. features",
     "author": "BlackCatGamer64, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor",

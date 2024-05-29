@@ -34,6 +34,7 @@
     "glowCondition": {
       "fixedValue": false
     },
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": true,
@@ -42,7 +43,7 @@
       "value": "CUSTOM:FireStaffProjectile"
     },
     "onRangedItemUsed": {
-      "name": "StaffSaveDurabilityProcedure"
+      "name": "FireStaffApplyEnchantments"
     },
     "isFood": false,
     "nutritionalValue": 0,

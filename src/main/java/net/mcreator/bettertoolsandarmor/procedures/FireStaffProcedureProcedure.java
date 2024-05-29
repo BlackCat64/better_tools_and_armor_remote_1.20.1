@@ -19,13 +19,19 @@ public class FireStaffProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
-		double fire_time = 0;
 		boolean play_sfx = false;
+		double fire_time = 0;
+		double explosion_power = 0;
 		if (!entity.fireImmune()) {
+			explosion_power = immediatesourceentity.getPersistentData().getDouble("explosion_power");
 			if ((entity.level().dimension()) == Level.NETHER) {
 				entity.setSecondsOnFire(20);
 			} else {
 				entity.setSecondsOnFire(10);
+			}
+			if (explosion_power > 0) {
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, y, z, (float) explosion_power, Level.ExplosionInteraction.MOB);
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -66,7 +72,7 @@ public class FireStaffProcedureProcedure {
 		if (!(sourceentity == null)) {
 			if (!(sourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(), 200);
+					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(), (int) immediatesourceentity.getPersistentData().getDouble("cooldown_ticks_on_hit"));
 			}
 		}
 		if (!immediatesourceentity.level().isClientSide())
