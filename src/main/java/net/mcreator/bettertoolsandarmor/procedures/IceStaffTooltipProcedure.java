@@ -38,7 +38,7 @@ public class IceStaffTooltipProcedure {
 		double radius = 0;
 		if (itemstack.getItem() == BetterToolsModItems.ICE_STAFF.get()) {
 			if (Screen.hasShiftDown()) {
-				radius = 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+				radius = 0.5 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
 				tooltip.add(Component.literal("\u00A72 10s Freeze Time"));
@@ -46,7 +46,7 @@ public class IceStaffTooltipProcedure {
 					tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
 				}
 				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
-				tooltip.add(Component.literal("\u00A7bEffect doubles in a cold biome"));
+				tooltip.add(Component.literal("\u00A7bMore powerful in a cold biome"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

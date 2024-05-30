@@ -42,7 +42,7 @@
       "value": "CUSTOM:IceStaffProjectile"
     },
     "onRangedItemUsed": {
-      "name": "StaffSaveDurabilityProcedure"
+      "name": "IceStaffApplyEnchantments"
     },
     "isFood": false,
     "nutritionalValue": 0,

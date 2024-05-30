@@ -17,7 +17,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.StaffSaveDurabilityProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.IceStaffApplyEnchantmentsProcedure;
 import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileEntity;
 
 import java.util.List;
@@ -86,7 +86,7 @@ public class IceStaffItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				StaffSaveDurabilityProcedureProcedure.execute(entity);
+				IceStaffApplyEnchantmentsProcedure.execute(world, entity, itemstack);
 			}
 		}
 	}
