@@ -39,9 +39,20 @@ public class IceStaffProjectileMissesProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((immediatesourceentity.getPersistentData().getDouble("radius") * 2) / 2d), e -> true).stream()
 						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
-								(int) (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f < 0.15 ? 200 : 300), 0, false, false));
+					if (!(entityiterator == immediatesourceentity)) {
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
+									(int) (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f < 0.15 ? 200 : 300), 0, false, false));
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")),
+										SoundSource.NEUTRAL, 2, 1);
+							} else {
+								_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")),
+										SoundSource.NEUTRAL, 2, 1, false);
+							}
+						}
+					}
 				}
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
