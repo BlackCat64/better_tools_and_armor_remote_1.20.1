@@ -31,8 +31,12 @@ public class IceStaffProjectileMissesProcedure {
 			return;
 		if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
 			if (world instanceof ServerLevel _level)
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.FREEZE_BOOM.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
+						(int) Math.floor(immediatesourceentity.getPersistentData().getDouble("radius") * 5), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
+						(immediatesourceentity.getPersistentData().getDouble("radius") / 2), 0);
+			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
-						(int) (immediatesourceentity.getPersistentData().getDouble("radius") * 15), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
+						(int) Math.floor(immediatesourceentity.getPersistentData().getDouble("radius") * 3), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
 						(immediatesourceentity.getPersistentData().getDouble("radius") / 2), 0.1);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));

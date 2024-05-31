@@ -20,5 +20,16 @@ public class FrozenEffectAppliedProcedure {
 			}
 		}
 		entity.clearFire();
+		{
+			Entity _ent = entity;
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(
+						new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+								_ent.level().getServer(), _ent),
+						("summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[" + ("" + entity.getBbWidth() * 1.25) + "f," + ("" + entity.getBbHeight() * 1.1) + "f,"
+								+ ("" + entity.getBbWidth() * 1.25) + "f],translation:[-" + ("" + entity.getBbWidth() * 0.625) + "f,0f,-" + ("" + entity.getBbWidth() * 0.625) + "f]},block_state:{Name:ice},ForgeData:{freeze_effect:1b}}"));
+			}
+		}
+		entity.getPersistentData().putBoolean("is_frozen", true);
 	}
 }

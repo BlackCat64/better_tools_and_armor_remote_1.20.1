@@ -36,7 +36,10 @@ public class IceStaffProcedure2Procedure {
 		if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), (int) Math.floor(radius * 15), (radius / 2),
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.FREEZE_BOOM.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), (int) Math.floor(radius * 5), (radius / 2),
+						(radius / 2), (radius / 2), 0.1);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), (int) Math.floor(radius * 3), (radius / 2),
 						(radius / 2), (radius / 2), 0.1);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
@@ -54,9 +57,9 @@ public class IceStaffProcedure2Procedure {
 								_level.playLocalSound((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 							}
 						}
-						if (!(sourceentity instanceof ServerPlayer _plr19 && _plr19.level() instanceof ServerLevel
-								&& _plr19.getAdvancements().getOrStartProgress(_plr19.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"))).isDone())) {
-							if (entityiterator instanceof Zombie && entityiterator instanceof LivingEntity _livEnt21 && _livEnt21.isBaby()) {
+						if (!(sourceentity instanceof ServerPlayer _plr23 && _plr23.level() instanceof ServerLevel
+								&& _plr23.getAdvancements().getOrStartProgress(_plr23.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"))).isDone())) {
+							if (entityiterator instanceof Zombie && entityiterator instanceof LivingEntity _livEnt25 && _livEnt25.isBaby()) {
 								if (sourceentity instanceof ServerPlayer _player) {
 									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"));
 									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -70,33 +73,32 @@ public class IceStaffProcedure2Procedure {
 					}
 				}
 			}
-		} else {
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
-						(int) (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f < 0.15 ? 200 : 300), 0, false, false));
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
-				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
-				}
+		}
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
+					(int) (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f < 0.15 ? 200 : 300), 0, false, false));
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
+			} else {
+				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 			}
-			if (!(sourceentity instanceof ServerPlayer _plr33 && _plr33.level() instanceof ServerLevel
-					&& _plr33.getAdvancements().getOrStartProgress(_plr33.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"))).isDone())) {
-				if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt35 && _livEnt35.isBaby()) {
-					if (sourceentity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
+		}
+		if (!(sourceentity instanceof ServerPlayer _plr37 && _plr37.level() instanceof ServerLevel
+				&& _plr37.getAdvancements().getOrStartProgress(_plr37.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"))).isDone())) {
+			if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt39 && _livEnt39.isBaby()) {
+				if (sourceentity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
 					}
 				}
 			}
 		}
-		if (!(sourceentity instanceof ServerPlayer _plr37 && _plr37.level() instanceof ServerLevel
-				&& _plr37.getAdvancements().getOrStartProgress(_plr37.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ice_staff_adv"))).isDone())) {
+		if (!(sourceentity instanceof ServerPlayer _plr41 && _plr41.level() instanceof ServerLevel
+				&& _plr41.getAdvancements().getOrStartProgress(_plr41.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ice_staff_adv"))).isDone())) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ice_staff_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
