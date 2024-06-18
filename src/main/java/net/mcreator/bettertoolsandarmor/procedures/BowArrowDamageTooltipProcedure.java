@@ -51,12 +51,14 @@ public class BowArrowDamageTooltipProcedure {
 					base_damage = 3.5;
 				}
 			}
-			tooltip.add(Component
-					.literal(("\u00A72 " + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage) + " Arrow Damage")));
+			tooltip.add(Component.literal(
+					("\u00A72 " + ("" + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage)).replace(".0", "")
+							+ " Arrow Damage")));
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items"))) || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal((itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items"))) ? "\u00A7725% chance for:" : "\u00A77When it is wet:")));
 				tooltip.add(Component.literal(("\u00A72 "
-						+ ((EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage) + 2.5) + " Arrow Damage")));
+						+ ("" + ((EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage) + 2.5)).replace(".0", "")
+						+ " Arrow Damage")));
 			}
 		}
 	}
