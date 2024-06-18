@@ -36,7 +36,7 @@ public class EnderTitaniumArmorTooltipProcedure {
 				|| itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
 			if (Screen.hasShiftDown()) {
 				if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
-					tooltip.add(Component.literal("\u00A7920% chance to teleport attackers away"));
+					tooltip.add(Component.literal("\u00A72 20% Teleport Chance"));
 				}
 				if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
 					tooltip.add(Component.literal("\u00A77When float ability used:"));

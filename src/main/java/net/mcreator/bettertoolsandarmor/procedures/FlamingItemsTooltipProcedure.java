@@ -33,7 +33,7 @@ public class FlamingItemsTooltipProcedure {
 			return;
 		double fire_chance = 0;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_tools"))) || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
-			tooltip.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+			tooltip.add(2, Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 	}
 }

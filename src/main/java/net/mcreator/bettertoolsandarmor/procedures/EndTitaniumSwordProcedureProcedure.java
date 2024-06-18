@@ -33,15 +33,14 @@ public class EndTitaniumSwordProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		AttributeModifier damage_modifier = null;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_SWORD.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_DAGGER.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_AXE.get()) {
 			if ((entity.level().dimension()) == Level.END) {
 				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-						.hasModifier((new AttributeModifier(UUID.fromString("711c2ab8-161f-4f61-b30e-e7d41cfd1d5b"), "ender_titanium_sword", 2.5, AttributeModifier.Operation.ADDITION)))))
+						.hasModifier((new AttributeModifier(UUID.fromString("711c2ab8-161f-4f61-b30e-e7d41cfd1d5b"), "ender_titanium_sword", 3, AttributeModifier.Operation.ADDITION)))))
 					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("711c2ab8-161f-4f61-b30e-e7d41cfd1d5b"), "ender_titanium_sword", 2.5, AttributeModifier.Operation.ADDITION)));
+							.addTransientModifier((new AttributeModifier(UUID.fromString("711c2ab8-161f-4f61-b30e-e7d41cfd1d5b"), "ender_titanium_sword", 3, AttributeModifier.Operation.ADDITION)));
 			} else {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("711c2ab8-161f-4f61-b30e-e7d41cfd1d5b"));
 			}

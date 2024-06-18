@@ -7,11 +7,12 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -22,22 +23,22 @@ public class EndTitaniumSwordTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_SWORD.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_AXE.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_DAGGER.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77When in the End:"));
-				tooltip.add(Component.literal("\u00A79+2.5 Attack Damage"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+		double line_iterator = 0;
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ender_titanium_weapons")))) {
+			if ((entity.level().dimension()) == Level.END) {
+				if (tooltip.size() > 0) {
+					tooltip.set(4, Component.literal("\u00A72 13 Attack Damage"));
+				}
 			}
 		}
 	}

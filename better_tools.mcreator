@@ -11894,6 +11894,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -30789,6 +30793,11 @@
       "Items.GOLDEN_HELMET",
       "Items.DIAMOND_HELMET",
       "Items.NETHERITE_HELMET"
+    ],
+    "ITEMS:mod:ender_titanium_weapons": [
+      "CUSTOM:EndTitaniumSword",
+      "CUSTOM:EndTitaniumAxe",
+      "CUSTOM:EndTitaniumDagger"
     ],
     "ITEMS:forge:ores_in_ground/stone": [
       "CUSTOM:RubyOre",
