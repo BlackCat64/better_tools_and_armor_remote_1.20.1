@@ -7,8 +7,10 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -35,9 +37,30 @@ public class NetherDiamondArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
+		double percent = 0;
+		double seconds = 0;
+		double default_time_chance = 0;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
-			tooltip.add(Component.literal(("\u00A72 " + ("" + ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSCHANCE.get()).getValue() * 100).replace(".0", "") + " Fire Chance")));
-			tooltip.add(Component.literal(("\u00A72 " + ("" + ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSTIME.get()).getValue()).replace(".0", "") + "s Burn Time")));
+			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSCHANCE.get()).getValue() * 100;
+			seconds = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSTIME.get()).getValue() / 20;
+			if ((entity.level().dimension()) == Level.NETHER) {
+				default_time_chance = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items"))) ? 15 : 10;
+			} else {
+				default_time_chance = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items"))) ? 10 : 5;
+			}
+			tooltip.add(Component.literal((!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())
+							? "\u00A79+" + new java.text.DecimalFormat("##").format(default_time_chance) + "% Fire Chance"
+							: "\u00A72 " + new java.text.DecimalFormat("##").format(percent) + "% Fire Chance")));
+			tooltip.add(Component.literal(("\u00A72 " + (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())
+							? new java.text.DecimalFormat("##").format(default_time_chance)
+							: new java.text.DecimalFormat("##").format(seconds))
+					+ "s Burn Time")));
 		}
 	}
 }

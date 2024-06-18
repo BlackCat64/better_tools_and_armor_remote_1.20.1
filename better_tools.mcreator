@@ -12414,30 +12414,6 @@
       "path": "~/Crystallite/Nether Diamond"
     },
     {
-      "name": "CrystalliteNetherDiamondArmorTooltip",
-      "type": "procedure",
-      "sortid": 940,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_nether_diamond_armor_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetherDiamondArmorTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
       "name": "CrystalliteTopazPickaxeTooltip",
       "type": "procedure",
       "sortid": 941,

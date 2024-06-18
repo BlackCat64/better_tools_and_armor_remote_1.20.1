@@ -4,7 +4,7 @@
   "definition": {
     "description": "Fire Thorns Time",
     "minValue": 0.0,
-    "maxValue": 100.0,
+    "maxValue": 20000.0,
     "defaultValue": 0.0,
     "isPersistent": false,
     "entities": [
