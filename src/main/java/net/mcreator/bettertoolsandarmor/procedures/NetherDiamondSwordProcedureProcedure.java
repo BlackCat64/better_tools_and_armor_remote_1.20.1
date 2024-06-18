@@ -15,10 +15,9 @@ public class NetherDiamondSwordProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double fire_chance = 0;
+		fire_chance = 0.25;
 		if ((entity.level().dimension()) == Level.NETHER) {
-			fire_chance = 0.2;
-		} else {
-			fire_chance = 0.1;
+			fire_chance = fire_chance * 2;
 		}
 		if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 			fire_chance = fire_chance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
