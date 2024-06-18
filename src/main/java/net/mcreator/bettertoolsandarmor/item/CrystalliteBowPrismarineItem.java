@@ -27,7 +27,5 @@ public class CrystalliteBowPrismarineItem extends BowItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A73Marine Might - Arrows deal very high damage when wet"));
-
-
 	}
 }

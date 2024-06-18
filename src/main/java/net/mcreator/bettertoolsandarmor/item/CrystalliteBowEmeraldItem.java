@@ -39,6 +39,7 @@ public class CrystalliteBowEmeraldItem extends BowItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A7aRenewable - Has infinite ammo"));
+		list.add(Component.literal("\u00A7aNo arrows required in inventory"));
 	}
 
 	@Override

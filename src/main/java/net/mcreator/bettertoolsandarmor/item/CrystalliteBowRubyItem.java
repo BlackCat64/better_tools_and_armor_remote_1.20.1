@@ -36,7 +36,7 @@ public class CrystalliteBowRubyItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRuby"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cSpeedy - Charge time is halved"));
+		list.add(Component.literal("\u00A7cSpeedy - Charge time is halved, but deals less damage"));
 	}
 
 	@Override
