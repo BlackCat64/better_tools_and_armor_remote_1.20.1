@@ -33,9 +33,6 @@ public class BetterToolsModTrades {
 				new ItemStack(BetterToolsModBlocks.SUGAR_BLOCK.get()), 4, 5, 0.05f));
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 3),
 
-				new ItemStack(BetterToolsModBlocks.FLINT_BLOCK.get()), 7, 5, 0.05f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 3),
-
 				new ItemStack(BetterToolsModBlocks.BLACKSTONE_MAGMA.get()), 5, 5, 0.05f));
 	}
 

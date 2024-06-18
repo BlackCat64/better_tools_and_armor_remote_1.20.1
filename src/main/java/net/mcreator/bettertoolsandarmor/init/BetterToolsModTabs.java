@@ -19,7 +19,6 @@ public class BetterToolsModTabs {
 	public static final RegistryObject<CreativeModeTab> BETTER_TOOLS_AND_ARMOR_MISC = REGISTRY.register("better_tools_and_armor_misc",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.better_tools_and_armor_misc")).icon(() -> new ItemStack(BetterToolsModItems.CREATIVE_TAB_LOGO.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.SUGAR_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.FLINT_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModBlocks.RANDOM_ORE.get().asItem());
 				tabData.accept(BetterToolsModBlocks.DEEPSLATE_RANDOM_ORE.get().asItem());
 				tabData.accept(BetterToolsModItems.MIXED_ESSENCE.get());

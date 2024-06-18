@@ -464,23 +464,6 @@
       "path": "~/Consumables"
     },
     {
-      "name": "FlintBlock",
-      "type": "block",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_block.json",
-          "src/main/resources/assets/better_tools/blockstates/flint_block.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/FlintBlockBlock.java",
-          "src/main/resources/assets/better_tools/models/block/flint_block.json"
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
       "name": "FlintSword",
       "type": "tool",
       "sortid": 53,
@@ -626,20 +609,6 @@
       "path": "~/Flint Tools"
     },
     {
-      "name": "FlintBlockRecipe",
-      "type": "recipe",
-      "sortid": 432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/flint_block_recipe.json"
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
       "name": "NetherDiamondArmor",
       "type": "armor",
       "sortid": 10,
@@ -674,34 +643,6 @@
         ]
       },
       "path": "~/Consumables"
-    },
-    {
-      "name": "FlintBlockLoot",
-      "type": "loottable",
-      "sortid": 434,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_block_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_tables/blocks/flint_block.json"
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
-      "name": "FlintRecipe",
-      "type": "recipe",
-      "sortid": 435,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/flint_recipe.json"
-        ]
-      },
-      "path": "~/Flint Tools"
     },
     {
       "name": "ItemFrameRecipe",
@@ -10366,27 +10307,6 @@
       "path": "~/Consumables"
     },
     {
-      "name": "FlintBlockGeneration",
-      "type": "procedure",
-      "sortid": 841,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_block_generation",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintBlockGenerationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
       "name": "LifeAuraProcedure",
       "type": "procedure",
       "sortid": 842,
@@ -11868,7 +11788,7 @@
       "type": "recipe",
       "sortid": 916,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "flint_blockwood_recipe",
       "metadata": {
         "files": [
@@ -24571,23 +24491,6 @@
       "path": "~/Attribute Viewer"
     },
     {
-      "name": "FlintBlockFeature",
-      "type": "feature",
-      "sortid": 1444,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_block_feature",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/worldgen/placed_feature/flint_block_feature.json",
-          "src/main/resources/data/better_tools/forge/biome_modifier/flint_block_feature_biome_modifier.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/world/features/FlintBlockFeatureFeature.java",
-          "src/main/resources/data/better_tools/worldgen/configured_feature/flint_block_feature.json"
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
       "name": "RubyOreFeature",
       "type": "feature",
       "sortid": 1445,
@@ -29665,6 +29568,30 @@
         ]
       },
       "path": "~/Nether Diamond"
+    },
+    {
+      "name": "FlamingItemsTooltip",
+      "type": "procedure",
+      "sortid": 1682,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_items_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlamingItemsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
     }
   ],
   "variable_elements": [
@@ -31218,7 +31145,6 @@
       "~CUSTOM:RandomOre",
       "~CUSTOM:RubyBlock",
       "~CUSTOM:RubyOre",
-      "~CUSTOM:FlintBlock",
       "~CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:forge:armors/boots": [
@@ -32289,7 +32215,6 @@
       "block.better_tools.light_polished_nether_diamond_stairs": "Light Metallic Nether Diamond Stairs",
       "advancements.electric_staff_pokemon_adv.descr": "Shock a water mob with an Lightning Staff",
       "block.better_tools.dark_polished_copper_stairs": "Dark Polished Copper Stairs",
-      "block.better_tools.flint_block": "Flint Block",
       "block.better_tools.light_polished_amethyst_stairs": "Light Metallic Amethyst Stairs",
       "item.better_tools.iron_glass_armor_helmet": "Glass Helmet",
       "item.minecraft.potion.effect.criticality_potion": "Potion of Criticality",

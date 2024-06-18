@@ -100,7 +100,6 @@ import net.mcreator.bettertoolsandarmor.block.LightPolishedAmethystBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.JewelleryTableBlock;
 import net.mcreator.bettertoolsandarmor.block.FourLeafCloverBlock;
 import net.mcreator.bettertoolsandarmor.block.FlintBlockwoodBlock;
-import net.mcreator.bettertoolsandarmor.block.FlintBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.EndTitaniumOreBlock;
 import net.mcreator.bettertoolsandarmor.block.EndTitaniumBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.DeepslateRubyOreBlock;
@@ -144,7 +143,6 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 public class BetterToolsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, BetterToolsMod.MODID);
 	public static final RegistryObject<Block> NETHER_DIAMOND_BLOCK = REGISTRY.register("nether_diamond_block", () -> new NetherDiamondBlockBlock());
-	public static final RegistryObject<Block> FLINT_BLOCK = REGISTRY.register("flint_block", () -> new FlintBlockBlock());
 	public static final RegistryObject<Block> SUGAR_BLOCK = REGISTRY.register("sugar_block", () -> new SugarBlockBlock());
 	public static final RegistryObject<Block> RUBY_ORE = REGISTRY.register("ruby_ore", () -> new RubyOreBlock());
 	public static final RegistryObject<Block> RUBY_BLOCK = REGISTRY.register("ruby_block", () -> new RubyBlockBlock());

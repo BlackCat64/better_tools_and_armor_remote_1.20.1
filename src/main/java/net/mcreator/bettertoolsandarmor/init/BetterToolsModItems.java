@@ -319,7 +319,6 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> NETHERITE_DAGGER = REGISTRY.register("netherite_dagger", () -> new NetheriteDaggerItem());
 	public static final RegistryObject<Item> NETHER_DIAMOND_DAGGER = REGISTRY.register("nether_diamond_dagger", () -> new NetherDiamondDaggerItem());
 	public static final RegistryObject<Item> FLINT_DAGGER = REGISTRY.register("flint_dagger", () -> new FlintDaggerItem());
-	public static final RegistryObject<Item> FLINT_BLOCK = block(BetterToolsModBlocks.FLINT_BLOCK);
 	public static final RegistryObject<Item> FLINT_SWORD = REGISTRY.register("flint_sword", () -> new FlintSwordItem());
 	public static final RegistryObject<Item> FLINT_PICKAXE = REGISTRY.register("flint_pickaxe", () -> new FlintPickaxeItem());
 	public static final RegistryObject<Item> FLINT_AXE = REGISTRY.register("flint_axe", () -> new FlintAxeItem());

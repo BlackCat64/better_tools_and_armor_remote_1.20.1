@@ -90,24 +90,6 @@
             },
             "countPrice2": 1,
             "offer": {
-              "value": "CUSTOM:FlintBlock"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 7,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 3,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
               "value": "CUSTOM:BlackstoneMagma"
             },
             "countOffer": 1,
