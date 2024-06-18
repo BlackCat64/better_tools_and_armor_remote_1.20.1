@@ -26,6 +26,6 @@ public class CrystalliteBowIronItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7fIncreased arrow knockback"));
+		list.add(Component.literal("\u00A7fTough - Increased arrow knockback"));
 	}
 }

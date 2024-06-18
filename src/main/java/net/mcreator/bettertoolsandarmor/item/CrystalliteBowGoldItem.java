@@ -26,6 +26,6 @@ public class CrystalliteBowGoldItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Arrows deal splash damage"));
+		list.add(Component.literal("\u00A76Outburst - Arrows deal splash damage"));
 	}
 }

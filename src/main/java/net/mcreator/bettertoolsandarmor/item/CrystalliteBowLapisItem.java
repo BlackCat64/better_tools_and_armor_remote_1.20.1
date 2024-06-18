@@ -26,6 +26,6 @@ public class CrystalliteBowLapisItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A79XP drops increase with distance from the target"));
+		list.add(Component.literal("\u00A79Magic - XP drops increase with distance from the target"));
 	}
 }
