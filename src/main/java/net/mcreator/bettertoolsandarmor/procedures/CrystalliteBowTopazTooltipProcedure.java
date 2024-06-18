@@ -35,7 +35,7 @@ public class CrystalliteBowTopazTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Arrow Effects:"));
-				tooltip.add(Component.literal("\u00A79+20% chance for lightning"));
+				tooltip.add(Component.literal("\u00A79+20% chance for Lightning"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

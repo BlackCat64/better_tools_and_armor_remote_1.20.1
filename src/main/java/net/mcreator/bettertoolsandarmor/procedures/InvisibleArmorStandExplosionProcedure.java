@@ -26,12 +26,18 @@ public class InvisibleArmorStandExplosionProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double power = 0;
 		if (entity instanceof ArmorStand) {
 			if (entity.getPersistentData().getBoolean("crystallite_nether_diamond_upgrade")) {
 				if (!entity.level().isClientSide())
 					entity.discard();
-				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null, x, y, z, (float) 2.5, Level.ExplosionInteraction.TNT);
+				if ((entity.level().dimension()) == Level.NETHER) {
+					if (world instanceof Level _level && !_level.isClientSide())
+						_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
+				} else {
+					if (world instanceof Level _level && !_level.isClientSide())
+						_level.explode(null, x, y, z, (float) 2.5, Level.ExplosionInteraction.TNT);
+				}
 			}
 		}
 	}

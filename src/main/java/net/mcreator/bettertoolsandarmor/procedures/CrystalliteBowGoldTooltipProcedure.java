@@ -36,6 +36,7 @@ public class CrystalliteBowGoldTooltipProcedure {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Splash Damage:"));
 				tooltip.add(Component.literal("\u00A7967% of Arrow Damage"));
+				tooltip.add(Component.literal("\u00A791.5 Block Radius"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

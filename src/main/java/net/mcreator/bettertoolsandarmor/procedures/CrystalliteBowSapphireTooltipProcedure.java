@@ -35,8 +35,8 @@ public class CrystalliteBowSapphireTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Arrow Effects:"));
-				tooltip.add(Component.literal("\u00A79+20% chance for freeze"));
-				tooltip.add(Component.literal("\u00A79+50% freeze time"));
+				tooltip.add(Component.literal("\u00A79+20% chance for Freeze"));
+				tooltip.add(Component.literal("\u00A79+50% Freeze Time"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
