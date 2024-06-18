@@ -15,6 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
@@ -61,6 +62,12 @@ public class NetherDiamondArmorTooltipProcedure {
 							? new java.text.DecimalFormat("##").format(default_time_chance)
 							: new java.text.DecimalFormat("##").format(seconds))
 					+ "s Burn Time")));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
+				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items"))) ? "10" : "5") + "% Fire Chance")));
+			} else {
+				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+			}
 		}
 	}
 }
