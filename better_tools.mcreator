@@ -29633,6 +29633,50 @@
         ]
       },
       "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FireThornsChance",
+      "type": "attribute",
+      "sortid": 1679,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_thorns_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "FireThornsTime",
+      "type": "attribute",
+      "sortid": 1680,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_thorns_time",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "NetherDiamondArmorSetAttributes",
+      "type": "procedure",
+      "sortid": 1681,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_armor_set_attributes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondArmorSetAttributesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
     }
   ],
   "variable_elements": [
@@ -32367,6 +32411,7 @@
       "item.better_tools.crystallite_armor_amethyst_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_upgrade_smithing_template": "Smithing Template",
       "block.better_tools.four_leaf_clover": "Four Leaf Clover",
+      "attribute.better_tools.fire_thorns_chance": "Fire Thorns Chance",
       "advancements.progression_section.descr": "Advancements to do with progression",
       "advancements.blackstone_rabbit_adv.title": "Resistant Rabbit",
       "item.better_tools.crystallite_chestplate": "Crystallite Chestplate",
@@ -32513,6 +32558,7 @@
       "advancements.ruby_pickaxe_adv.descr": "Craft a fast-mining Ruby Pickaxe",
       "item.better_tools.crystallite_armor_nether_diamond_chestplate": "Crystallite Chestplate",
       "subtitles.master_builders": "",
+      "attribute.better_tools.fire_thorns_time": "Fire Thorns Time",
       "advancements.topaz_adv.title": "Human Lightning Rod",
       "item.better_tools.crystallite_armor_ruby_boots": "Crystallite Boots",
       "death.attack.shockwave_damage.player": "%1$s was killed by a shockwave whilst trying to escape %2$s",
