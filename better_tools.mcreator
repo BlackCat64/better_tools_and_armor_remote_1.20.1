@@ -30497,6 +30497,14 @@
       "CUSTOM:MagicWeaponDamage",
       "CUSTOM:KarmaDamage"
     ],
+    "ITEMS:mod:flaming_tools": [
+      "CUSTOM:NetherDiamondSword",
+      "CUSTOM:NetherDiamondAxe",
+      "CUSTOM:NetherDiamondDagger",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteDaggerNetherDiamond"
+    ],
     "BLOCKS:forge:ore_rates/singular": [
       "CUSTOM:RandomOre",
       "CUSTOM:EndTitaniumOre",
@@ -30581,6 +30589,16 @@
       "Blocks.DIRT#1",
       "Blocks.DIRT#2",
       "Blocks.ROOTED_DIRT"
+    ],
+    "ITEMS:mod:lightning_armor": [
+      "CUSTOM:TopazArmor.helmet",
+      "CUSTOM:TopazArmor.body",
+      "CUSTOM:TopazArmor.legs",
+      "CUSTOM:TopazArmor.boots",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorTopaz.boots"
     ],
     "ITEMS:minecraft:beacon_base_blocks": [
       "CUSTOM:NetherDiamondBlock",
@@ -30818,6 +30836,14 @@
       "CUSTOM:RandomOre",
       "CUSTOM:SapphireOre",
       "CUSTOM:TopazOre"
+    ],
+    "ITEMS:mod:lightning_tools": [
+      "CUSTOM:TopazSword",
+      "CUSTOM:TopazAxe",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteDaggerTopaz"
     ],
     "BLOCKS:forge:ore_rates/dense": [
       "CUSTOM:RubyOre",
@@ -31310,6 +31336,16 @@
       "CUSTOM:CrystalliteArmorSapphire.body",
       "CUSTOM:CrystalliteArmorSapphire.legs",
       "CUSTOM:CrystalliteArmorSapphire.boots"
+    ],
+    "ITEMS:mod:flaming_armor": [
+      "CUSTOM:NetherDiamondArmor.helmet",
+      "CUSTOM:NetherDiamondArmor.body",
+      "CUSTOM:NetherDiamondArmor.legs",
+      "CUSTOM:NetherDiamondArmor.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots"
     ],
     "ITEMS:mod:gold_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordGold",

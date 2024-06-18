@@ -35,9 +35,8 @@ public class NetherDiamondSwordTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.NETHER_DIAMOND_SWORD.get() || itemstack.getItem() == BetterToolsModItems.NETHER_DIAMOND_DAGGER.get() || itemstack.getItem() == BetterToolsModItems.NETHER_DIAMOND_AXE.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
-				tooltip.add(Component.literal("\u00A7910% \u00A74chance for \u00A795s \u00A74of fire"));
-				tooltip.add(Component.literal("\u00A77When in the Nether:"));
-				tooltip.add(Component.literal("\u00A7920% \u00A74chance for \u00A7910s \u00A74of fire"));
+				tooltip.add(Component.literal("\u00A79+10% Fire chance"));
+				tooltip.add(Component.literal("\u00A795s Fire time"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
