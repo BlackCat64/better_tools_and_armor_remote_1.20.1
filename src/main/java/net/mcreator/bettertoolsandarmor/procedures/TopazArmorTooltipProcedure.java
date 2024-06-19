@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -43,12 +42,7 @@ public class TopazArmorTooltipProcedure {
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lightning_armor")))) {
 			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).getValue() * 100;
 			default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "10" : "5";
-			tooltip.add(Component.literal((!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())
-							? "\u00A79+" + default_time_chance_str + "% Lightning Chance"
-							: "\u00A72 " + new java.text.DecimalFormat("##").format(percent) + "% Lightning Chance")));
+			tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
