@@ -40,7 +40,7 @@ public class FreezingWeaponsSetAttributesProcedure {
 		double chance = 0;
 		double time = 0;
 		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()) != null) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:freezing_weapons")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:freezing_tools")))) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
 					chance = 0.2;
 					time = 200;
@@ -54,11 +54,11 @@ public class FreezingWeaponsSetAttributesProcedure {
 			}
 			if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
-					chance = chance * 1.5;
-					time = chance * 1.5;
+					chance = chance * 2;
+					time = time * 1.5;
 				} else {
 					chance = chance * 2;
-					time = chance * 2;
+					time = time * 2;
 				}
 			}
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("f84aa605-971d-4d66-b38b-c669ec0138b7"), "", 0, AttributeModifier.Operation.ADDITION)));

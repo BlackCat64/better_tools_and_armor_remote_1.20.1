@@ -160,5 +160,6 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_upgrade_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get()), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get()), new ItemStack(BetterToolsModItems.DESCENSION_POTION.get()),
 				new ItemStack(BetterToolsModItems.RECALL_POTION.get()), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.utility_potions_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.ICY_BRACELET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.icy_bracelet_info"));
 	}
 }

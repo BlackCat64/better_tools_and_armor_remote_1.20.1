@@ -25,7 +25,8 @@ public class IcyBraceletItem extends Item implements ICurioItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
-		list.add(Component.literal("\u00A79+10% Freeze Chance (melee)"));
+		list.add(Component.literal("\u00A79+10% Freeze Chance"));
+		list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
 	}
 
 	@Override

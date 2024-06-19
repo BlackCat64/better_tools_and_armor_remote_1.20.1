@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:IcyBracelet"
+      }
+    ],
+    "information": [
+      "Adds §9+10% Freeze Chance§r for any melee attacks.",
+      "This stacks with any Sapphire weapons, and any Bows enchanted with Freeze Shot."
+    ]
+  }
+}

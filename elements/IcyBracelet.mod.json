@@ -31,7 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7When worn:",
-        "§9+10% Freeze Chance (melee)"
+        "§9+10% Freeze Chance",
+        "§bEffect is stronger in a cold biome"
       ]
     },
     "hasGlow": false,
