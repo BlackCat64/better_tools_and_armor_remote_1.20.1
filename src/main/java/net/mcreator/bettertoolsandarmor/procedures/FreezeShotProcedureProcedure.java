@@ -17,7 +17,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
@@ -56,7 +55,7 @@ public class FreezeShotProcedureProcedure {
 				FreezeShotChance = FreezeShotChance + 0.2;
 				freeze_time = freeze_time == 0 ? 70 : freeze_time * 1.5;
 			}
-			if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f < 0.15) {
+			if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15) {
 				FreezeShotChance = FreezeShotChance * 2;
 			}
 			if (FreezeShotChance > 0) {
@@ -74,8 +73,6 @@ public class FreezeShotProcedureProcedure {
 						}
 					}
 				}
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + FreezeShotChance)), false);
 			}
 		}
 	}
