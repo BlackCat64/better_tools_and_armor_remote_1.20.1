@@ -43,7 +43,7 @@ public class NetherDiamondArmorTooltipProcedure {
 		double default_time_chance = 0;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
 			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSCHANCE.get()).getValue() * 100;
-			seconds = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSTIME.get()).getValue() / 20;
+			seconds = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSTIME.get()).getValue();
 			if ((entity.level().dimension()) == Level.NETHER) {
 				default_time_chance = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items"))) ? 15 : 10;
 			} else {

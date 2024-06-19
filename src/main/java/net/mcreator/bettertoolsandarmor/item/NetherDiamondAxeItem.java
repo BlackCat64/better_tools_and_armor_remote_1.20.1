@@ -56,5 +56,6 @@ public class NetherDiamondAxeItem extends AxeItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A74Has a chance set the target on fire"));
+		list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 	}
 }

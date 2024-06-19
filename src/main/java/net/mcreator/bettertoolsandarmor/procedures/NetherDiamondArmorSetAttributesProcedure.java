@@ -37,14 +37,14 @@ public class NetherDiamondArmorSetAttributesProcedure {
 		double chance = 0;
 		double time = 0;
 		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FIRETHORNSCHANCE.get()) != null) {
-			time = 100;
+			time = 5;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.NETHER_DIAMOND_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.05;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.1;
-				time = 200;
+				time = 10;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.NETHER_DIAMOND_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
@@ -60,7 +60,7 @@ public class NetherDiamondArmorSetAttributesProcedure {
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.1;
-				time = 200;
+				time = 10;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.NETHER_DIAMOND_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
@@ -68,17 +68,17 @@ public class NetherDiamondArmorSetAttributesProcedure {
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.1;
-				time = 200;
+				time = 10;
 			}
 			if (armor_pieces == 4) {
-				if (time == 200) {
+				if (time == 10) {
 					chance = chance + 0.1;
 				} else {
 					chance = chance + 0.05;
 				}
 			}
 			if ((entity.level().dimension()) == Level.NETHER) {
-				if (time == 200) {
+				if (time == 10) {
 					chance = chance * 1.5;
 					time = time * 1.5;
 				} else {

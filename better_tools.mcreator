@@ -68,8 +68,8 @@
       "registry_name": "nether_diamond_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/nether_diamond_axe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondAxeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondAxeItem.java",
+          "src/main/resources/assets/better_tools/models/item/nether_diamond_axe.json"
         ]
       },
       "path": "~/Nether Diamond"
@@ -394,8 +394,8 @@
       "registry_name": "nether_diamond_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondDaggerItem.java",
-          "src/main/resources/assets/better_tools/models/item/nether_diamond_dagger.json"
+          "src/main/resources/assets/better_tools/models/item/nether_diamond_dagger.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondDaggerItem.java"
         ]
       },
       "path": "~/Nether Diamond"
@@ -9679,8 +9679,8 @@
       "registry_name": "crystallite_axe_nether_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_nether_diamond.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeNetherDiamondItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeNetherDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_nether_diamond.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -9802,8 +9802,8 @@
       "registry_name": "crystallite_dagger_nether_diamond",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerNetherDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_nether_diamond.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_nether_diamond.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerNetherDiamondItem.java"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -11934,30 +11934,6 @@
       "path": "~/Sapphire"
     },
     {
-      "name": "SapphireArmorTooltip",
-      "type": "procedure",
-      "sortid": 922,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireArmorTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Sapphire"
-    },
-    {
       "name": "TopazSwordTooltip",
       "type": "procedure",
       "sortid": 924,
@@ -12231,30 +12207,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSapphireSwordTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sapphire"
-    },
-    {
-      "name": "CrystalliteSapphireArmorTooltip",
-      "type": "procedure",
-      "sortid": 936,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sapphire_armor_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSapphireArmorTooltipProcedure.java"
         ],
         "dependencies": [
           {
@@ -29574,17 +29526,81 @@
       "path": "~/Nether Diamond"
     },
     {
-      "name": "FlamingItemsTooltip",
-      "type": "procedure",
-      "sortid": 1682,
+      "name": "FreezeThornsChance",
+      "type": "attribute",
+      "sortid": 1683,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flaming_items_tooltip",
+      "registry_name": "freeze_thorns_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "FreezeThornsTime",
+      "type": "attribute",
+      "sortid": 1684,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_thorns_time",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "SapphireArmorSetAttributes",
+      "type": "procedure",
+      "sortid": 1685,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_armor_set_attributes",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlamingItemsTooltipProcedure.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireArmorSetAttributesProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "SapphireArmorTooltip",
+      "type": "procedure",
+      "sortid": 1686,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_armor_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireArmorTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -29595,7 +29611,67 @@
           }
         ]
       },
-      "path": "~/Nether Diamond"
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "PlayerInColdBiomeTracker",
+      "type": "procedure",
+      "sortid": 1687,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_in_cold_biome_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerInColdBiomeTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "PlayerInThunderstormTracker",
+      "type": "procedure",
+      "sortid": 1688,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_in_thunderstorm_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerInThunderstormTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
@@ -29826,6 +29902,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "is_in_cold_biome",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "is_in_thunderstorm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -29882,11 +29970,11 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:forge:ores_in_ground/end_stone": [
-      "CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:mod:smelting_touch_tools": [
       "CUSTOM:CrystallitePickaxeNetherDiamond"
+    ],
+    "ITEMS:forge:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:ClimbableWall",
@@ -29955,6 +30043,21 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CrystalliteBowSky"
     ],
+    "ITEMS:mod:amethyst_upgraded_crystallite_items": [
+      "CUSTOM:EarthCrystal",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:EarthCirclet",
+      "CUSTOM:CrystalliteBowAmethyst"
+    ],
     "BLOCKS:minecraft:trapdoors": [
       "CUSTOM:DarkPolishedCoalTrapdoor",
       "CUSTOM:LightPolishedCoalTrapdoor",
@@ -29977,26 +30080,17 @@
       "CUSTOM:PolishedAmethystTrapdoor",
       "CUSTOM:LightPolishedAmethystTrapdoor"
     ],
-    "ITEMS:mod:amethyst_upgraded_crystallite_items": [
-      "CUSTOM:EarthCrystal",
-      "CUSTOM:CrystalliteSwordAmethyst",
-      "CUSTOM:CrystallitePickaxeAmethyst",
-      "CUSTOM:CrystalliteAxeAmethyst",
-      "CUSTOM:CrystalliteShovelAmethyst",
-      "CUSTOM:CrystalliteHoeAmethyst",
-      "CUSTOM:CrystalliteDaggerAmethyst",
-      "CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "CUSTOM:CrystalliteArmorAmethyst.body",
-      "CUSTOM:CrystalliteArmorAmethyst.legs",
-      "CUSTOM:CrystalliteArmorAmethyst.boots",
-      "CUSTOM:EarthCirclet",
-      "CUSTOM:CrystalliteBowAmethyst"
-    ],
     "ITEMS:forge:tools/hoes": [
       "TAG:minecraft:hoes"
     ],
     "ITEMS:forge:tools/swords": [
       "TAG:minecraft:swords"
+    ],
+    "BLOCKS:forge:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
     ],
     "BLOCKS:mod:warped_planks": [
       "Blocks.WARPED_PLANKS",
@@ -30010,12 +30104,6 @@
       "Blocks.WARPED_FENCE",
       "Blocks.WARPED_FENCE_GATE",
       "Blocks.WARPED_SLAB"
-    ],
-    "BLOCKS:forge:ores_in_ground/stone": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre"
     ],
     "ITEMS:forge:tools/pickaxes": [
       "TAG:minecraft:pickaxes"
@@ -31678,33 +31766,33 @@
     "en_us": {
       "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
-      "item.better_tools.flint_hoe": "Flint Hoe",
       "item.better_tools.curing_charm": "§6Curing Charm",
+      "item.better_tools.flint_hoe": "Flint Hoe",
+      "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
-      "item.better_tools.poison_charm": "§5Poison Charm",
       "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
+      "item.better_tools.poison_charm": "§5Poison Charm",
       "item_group.better_tools.crystallite_tab": "BT+A - Crystallite",
       "block.better_tools.polished_ruby_trapdoor": "Metallic Ruby Trapdoor",
       "item.minecraft.splash_potion.effect.double_jump_potion": "Splash Potion of Double Jump",
       "item.minecraft.tipped_arrow.effect.double_jump_potion_2": "Arrow of Double Jump",
-      "item.better_tools.crystallite_armor_amethyst_chestplate": "Crystallite Chestplate",
       "block.better_tools.light_polished_copper_stairs": "Polished Copper Stairs",
+      "item.better_tools.crystallite_armor_amethyst_chestplate": "Crystallite Chestplate",
       "item.better_tools.fire_crystal": "Flame Crystal",
       "item.copper_tools_and_armor.master_builder": "Master Builder",
       "item.better_tools.crystallite_dagger_amethyst": "Crystallite Dagger",
       "item.better_tools.battle_axe": "Battle Axe",
       "block.better_tools.jewellery_table": "Jewellery Table",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_shovel": "Crystallite Shovel",
       "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
+      "item.better_tools.crystallite_shovel": "Crystallite Shovel",
       "block.better_tools.light_polished_lapis_trapdoor": "Light Metallic Lapis Lazuli Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "block.better_tools.sugar_block": "Sugar Block",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -31715,12 +31803,12 @@
       "item.copper_tools_and_armor.copper_shovel": "Copper Shovel",
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
       "advancements.high_crit_multiplier_adv.descr": "Deal at least double your weapon\u0027s regular damage with a critical hit",
-      "item.better_tools.crystallite_sword": "Crystallite Sword",
+      "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
       "item.better_tools.fire_staff": "Fire Staff",
-      "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
+      "item.better_tools.crystallite_sword": "Crystallite Sword",
       "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
+      "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
       "block.better_tools.light_polished_iron_block": "Polished Iron Block",
@@ -31778,8 +31866,8 @@
       "block.better_tools.sapphire_block": "Sapphire Block",
       "gui.better_tools.attributes_viewer.label_max_health": "Max Health",
       "advancements.glass_armor_adv.title": "Glass Ghost",
-      "advancements.get_guardian_spike_adv.descr": "Obtain a Guardian Spike",
       "item.better_tools.crystallite_bow_lapis": "Crystallite Bow",
+      "advancements.get_guardian_spike_adv.descr": "Obtain a Guardian Spike",
       "item.better_tools.crystallite_bow_diamond": "Crystallite Bow",
       "block.better_tools.polished_gold_wall": "Polished Gold Wall",
       "advancements.progression_section.title": "BT+A - Progression",
@@ -31820,16 +31908,16 @@
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
-      "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
       "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
+      "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
       "item.better_tools.obsidian_stick": "Obsidian Stick",
       "item.minecraft.tipped_arrow.effect.potion_of_decay_long": "Arrow of Decay",
       "advancements.crystallite_gem_adv.descr": "Craft a Crystallite Gem",
-      "enchantment.better_tools.swift_cast": "Swift Cast",
       "item.better_tools.mixed_essence": "Mixed Essence",
+      "enchantment.better_tools.swift_cast": "Swift Cast",
       "subtitles.crystallite_shimmer": "Mysterious sparkle",
-      "block.better_tools.dark_polished_iron_stairs": "Dark Polished Iron Stairs",
       "advancements.high_max_hp_adv.descr": "Have at least 30 Max HP",
+      "block.better_tools.dark_polished_iron_stairs": "Dark Polished Iron Stairs",
       "item.better_tools.end_titanium_hoe": "Ender Titanium Hoe",
       "item.better_tools.hive_crystal": "Hive Crystal",
       "advancements.reflect_projectile_adv.descr": "Reflect a projectile at an enemy",
@@ -31900,12 +31988,13 @@
       "item.better_tools.crystallite_hoe_iron": "Crystallite Hoe",
       "block.better_tools.random_ore": "Mixed Ore",
       "death.attack.freeze_shatter": "%1$s was shattered to pieces",
+      "attribute.better_tools.freeze_thorns_time": "Freeze Thorns Time",
       "item.better_tools.crystallite_armor_gold_boots": "Crystallite Boots",
       "item.better_tools.crystallite_sword_honey": "Crystallite Sword",
       "item.better_tools.crystallite_armor_prismarine_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_armor_lapis_boots": "Crystallite Boots",
-      "block.better_tools.polished_diamond_trapdoor": "Metallic Diamond Trapdoor",
       "advancements.deal_dmg_through_armor_adv.title": "Mold Breaker",
+      "block.better_tools.polished_diamond_trapdoor": "Metallic Diamond Trapdoor",
       "item.better_tools.crystallite_pickaxe_sculk": "Crystallite Pickaxe",
       "item.better_tools.diamond_dagger": "Diamond Dagger",
       "enchantment.better_tools.experience_ench.desc": "Kills drop more XP",
@@ -31923,8 +32012,8 @@
       "gui.better_tools.attributes_viewer.label_006": "00",
       "gui.better_tools.attributes_viewer.label_005": "00",
       "advancements.high_armor_points_adv.title": "\u0027Tis but a scratch!",
-      "gui.better_tools.attributes_viewer.label_004": "00",
       "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
+      "gui.better_tools.attributes_viewer.label_004": "00",
       "gui.better_tools.attributes_viewer.label_003": "00",
       "gui.better_tools.attributes_viewer.label_002": "00",
       "gui.better_tools.attributes_viewer.label_001": "00",
@@ -31935,8 +32024,8 @@
       "effect.karma_potion": "Karma",
       "item.better_tools.crystallite_armor_netherite_chestplate": "Crystallite Chestplate",
       "advancements.crystallite_upgrades_section.descr": "Advancements for true completionists!",
-      "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
       "item.better_tools.crystallite_armor_prismarine_boots": "Crystallite Boots",
+      "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
       "advancements.combo_jump_adv.title": "Wahoo!",
       "item.better_tools.crystallite_armor_iron_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_honey": "Crystallite Hoe",
@@ -31950,14 +32039,14 @@
       "item.better_tools.recall_potion": "Recall Potion",
       "advancements.shockwave_adv.descr": "Kill a mob with a shockwave when landing from a fall",
       "enchantment.better_tools.ensorcellation": "Ensorcellation",
-      "advancements.sugar_clump_adv.title": "Sugar Rush",
       "item.better_tools.topaz_shovel": "Topaz Shovel",
-      "entity.better_tools.projectile_ice_staff_projectile": "Ice Staff",
+      "advancements.sugar_clump_adv.title": "Sugar Rush",
       "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",
+      "entity.better_tools.projectile_ice_staff_projectile": "Ice Staff",
       "advancements.guardian_staff_adv.descr": "Hit a mob with the water pulse from a Guardian Staff",
       "item.better_tools.sapphire_sword": "Sapphire Sword",
-      "item.better_tools.crystallite_shovel_diamond": "Crystallite Shovel",
       "item.better_tools.crystallite_shovel_honey": "Crystallite Shovel",
+      "item.better_tools.crystallite_shovel_diamond": "Crystallite Shovel",
       "item.better_tools.nether_diamond_dagger": "Nether Diamond Dagger",
       "item.better_tools.tough_crystal": "Tough Crystal",
       "item.better_tools.echo_crystal": "Echo Crystal",
@@ -31973,22 +32062,22 @@
       "item.better_tools.crystallite_dagger_emerald": "Crystallite Dagger",
       "item.better_tools.crystallite_bow_iron": "Crystallite Bow",
       "item.better_tools.crystallite_armor_topaz_leggings": "Crystallite Leggings",
-      "enchantment.copper_tools_and_armor.smelting_touch": "Smelting Touch",
       "item.better_tools.magma_chestplate": "Magma Chestplate",
-      "item.better_tools.heart_charm": "§cHeart Charm",
-      "item.better_tools.netherite_dagger": "Netherite Dagger",
+      "enchantment.copper_tools_and_armor.smelting_touch": "Smelting Touch",
       "item.better_tools.crystallite_armor_honey_helmet": "Crystallite Helmet",
+      "item.better_tools.netherite_dagger": "Netherite Dagger",
+      "item.better_tools.heart_charm": "§cHeart Charm",
       "item.copper_tools_and_armor.nether_diamond_pickaxe": "Nether Diamond Pickaxe",
       "advancements.end_titanium_armor_adv.title": "One with the End",
       "item.better_tools.crystallite_shovel_ruby": "Crystallite Shovel",
       "item.better_tools.crystallite_sword_prismarine": "Crystallite Sword",
-      "item.minecraft.tipped_arrow.effect.criticality_potion": "Arrow of Criticality",
       "item.minecraft.tipped_arrow.effect.swift_swim_potion_2": "Arrow of Rapidity",
+      "item.minecraft.tipped_arrow.effect.criticality_potion": "Arrow of Criticality",
       "advancements.crystallite_gem_adv.title": "Local Jeweller",
       "gui.better_tools.attributes_viewer.label_movement_speed": "Movement Spd.",
-      "item.better_tools.withered_gauntlet": "§8Withered Gauntlet",
-      "block.better_tools.polished_diamond_slab": "Metallic Diamond Slab",
       "item.better_tools.ruby_leggings": "Ruby Leggings",
+      "block.better_tools.polished_diamond_slab": "Metallic Diamond Slab",
+      "item.better_tools.withered_gauntlet": "§8Withered Gauntlet",
       "item.better_tools.earth_circlet": "§dEarth Circlet",
       "advancements.crystallite_tool_upgrade_adv.descr": "Upgrade a Crystallite tool for a useful effect",
       "item.better_tools.crystallite_armor_lapis_leggings": "Crystallite Leggings",
@@ -32091,6 +32180,7 @@
       "block.better_tools.dark_polished_copper_block": "Dark Polished Copper Block",
       "item.better_tools.diamond_hard_crystal": "Diamond Hard Crystal",
       "item.minecraft.tipped_arrow.effect.luck_potion_2": "Arrow of Luck",
+      "attribute.better_tools.freeze_thorns_chance": "Freeze Thorns Chance",
       "advancements.warden_staff_adv.title": "Supersonic Staff!",
       "subtitles.crystallite_place": "Crystallite placed",
       "advancements.charms_all_slots_adv.descr": "Have 4 Crystallite Charms equipped at the same time",

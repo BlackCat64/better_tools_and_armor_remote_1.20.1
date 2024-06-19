@@ -11,7 +11,8 @@
     "name": "Nether Diamond Axe",
     "specialInformation": {
       "fixedValue": [
-        "§4Has a chance set the target on fire"
+        "§4Has a chance set the target on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "creativeTab": {
