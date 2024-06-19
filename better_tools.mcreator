@@ -11958,30 +11958,6 @@
       "path": "~/Topaz"
     },
     {
-      "name": "TopazArmorTooltip",
-      "type": "procedure",
-      "sortid": 925,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "topaz_armor_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazArmorTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Topaz"
-    },
-    {
       "name": "CrystalliteIronSwordTooltip",
       "type": "procedure",
       "sortid": 926,
@@ -12231,30 +12207,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteTopazSwordTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "CrystalliteTopazArmorTooltip",
-      "type": "procedure",
-      "sortid": 938,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_topaz_armor_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteTopazArmorTooltipProcedure.java"
         ],
         "dependencies": [
           {
@@ -29650,15 +29602,15 @@
       "path": "~/Sapphire"
     },
     {
-      "name": "PlayerInThunderstormTracker",
+      "name": "TopazArmorSetAttributes",
       "type": "procedure",
-      "sortid": 1688,
+      "sortid": 1689,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "player_in_thunderstorm_tracker",
+      "registry_name": "topaz_armor_set_attributes",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerInThunderstormTrackerProcedure.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazArmorSetAttributesProcedure.java"
         ],
         "dependencies": [
           {
@@ -29668,6 +29620,46 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "LightningThornsChance",
+      "type": "attribute",
+      "sortid": 1690,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_thorns_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "TopazArmorTooltip",
+      "type": "procedure",
+      "sortid": 1691,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_armor_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazArmorTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
           }
         ]
       },
@@ -29905,12 +29897,6 @@
     },
     {
       "name": "is_in_cold_biome",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
-      "name": "is_in_thunderstorm",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
@@ -32378,6 +32364,7 @@
       "item.better_tools.experience_potion": "Potion of Experience",
       "item.better_tools.crystallite_axe_sky": "Crystallite Axe",
       "item.better_tools.crystallite_axe_diamond": "Crystallite Axe",
+      "attribute.better_tools.lightning_thorns_chance": "Lightning Thorns Chance",
       "advancements.ruby_pickaxe_adv.title": "Ruby-fficiency",
       "death.attack.karma_damage.item": "%1$s got instant karma from %2$s using %3$s",
       "item.better_tools.ruby_sword": "Ruby Sword",

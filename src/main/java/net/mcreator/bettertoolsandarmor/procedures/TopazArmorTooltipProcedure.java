@@ -8,10 +8,15 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.Screen;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -22,25 +27,31 @@ public class TopazArmorTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.TOPAZ_HELMET.get() || itemstack.getItem() == BetterToolsModItems.TOPAZ_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.TOPAZ_LEGGINGS.get()
-				|| itemstack.getItem() == BetterToolsModItems.TOPAZ_BOOTS.get()) {
+		double percent = 0;
+		double seconds = 0;
+		String default_time_chance_str = "";
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lightning_armor")))) {
+			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).getValue() * 100;
+			default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "10" : "5";
+			tooltip.add(Component.literal((!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())
+							? "\u00A79+" + default_time_chance_str + "% Lightning Chance"
+							: "\u00A72 " + new java.text.DecimalFormat("##").format(percent) + "% Lightning Chance")));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77For each armor piece worn:"));
-				tooltip.add(Component.literal("\u00A79+5% \u00A76chance for lightning"));
-				tooltip.add(Component.literal("\u00A77When in a thunderstorm:"));
-				tooltip.add(Component.literal("\u00A79+10% \u00A76chance for lightning"));
-				tooltip.add(Component.literal("\u00A77When full set worn:"));
-				tooltip.add(Component.literal("\u00A7925-50% \u00A76chance for lightning"));
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
+				tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

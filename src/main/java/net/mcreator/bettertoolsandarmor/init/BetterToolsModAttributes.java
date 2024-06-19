@@ -33,6 +33,7 @@ public class BetterToolsModAttributes {
 	public static final RegistryObject<Attribute> FIRETHORNSTIME = ATTRIBUTES.register("fire_thorns_time", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".fire_thorns_time", 0, 0, 20000)).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZETHORNSCHANCE = ATTRIBUTES.register("freeze_thorns_chance", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".freeze_thorns_chance", 0, 0, 1)).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZETHORNSTIME = ATTRIBUTES.register("freeze_thorns_time", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".freeze_thorns_time", 0, 0, 20000)).setSyncable(true));
+	public static final RegistryObject<Attribute> LIGHTNINGTHORNSCHANCE = ATTRIBUTES.register("lightning_thorns_chance", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".lightning_thorns_chance", 0, 0, 1)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
@@ -74,6 +75,12 @@ public class BetterToolsModAttributes {
 			Class<? extends Entity> baseClass = e.getBaseClass();
 			if (baseClass.isAssignableFrom(Mob.class)) {
 				event.add(e, FREEZETHORNSTIME.get());
+			}
+		});
+		entityTypes.forEach((e) -> {
+			Class<? extends Entity> baseClass = e.getBaseClass();
+			if (baseClass.isAssignableFrom(Mob.class)) {
+				event.add(e, LIGHTNINGTHORNSCHANCE.get());
 			}
 		});
 	}

@@ -613,6 +613,7 @@
   "item.better_tools.experience_potion": "Potion of Experience",
   "item.better_tools.crystallite_axe_sky": "Crystallite Axe",
   "item.better_tools.crystallite_axe_diamond": "Crystallite Axe",
+  "attribute.better_tools.lightning_thorns_chance": "Lightning Thorns Chance",
   "advancements.ruby_pickaxe_adv.title": "Ruby-fficiency",
   "death.attack.karma_damage.item": "%1$s got instant karma from %2$s using %3$s",
   "item.better_tools.ruby_sword": "Ruby Sword",
