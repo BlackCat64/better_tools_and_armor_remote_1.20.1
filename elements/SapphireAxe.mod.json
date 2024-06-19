@@ -24,6 +24,9 @@
     "damageVsEntity": 10.0,
     "usageCount": 600,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Sapphire"
@@ -31,9 +34,6 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "SapphireSwordProcedure2"
-    }
+    "damageOnCrafting": false
   }
 }

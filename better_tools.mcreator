@@ -4346,8 +4346,8 @@
       "registry_name": "sapphire_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java"
         ]
       },
       "path": "~/Sapphire"
@@ -18862,46 +18862,6 @@
       "path": "~/Crystallite/Structures"
     },
     {
-      "name": "SapphireSwordProcedure2",
-      "type": "procedure",
-      "sortid": 1200,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_sword_procedure_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireSwordProcedure2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sapphire"
-    },
-    {
       "name": "CrystalliteSwordSapphireProcedure2",
       "type": "procedure",
       "sortid": 1201,
@@ -29676,6 +29636,94 @@
         "files": []
       },
       "path": "~/Sapphire"
+    },
+    {
+      "name": "AttackFreezeTime",
+      "type": "attribute",
+      "sortid": 1693,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_freeze_time",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "FreezingWeaponsSetAttributes",
+      "type": "procedure",
+      "sortid": 1694,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_weapons_set_attributes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FreezingWeaponsSetAttributesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "FreezingWeaponsProcedure",
+      "type": "procedure",
+      "sortid": 1695,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_weapons_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FreezingWeaponsProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
     }
   ],
   "variable_elements": [
@@ -32080,6 +32128,7 @@
       "advancements.crystallite_tool_upgrade_adv.descr": "Upgrade a Crystallite tool for a useful effect",
       "item.better_tools.crystallite_armor_lapis_leggings": "Crystallite Leggings",
       "advancements.crystallite_armor_upgrade_adv.title": "Crystal Armorer",
+      "attribute.better_tools.attack_freeze_time": "Attack Freeze Time",
       "item.better_tools.crystallite_shovel_redstone": "Crystallite Shovel",
       "jei.better_tools.sculk_crystallite_info": "§lCrystallite Upgrades: \n§3Sculk§r\n\nTheme:\nDeep Dark and Mining\nAll stats increase slightly too!",
       "advancements.nether_diamond_adv.title": "Diamonds! (Fire Edition)",
