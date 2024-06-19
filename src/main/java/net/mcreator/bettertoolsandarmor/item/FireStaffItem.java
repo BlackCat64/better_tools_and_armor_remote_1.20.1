@@ -51,6 +51,7 @@ public class FireStaffItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A74Sets the target on fire"));
+		list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 	}
 
 	@Override

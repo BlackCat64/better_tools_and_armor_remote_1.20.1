@@ -74,6 +74,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -91,6 +92,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -108,6 +110,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -125,6 +128,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override

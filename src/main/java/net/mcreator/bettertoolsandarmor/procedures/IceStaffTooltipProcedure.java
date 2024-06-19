@@ -46,7 +46,6 @@ public class IceStaffTooltipProcedure {
 					tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
 				}
 				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
-				tooltip.add(Component.literal("\u00A7bMore powerful in a cold biome"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

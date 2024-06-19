@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§4Sets the target on fire"
+        "§4Sets the target on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "glowCondition": {

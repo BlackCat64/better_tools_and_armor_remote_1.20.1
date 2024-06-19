@@ -11,7 +11,8 @@
     "name": "Topaz Axe",
     "specialInformation": {
       "fixedValue": [
-        "§6Has a chance to summon lightning on the target"
+        "§6Has a chance to summon lightning on the target",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "creativeTab": {
@@ -24,6 +25,9 @@
     "damageVsEntity": 9.0,
     "usageCount": 600,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Topaz"

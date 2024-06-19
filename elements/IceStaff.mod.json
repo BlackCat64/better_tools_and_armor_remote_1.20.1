@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§bFreezes the target"
+        "§bFreezes the target",
+        "§bEffect is stronger in a cold biome"
       ]
     },
     "glowCondition": {

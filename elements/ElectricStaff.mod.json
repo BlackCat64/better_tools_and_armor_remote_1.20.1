@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§6Strikes the target with lightning"
+        "§6Strikes the target with lightning",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "glowCondition": {

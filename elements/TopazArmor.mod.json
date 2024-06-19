@@ -20,22 +20,26 @@
     "bootsName": "Topaz Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§6Has a chance to summon lightning on attackers"
+        "§6Has a chance to summon lightning on attackers",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§6Has a chance to summon lightning on attackers"
+        "§6Has a chance to summon lightning on attackers",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§6Has a chance to summon lightning on attackers"
+        "§6Has a chance to summon lightning on attackers",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§6Has a chance to summon lightning on attackers"
+        "§6Has a chance to summon lightning on attackers",
+        "§6Effect is stronger in a thunderstorm"
       ]
     },
     "helmetModelName": "Default",
@@ -66,6 +70,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 20,
     "damageValueHelmet": 3,
     "damageValueBody": 6,

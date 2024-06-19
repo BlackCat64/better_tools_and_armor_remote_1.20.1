@@ -54,7 +54,6 @@ public class FireStaffTooltipProcedure {
 					tooltip.add(Component.literal(("\u00A72 " + ("" + explosion_power).replace(".0", "") + " Explosion Power")));
 				}
 				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
-				tooltip.add(Component.literal("\u00A74Effect doubles in the Nether"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

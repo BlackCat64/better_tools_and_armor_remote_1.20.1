@@ -35,7 +35,7 @@ public class SapphireSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:freezing_weapons")))) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:freezing_tools")))) {
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue() * 100) + "% Freeze Chance")));
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue() / 20) + "s Freeze Time")));
 		}

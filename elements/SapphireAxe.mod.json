@@ -11,7 +11,8 @@
     "name": "Sapphire Axe",
     "specialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze the target"
+        "§bHas a chance to freeze the target",
+        "§bEffect is stronger in a cold biome"
       ]
     },
     "creativeTab": {
