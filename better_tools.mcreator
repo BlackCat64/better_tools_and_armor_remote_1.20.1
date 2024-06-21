@@ -29700,6 +29700,20 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "KarmaCurseDamage",
+      "type": "damagetype",
+      "sortid": 1699,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_curse_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/karma_curse_damage.json"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -32084,6 +32098,7 @@
       "item.better_tools.crystallite_dagger_emerald": "Crystallite Dagger",
       "item.better_tools.crystallite_bow_iron": "Crystallite Bow",
       "item.better_tools.crystallite_armor_topaz_leggings": "Crystallite Leggings",
+      "death.attack.karma_curse_damage": "%1$s got instant karma",
       "item.better_tools.magma_chestplate": "Magma Chestplate",
       "enchantment.copper_tools_and_armor.smelting_touch": "Smelting Touch",
       "item.better_tools.crystallite_armor_honey_helmet": "Crystallite Helmet",
@@ -32300,6 +32315,7 @@
       "attribute.better_tools.attack_freeze_chance": "Attack Freeze Chance",
       "item.better_tools.crystallite_axe_sapphire": "Crystallite Axe",
       "item.better_tools.glass_chestplate": "Glass Chestplate",
+      "death.attack.karma_curse_damage.player": "%1$s got instant karma",
       "jei.better_tools.netherite_crystallite_info": "§lCrystallite Upgrades: \n§8Netherite§r\n\nTheme:\nDamage and The Nether\nAll stats increase slightly too!",
       "advancements.sugar_clump_adv.descr": "Eat a sugar clump",
       "item.better_tools.crystallite_sword_ruby": "Crystallite Sword",
@@ -32350,6 +32366,7 @@
       "item.better_tools.crystallite_bow_sapphire": "Crystallite Bow",
       "item.better_tools.diamond_crystal_leggings": "Crystal Leggings",
       "item.better_tools.electric_crystal": "Lightning Crystal",
+      "death.attack.karma_curse_damage.item": "%1$s got instant karma using %3$s",
       "item.better_tools.iron_glass_armor_boots": "Glass Boots",
       "item.minecraft.splash_potion.effect.swift_swim_potion": "Splash Potion of Rapidity",
       "block.better_tools.light_polished_lapis_block": "Light Metallic Lapis Lazuli Block",

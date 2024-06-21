@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import javax.annotation.Nullable;
@@ -35,8 +36,13 @@ public class KarmaCurseProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity sourceentity) {
 		if (sourceentity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.KARMA_CURSE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_damage")))), 1);
+		if (!BetterToolsModVariables.being_damaged_flag) {
+			if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.KARMA_CURSE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+				BetterToolsModVariables.being_damaged_flag = true;
+				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_curse_damage"))), sourceentity),
+						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.KARMA_CURSE.get()));
+				BetterToolsModVariables.being_damaged_flag = false;
+			}
 		}
 	}
 }
