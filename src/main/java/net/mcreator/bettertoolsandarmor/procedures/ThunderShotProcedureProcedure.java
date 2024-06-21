@@ -44,7 +44,6 @@ public class ThunderShotProcedureProcedure {
 			return;
 		double LightningChance = 0;
 		if (immediatesourceentity instanceof Arrow && !(sourceentity == null)) {
-			LightningChance = 0;
 			LightningChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.THUNDER_SHOT.get()) * 0.1;
 			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ELECTRIC_NECKLACE.get(), lv).isPresent() : false) {
 				LightningChance = LightningChance + 0.1;
@@ -52,26 +51,26 @@ public class ThunderShotProcedureProcedure {
 			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_topaz_upgrade")) {
 				LightningChance = LightningChance + 0.2;
 			}
-			if (world.getLevelData().isThundering() == true) {
+			if (world.getLevelData().isThundering()) {
 				LightningChance = LightningChance * 2;
 			}
 			if (LightningChance > 0) {
 				if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 					LightningChance = LightningChance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				}
-			}
-			if (Math.random() < LightningChance) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+				if (Math.random() < LightningChance) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+						}
 					}
-				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1);
-					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1, false);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1);
+						} else {
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1, false);
+						}
 					}
 				}
 			}
