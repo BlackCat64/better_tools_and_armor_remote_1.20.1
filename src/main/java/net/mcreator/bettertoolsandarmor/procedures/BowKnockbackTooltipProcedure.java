@@ -7,18 +7,19 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class CrystalliteIronSwordTooltipProcedure {
+public class BowKnockbackTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -32,13 +33,13 @@ public class CrystalliteIronSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:high_knockback_weapons")))) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
-				tooltip.add(Component.literal("\u00A79+3 Attack Knockback"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+		double value = 0;
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, itemstack) != 0 || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_IRON.get()) {
+			value = itemstack.getEnchantmentLevel(Enchantments.PUNCH_ARROWS);
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_IRON.get()) {
+				value = value + 2;
 			}
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(value) + " Arrow Knockback")));
 		}
 	}
 }

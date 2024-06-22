@@ -32,11 +32,12 @@ public class CrystalliteIronKnockbackProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:high_knockback_weapons")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:high_knockback_weapons")))
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:iron_upgraded_crystallite_items")))) {
 			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK)
-					.hasModifier((new AttributeModifier(UUID.fromString("f27c97a7-3849-4c6c-bb28-fa6c7780eb7f"), "crystallite_iron", 3, AttributeModifier.Operation.ADDITION)))))
+					.hasModifier((new AttributeModifier(UUID.fromString("f27c97a7-3849-4c6c-bb28-fa6c7780eb7f"), "crystallite_iron", 2, AttributeModifier.Operation.ADDITION)))))
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("f27c97a7-3849-4c6c-bb28-fa6c7780eb7f"), "crystallite_iron", 3, AttributeModifier.Operation.ADDITION)));
+						.addTransientModifier((new AttributeModifier(UUID.fromString("f27c97a7-3849-4c6c-bb28-fa6c7780eb7f"), "crystallite_iron", 2, AttributeModifier.Operation.ADDITION)));
 		} else {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).removeModifier(UUID.fromString("f27c97a7-3849-4c6c-bb28-fa6c7780eb7f"));
 		}
