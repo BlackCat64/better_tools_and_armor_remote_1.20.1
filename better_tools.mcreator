@@ -12178,34 +12178,6 @@
       "path": "~/Crystallite/Topaz"
     },
     {
-      "name": "CrystalliteNetherDiamondSwordTooltip",
-      "type": "procedure",
-      "sortid": 939,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_nether_diamond_sword_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetherDiamondSwordTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
       "name": "CrystalliteTopazPickaxeTooltip",
       "type": "procedure",
       "sortid": 941,
@@ -29694,6 +29666,34 @@
         ]
       },
       "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "FireAspectTooltip",
+      "type": "procedure",
+      "sortid": 1702,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_aspect_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireAspectTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
     }
   ],
   "variable_elements": [
