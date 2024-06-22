@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"time\">time</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">tooltip_event</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"itemstack_has_enchantment\"><field name=\"enhancement\">FLAME</field><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value></block></value><statement name=\"DO0\"><block type=\"new_tooltip_line\"><value name=\"tooltiptext\"><block type=\"text\"><field name=\"TEXT\">§2 5s Burn Time</field></block></value></block></statement></block></next></block></xml>"
+  }
+}

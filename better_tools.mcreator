@@ -29694,6 +29694,30 @@
         ]
       },
       "path": "~/Nether Diamond"
+    },
+    {
+      "name": "FlameEnchTooltip",
+      "type": "procedure",
+      "sortid": 1703,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_ench_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlameEnchTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
     }
   ],
   "variable_elements": [
