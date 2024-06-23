@@ -74,6 +74,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
+			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -91,6 +92,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
+			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -108,6 +110,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
+			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -125,6 +128,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
+			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override

@@ -20,22 +20,26 @@
     "bootsName": "Nether Diamond Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire"
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire"
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire"
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire"
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "helmetModelName": "Default",

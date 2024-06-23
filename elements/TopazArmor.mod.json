@@ -21,25 +21,25 @@
     "helmetSpecialInformation": {
       "fixedValue": [
         "§6Has a chance to summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Effect is more likely in a thunderstorm"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§6Has a chance to summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Effect is more likely in a thunderstorm"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§6Has a chance to summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Effect is more likely in a thunderstorm"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§6Has a chance to summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Effect is more likely in a thunderstorm"
       ]
     },
     "helmetModelName": "Default",

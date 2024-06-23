@@ -15,6 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
 
 import javax.annotation.Nullable;
 
@@ -54,6 +55,13 @@ public class EndTitaniumSwordTooltipProcedure {
 				damage_str = new java.text.DecimalFormat("##.#").format(damage);
 				initial_lines = tooltip.size();
 				tooltip.set((int) (initial_lines - 2), Component.literal("\u00A72 " + damage_str + " Attack Damage"));
+			} else {
+				if (Screen.hasShiftDown()) {
+					tooltip.add(Component.literal("\u00A77When in The End:"));
+					tooltip.add(Component.literal("\u00A79+3 Attack Damage"));
+				} else {
+					tooltip.add(Component.literal("\u00A78Press Shift for details"));
+				}
 			}
 		}
 	}

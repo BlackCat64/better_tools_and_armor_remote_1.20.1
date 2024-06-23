@@ -46,7 +46,6 @@ public class TopazArmorTooltipProcedure {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
-				tooltip.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

@@ -34,10 +34,10 @@ public class EnderTitaniumArmorTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()
 				|| itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
+			if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A72 20% Teleport Chance"));
+			}
 			if (Screen.hasShiftDown()) {
-				if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
-					tooltip.add(Component.literal("\u00A72 20% Teleport Chance"));
-				}
 				if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
 					tooltip.add(Component.literal("\u00A77When float ability used:"));
 					tooltip.add(Component.literal("\u00A7cDurability Cost: 10"));
