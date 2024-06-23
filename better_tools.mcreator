@@ -3004,8 +3004,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/EndTitaniumArmorItem.java",
           "src/main/resources/assets/better_tools/models/item/end_titanium_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/end_titanium_boots.json",
-          "src/main/resources/assets/better_tools/models/item/end_titanium_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/end_titanium_leggings.json"
+          "src/main/resources/assets/better_tools/models/item/end_titanium_leggings.json",
+          "src/main/resources/assets/better_tools/models/item/end_titanium_helmet.json"
         ]
       },
       "path": "~/Ender Titanium"
@@ -10035,27 +10035,6 @@
       "path": "~/Ender Titanium"
     },
     {
-      "name": "EndTitaniumSwordGlow",
-      "type": "procedure",
-      "sortid": 835,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_titanium_sword_glow",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumSwordGlowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
       "name": "EndTitaniumChestplateProcedure",
       "type": "procedure",
       "sortid": 836,
@@ -11974,6 +11953,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -11997,6 +11980,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteGoldArmorTooltipProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
