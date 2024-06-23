@@ -35,7 +35,7 @@ public class CrystalliteArmorIronTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_CHESTPLATE.get()
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_BOOTS.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77When full set worn:"));
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal("\u00A79Inflict melee attackers with Slowness II for 3s"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));

@@ -34,11 +34,10 @@ public class CrystalliteRedstoneArmorTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get()
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get()) {
+			tooltip.add(Component.literal("\u00A79+2 Max Health"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77For each armor piece worn:"));
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal("\u00A79+2 Max Health"));
-				tooltip.add(Component.literal("\u00A77When full set worn:"));
-				tooltip.add(Component.literal("\u00A79+10 Max Health"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
