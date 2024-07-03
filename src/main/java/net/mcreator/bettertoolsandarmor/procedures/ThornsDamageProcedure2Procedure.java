@@ -8,8 +8,9 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
@@ -37,7 +38,7 @@ public class ThornsDamageProcedure2Procedure {
 			if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()) != null) {
 				if (((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()).getValue() > 0) {
 					BetterToolsModVariables.being_damaged_flag = true;
-					immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.THORNS), entity),
+					immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity),
 							(float) ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()).getValue());
 					BetterToolsModVariables.being_damaged_flag = false;
 				}

@@ -161,5 +161,10 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get()), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get()), new ItemStack(BetterToolsModItems.DESCENSION_POTION.get()),
 				new ItemStack(BetterToolsModItems.RECALL_POTION.get()), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.utility_potions_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.ICY_BRACELET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.icy_bracelet_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.thorns_damage_info"));
 	}
 }

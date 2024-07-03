@@ -3,7 +3,7 @@ package net.mcreator.bettertoolsandarmor.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
@@ -21,10 +21,8 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class CrystalliteArmorNetheriteThornsProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -54,13 +52,6 @@ public class CrystalliteArmorNetheriteThornsProcedure {
 			}
 			if (armor_pieces == 4) {
 				damage = damage + 1;
-			}
-			if (armor_pieces >= 2) {
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get()) {
-					damage = 2;
-				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get()) {
-					damage = 3;
-				}
 			}
 			if (damage > 0) {
 				{
