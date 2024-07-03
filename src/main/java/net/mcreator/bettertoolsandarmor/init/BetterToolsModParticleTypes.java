@@ -21,4 +21,5 @@ public class BetterToolsModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> GUARDIAN_STAFF_BEAM = REGISTRY.register("guardian_staff_beam", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CRYSTALLITE_SPLASH_DAMAGE = REGISTRY.register("crystallite_splash_damage", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM = REGISTRY.register("freeze_boom", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> CRYSTALLITE_THORNS_PARTICLE = REGISTRY.register("crystallite_thorns_particle", () -> new SimpleParticleType(false));
 }

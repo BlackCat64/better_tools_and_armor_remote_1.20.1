@@ -24,7 +24,7 @@
         "§7Ability:",
         "§8Spiky - Deal damage to melee attackers",
         "§7Full-set bonus:",
-        "§8Further increased damage"
+        "§8Thorns affects all mobs in a radius"
       ]
     },
     "bodySpecialInformation": {
@@ -33,7 +33,7 @@
         "§7Ability:",
         "§8Spiky - Deal damage to melee attackers",
         "§7Full-set bonus:",
-        "§8Further increased damage"
+        "§8Thorns affects all mobs in a radius"
       ]
     },
     "leggingsSpecialInformation": {
@@ -42,7 +42,7 @@
         "§7Ability:",
         "§8Spiky - Deal damage to melee attackers",
         "§7Full-set bonus:",
-        "§8Further increased damage"
+        "§8Thorns affects all mobs in a radius"
       ]
     },
     "bootsSpecialInformation": {
@@ -51,7 +51,7 @@
         "§7Ability:",
         "§8Spiky - Deal damage to melee attackers",
         "§7Full-set bonus:",
-        "§8Further increased damage"
+        "§8Thorns affects all mobs in a radius"
       ]
     },
     "helmetModelName": "Default",

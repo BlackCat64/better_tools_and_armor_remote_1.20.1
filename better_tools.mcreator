@@ -8713,9 +8713,9 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_netherite_leggings.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_netherite_helmet.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorNetheriteItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_netherite_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_netherite_boots.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_netherite_chestplate.json"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorNetheriteItem.java"
         ]
       },
       "path": "~/Crystallite/Netherite"
@@ -25039,6 +25039,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -29743,6 +29755,21 @@
         "files": []
       },
       "path": "~/Effect Armor/Cactus Shirt"
+    },
+    {
+      "name": "CrystalliteThornsParticle",
+      "type": "particle",
+      "sortid": 1706,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_thorns_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/CrystalliteThornsParticleParticle.java",
+          "src/main/resources/assets/better_tools/particles/crystallite_thorns_particle.json"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
     }
   ],
   "variable_elements": [
@@ -30619,8 +30646,7 @@
     ],
     "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
       "CUSTOM:MagicWeaponDamage",
-      "CUSTOM:KarmaDamage",
-      "CUSTOM:ArmorThorns"
+      "CUSTOM:KarmaDamage"
     ],
     "ITEMS:mod:flaming_tools": [
       "CUSTOM:NetherDiamondSword",

@@ -13,6 +13,7 @@ import net.mcreator.bettertoolsandarmor.client.particle.OreLocationParticleParti
 import net.mcreator.bettertoolsandarmor.client.particle.IceParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.GuardianStaffBeamParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoomParticle;
+import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteThornsParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSplashDamageParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSparkleParticle;
 
@@ -26,5 +27,6 @@ public class BetterToolsModParticles {
 		event.registerSpriteSet(BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get(), GuardianStaffBeamParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get(), CrystalliteSplashDamageParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM.get(), FreezeBoomParticle::provider);
+		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_THORNS_PARTICLE.get(), CrystalliteThornsParticleParticle::provider);
 	}
 }
