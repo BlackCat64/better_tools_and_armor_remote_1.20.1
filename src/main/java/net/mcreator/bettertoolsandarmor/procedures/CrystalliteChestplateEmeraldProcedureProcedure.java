@@ -41,22 +41,16 @@ public class CrystalliteChestplateEmeraldProcedureProcedure {
 						if (entity instanceof LivingEntity _entity)
 							_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
 					}
-					if (IsPlayerInSunlightProcedure.execute(world, x, y, z, entity) == true) {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
-							time_delay = 100;
-						} else {
-							time_delay = 160;
-						}
-					} else {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
-							time_delay = 240;
-						} else {
-							time_delay = 320;
-						}
+					time_delay = 320;
+					if (IsPlayerInSunlightProcedure.execute(world, x, y, z, entity)) {
+						time_delay = time_delay / 2;
+					}
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
+						time_delay = time_delay / 2;
 					}
 					if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).nature_ring_equipped
 							&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()) {
-						time_delay = time_delay * 0.75;
+						time_delay = time_delay / 2;
 					}
 					{
 						double _setval = time_delay;

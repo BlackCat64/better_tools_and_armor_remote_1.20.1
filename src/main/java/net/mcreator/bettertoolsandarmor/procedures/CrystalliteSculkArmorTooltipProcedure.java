@@ -41,6 +41,10 @@ public class CrystalliteSculkArmorTooltipProcedure {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
+				if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+					tooltip.add(Component.literal("\u00A77When in the dark:"));
+					tooltip.add(Component.literal("\u00A79+30% Speed"));
+				}
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

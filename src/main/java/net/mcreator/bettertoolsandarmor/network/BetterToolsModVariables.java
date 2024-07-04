@@ -112,6 +112,7 @@ public class BetterToolsModVariables {
 				clone.fall_start_y = original.fall_start_y;
 				clone.nature_ring_equipped = original.nature_ring_equipped;
 				clone.is_in_cold_biome = original.is_in_cold_biome;
+				clone.is_in_sunlight = original.is_in_sunlight;
 			}
 		}
 	}
@@ -185,6 +186,7 @@ public class BetterToolsModVariables {
 		public double fall_start_y = 0;
 		public boolean nature_ring_equipped = false;
 		public boolean is_in_cold_biome = false;
+		public boolean is_in_sunlight = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -231,6 +233,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("fall_start_y", fall_start_y);
 			nbt.putBoolean("nature_ring_equipped", nature_ring_equipped);
 			nbt.putBoolean("is_in_cold_biome", is_in_cold_biome);
+			nbt.putBoolean("is_in_sunlight", is_in_sunlight);
 			return nbt;
 		}
 
@@ -274,6 +277,7 @@ public class BetterToolsModVariables {
 			fall_start_y = nbt.getDouble("fall_start_y");
 			nature_ring_equipped = nbt.getBoolean("nature_ring_equipped");
 			is_in_cold_biome = nbt.getBoolean("is_in_cold_biome");
+			is_in_sunlight = nbt.getBoolean("is_in_sunlight");
 		}
 	}
 
@@ -336,6 +340,7 @@ public class BetterToolsModVariables {
 					variables.fall_start_y = message.data.fall_start_y;
 					variables.nature_ring_equipped = message.data.nature_ring_equipped;
 					variables.is_in_cold_biome = message.data.is_in_cold_biome;
+					variables.is_in_sunlight = message.data.is_in_sunlight;
 				}
 			});
 			context.setPacketHandled(true);
