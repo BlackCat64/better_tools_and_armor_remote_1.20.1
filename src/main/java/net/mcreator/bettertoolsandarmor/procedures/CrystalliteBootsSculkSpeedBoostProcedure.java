@@ -37,9 +37,9 @@ public class CrystalliteBootsSculkSpeedBoostProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
 			if (IsPlayerInTheDarkProcedure.execute(world, x, y, z, entity)) {
 				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-						.hasModifier((new AttributeModifier(UUID.fromString("01a3ed89-9232-4f36-b478-9b4c20e8c741"), "crystallite_sculk_boots_speed_boost", 0.02, AttributeModifier.Operation.ADDITION)))))
+						.hasModifier((new AttributeModifier(UUID.fromString("01a3ed89-9232-4f36-b478-9b4c20e8c741"), "crystallite_sculk_boots_speed_boost", 0.03, AttributeModifier.Operation.ADDITION)))))
 					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("01a3ed89-9232-4f36-b478-9b4c20e8c741"), "crystallite_sculk_boots_speed_boost", 0.02, AttributeModifier.Operation.ADDITION)));
+							.addTransientModifier((new AttributeModifier(UUID.fromString("01a3ed89-9232-4f36-b478-9b4c20e8c741"), "crystallite_sculk_boots_speed_boost", 0.03, AttributeModifier.Operation.ADDITION)));
 			} else {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("01a3ed89-9232-4f36-b478-9b4c20e8c741"));
 			}

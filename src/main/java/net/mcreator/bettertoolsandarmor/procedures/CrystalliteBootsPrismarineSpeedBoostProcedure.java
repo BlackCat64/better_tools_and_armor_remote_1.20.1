@@ -45,9 +45,9 @@ public class CrystalliteBootsPrismarineSpeedBoostProcedure {
 				} else {
 					((LivingEntity) entity).getAttribute(ForgeMod.SWIM_SPEED.get()).removeModifier(UUID.fromString("4a803404-97f0-4299-b1c1-f5d9174d42f4"));
 					if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-							.hasModifier((new AttributeModifier(UUID.fromString("b05b341a-9ba0-4b30-a013-4f827db2c03f"), "crystallite_boots_prismarine_rain", 0.02, AttributeModifier.Operation.ADDITION)))))
+							.hasModifier((new AttributeModifier(UUID.fromString("b05b341a-9ba0-4b30-a013-4f827db2c03f"), "crystallite_boots_prismarine_rain", 0.03, AttributeModifier.Operation.ADDITION)))))
 						((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-								.addTransientModifier((new AttributeModifier(UUID.fromString("b05b341a-9ba0-4b30-a013-4f827db2c03f"), "crystallite_boots_prismarine_rain", 0.02, AttributeModifier.Operation.ADDITION)));
+								.addTransientModifier((new AttributeModifier(UUID.fromString("b05b341a-9ba0-4b30-a013-4f827db2c03f"), "crystallite_boots_prismarine_rain", 0.03, AttributeModifier.Operation.ADDITION)));
 				}
 			} else {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("b05b341a-9ba0-4b30-a013-4f827db2c03f"));

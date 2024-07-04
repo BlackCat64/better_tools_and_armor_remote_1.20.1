@@ -35,7 +35,7 @@ public class CrystalliteBootsEmeraldTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_BOOTS.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When in sunlight:"));
-				tooltip.add(Component.literal("\u00A79+20% Movement Speed"));
+				tooltip.add(Component.literal("\u00A79+30% Speed"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
