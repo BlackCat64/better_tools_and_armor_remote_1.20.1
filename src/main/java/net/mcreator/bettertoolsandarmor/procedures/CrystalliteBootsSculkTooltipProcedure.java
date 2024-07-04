@@ -35,7 +35,7 @@ public class CrystalliteBootsSculkTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When in the dark:"));
-				tooltip.add(Component.literal("\u00A79+20% Movement Speed"));
+				tooltip.add(Component.literal("\u00A79+20% Speed"));
 			}
 		}
 	}

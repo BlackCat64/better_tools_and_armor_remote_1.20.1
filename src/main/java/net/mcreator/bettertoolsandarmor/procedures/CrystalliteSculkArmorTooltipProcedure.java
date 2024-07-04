@@ -34,15 +34,13 @@ public class CrystalliteSculkArmorTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A72 20% Sonic Boom Chance"));
+			}
+			tooltip.add(Component.literal("\u00A79-10% Detection Range"));
 			if (Screen.hasShiftDown()) {
-				if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
-					tooltip.add(Component.literal("\u00A77When attacked at range:"));
-					tooltip.add(Component.literal("\u00A7920% chance to launch a sonic boom"));
-				}
-				tooltip.add(Component.literal("\u00A77For each armor piece worn:"));
-				tooltip.add(Component.literal("\u00A79-10% Detection Range for all nearby mobs"));
-				tooltip.add(Component.literal("\u00A77When full set worn:"));
-				tooltip.add(Component.literal("\u00A79-50% Detection Range"));
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
+				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

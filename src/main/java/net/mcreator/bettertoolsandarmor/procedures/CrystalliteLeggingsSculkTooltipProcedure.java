@@ -35,7 +35,7 @@ public class CrystalliteLeggingsSculkTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When sneaking:"));
-				tooltip.add(Component.literal("\u00A79+30% Movement Speed"));
+				tooltip.add(Component.literal("\u00A79+30% Speed"));
 			}
 		}
 	}
