@@ -22311,30 +22311,6 @@
       "path": "~/Crystallite/Prismarine"
     },
     {
-      "name": "CrystalliteSwordSkyTooltip",
-      "type": "procedure",
-      "sortid": 1359,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_sky_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "CrystalliteSwordAmethystTooltip",
       "type": "procedure",
       "sortid": 1360,
@@ -29774,6 +29750,34 @@
         ]
       },
       "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CriticalityWeaponTooltip",
+      "type": "procedure",
+      "sortid": 1710,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criticality_weapon_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalityWeaponTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Critical Hit Multiplier"
     }
   ],
   "variable_elements": [
