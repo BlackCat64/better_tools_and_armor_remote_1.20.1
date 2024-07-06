@@ -9057,8 +9057,8 @@
       "registry_name": "crystallite_sword_sapphire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -9226,8 +9226,8 @@
       "registry_name": "crystallite_dagger_sapphire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -9245,10 +9245,10 @@
         "eb": true,
         "ec": true,
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_chestplate.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_leggings.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorSapphireItem.java",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_leggings.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_boots.json"
         ]
       },
@@ -9835,11 +9835,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_leggings.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_helmet.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_chestplate.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_boots.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_leggings.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorNetherDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_helmet.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_boots.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"

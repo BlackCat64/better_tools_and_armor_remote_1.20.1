@@ -23,8 +23,7 @@
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
         "§4Flaming - Can set attackers on fire",
-        "§7Full-set bonus:",
-        "§4Further increases chances for fire"
+        "§4Effect is stronger in the Nether"
       ]
     },
     "bodySpecialInformation": {
@@ -32,8 +31,7 @@
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
         "§4Flaming - Can set attackers on fire",
-        "§7Full-set bonus:",
-        "§4Further increases chances for fire"
+        "§4Effect is stronger in the Nether"
       ]
     },
     "leggingsSpecialInformation": {
@@ -41,8 +39,7 @@
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
         "§4Flaming - Can set attackers on fire",
-        "§7Full-set bonus:",
-        "§4Further increases chances for fire"
+        "§4Effect is stronger in the Nether"
       ]
     },
     "bootsSpecialInformation": {
@@ -50,8 +47,7 @@
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
         "§4Flaming - Can set attackers on fire",
-        "§7Full-set bonus:",
-        "§4Further increases chances for fire"
+        "§4Effect is stronger in the Nether"
       ]
     },
     "helmetModelName": "Default",

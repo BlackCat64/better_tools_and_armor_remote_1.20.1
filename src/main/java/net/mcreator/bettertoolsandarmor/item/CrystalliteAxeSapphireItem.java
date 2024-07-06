@@ -61,6 +61,7 @@ public class CrystalliteAxeSapphireItem extends AxeItem {
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7bFreezing - Can freeze opponents"));
 		list.add(Component.literal("\u00A7bIcy Coating - Has Silk Touch"));
+		list.add(Component.literal("\u00A7bFreezing effect is stronger in a cold biome"));
 	}
 
 	@Override
