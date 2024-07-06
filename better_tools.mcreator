@@ -18290,6 +18290,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -18552,30 +18556,6 @@
         ]
       },
       "path": "~/Crystallite/Emerald"
-    },
-    {
-      "name": "CrystalliteLeggingsSculkTooltip",
-      "type": "procedure",
-      "sortid": 1193,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_leggings_sculk_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSculkTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
     },
     {
       "name": "WardenEchoShardsDrop",
