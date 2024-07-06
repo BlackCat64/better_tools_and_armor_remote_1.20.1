@@ -41,8 +41,8 @@ public class CrystalliteRubyArmorTooltipProcedure {
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-				tooltip.add(Component
-						.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() / 0.1) * 100) + "% Movement Speed")));
+				tooltip.add(
+						Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * 1000) + "% Movement Speed")));
 			} else {
 				tooltip.add(Component.literal("\u00A79+10% Speed"));
 			}
