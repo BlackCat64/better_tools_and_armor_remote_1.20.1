@@ -29778,6 +29778,34 @@
         ]
       },
       "path": "~/Critical Hit Multiplier"
+    },
+    {
+      "name": "CrystalliteSwordSkyTooltip",
+      "type": "procedure",
+      "sortid": 1711,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_sky_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sky"
     }
   ],
   "variable_elements": [
@@ -30320,6 +30348,9 @@
       "CUSTOM:SapphireDagger",
       "CUSTOM:TopazDagger",
       "TAG:better_tools:crystallite_daggers"
+    ],
+    "ITEMS:forge:tools": [
+      "TAG:minecraft:tools"
     ],
     "ITEMS:minecraft:walls": [
       "CUSTOM:DarkPolishedCoalWall",
@@ -31469,6 +31500,28 @@
       "TAG:minecraft:mineable/hoe",
       "TAG:minecraft:wool"
     ],
+    "ITEMS:mod:crystallite_charms": [
+      "CUSTOM:ToughNecklace",
+      "CUSTOM:GildedBracelet",
+      "CUSTOM:MagicRing",
+      "CUSTOM:HeartCharm",
+      "CUSTOM:DiamondHardPlate",
+      "CUSTOM:WitheredGauntlet",
+      "CUSTOM:SpeedyNecklace",
+      "CUSTOM:IcyBracelet",
+      "CUSTOM:ElectricNecklace",
+      "CUSTOM:NatureRing",
+      "CUSTOM:WardenHeadband",
+      "CUSTOM:EnderGoggles",
+      "CUSTOM:BouncyBracelet",
+      "CUSTOM:PoisonCharm",
+      "CUSTOM:LuckyCharm",
+      "CUSTOM:FlamingCirclet",
+      "CUSTOM:ReflectCharm",
+      "CUSTOM:EarthCirclet",
+      "CUSTOM:GuardianNecklace",
+      "CUSTOM:CuringCharm"
+    ],
     "ITEMS:minecraft:hoes": [
       "CUSTOM:NetherDiamondHoe",
       "CUSTOM:FlintHoe",
@@ -31712,57 +31765,13 @@
       "CUSTOM:CrystalliteBowHoney"
     ],
     "ITEMS:minecraft:tools": [
-      "CUSTOM:NetherDiamondSword",
-      "CUSTOM:NetherDiamondPickaxe",
-      "CUSTOM:NetherDiamondAxe",
-      "CUSTOM:NetherDiamondShovel",
-      "CUSTOM:NetherDiamondHoe",
-      "CUSTOM:BattleAxe",
-      "CUSTOM:WoodDagger",
-      "CUSTOM:StoneDagger",
-      "CUSTOM:IronDagger",
-      "CUSTOM:GoldDagger",
-      "CUSTOM:DiamondDagger",
-      "CUSTOM:NetheriteDagger",
-      "CUSTOM:NetherDiamondDagger",
-      "CUSTOM:FlintDagger",
-      "CUSTOM:FlintSword",
-      "CUSTOM:FlintPickaxe",
-      "CUSTOM:FlintAxe",
-      "CUSTOM:FlintShovel",
-      "CUSTOM:FlintHoe",
-      "CUSTOM:RubyToolsPickaxe",
-      "CUSTOM:RubyToolsAxe",
-      "CUSTOM:RubyToolsSword",
-      "CUSTOM:RubyToolsShovel",
-      "CUSTOM:RubyToolsHoe",
-      "CUSTOM:RubyDagger",
-      "CUSTOM:EndTitaniumSword",
-      "CUSTOM:EndTitaniumPickaxe",
-      "CUSTOM:EndTitaniumAxe",
-      "CUSTOM:EndTitaniumShovel",
-      "CUSTOM:EndTitaniumHoe",
-      "CUSTOM:EndTitaniumDagger",
-      "CUSTOM:SapphireSword",
-      "CUSTOM:SapphirePickaxe",
-      "CUSTOM:SapphireAxe",
-      "CUSTOM:SapphireShovel",
-      "CUSTOM:SapphireHoe",
-      "CUSTOM:SapphireDagger",
-      "CUSTOM:TopazSword",
-      "CUSTOM:TopazPickaxe",
-      "CUSTOM:TopazAxe",
-      "CUSTOM:TopazShovel",
-      "CUSTOM:TopazHoe",
-      "CUSTOM:TopazDagger",
-      "CUSTOM:CrystalliteSword",
-      "CUSTOM:CrystallitePickaxe",
-      "CUSTOM:CrystalliteAxe",
-      "CUSTOM:CrystalliteShovel",
-      "CUSTOM:CrystalliteHoe",
-      "CUSTOM:CrystalliteDagger",
-      "TAG:better_tools:staffs",
-      "TAG:better_tools:upgraded_crystallite_tools"
+      "TAG:minecraft:swords",
+      "TAG:minecraft:pickaxes",
+      "TAG:minecraft:axes",
+      "TAG:minecraft:shovels",
+      "TAG:minecraft:hoes",
+      "TAG:better_tools:daggers",
+      "TAG:better_tools:staffs"
     ],
     "ITEMS:mod:staffs": [
       "CUSTOM:ElectricStaff",
