@@ -44,17 +44,17 @@ public class CrystalliteLeggingsPrismarineTooltipProcedure {
 				rain = true;
 				tooltip.add(Component.literal("\u00A79-50% Gravity"));
 			}
-			if (Screen.hasShiftDown()) {
-				if (!rain) {
-					tooltip.add(Component.literal("\u00A77When in rain:"));
-					tooltip.add(Component.literal("\u00A79-50% Gravity"));
-				}
-				if (!water) {
+			if (!water) {
+				if (Screen.hasShiftDown()) {
+					if (!rain) {
+						tooltip.add(Component.literal("\u00A77When in rain:"));
+						tooltip.add(Component.literal("\u00A79-50% Gravity"));
+					}
 					tooltip.add(Component.literal("\u00A77When in water:"));
 					tooltip.add(Component.literal("\u00A79Zero Gravity"));
+				} else {
+					tooltip.add(Component.literal("\u00A78Press Shift for details"));
 				}
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
 		}
 	}
