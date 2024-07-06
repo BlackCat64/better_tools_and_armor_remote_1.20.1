@@ -29778,6 +29778,54 @@
         ]
       },
       "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "SwiftSwimPotionTooltip",
+      "type": "procedure",
+      "sortid": 1714,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swift_swim_potion_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SwiftSwimPotionTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Swift Swim"
+    },
+    {
+      "name": "CriticalityPotionTooltip",
+      "type": "procedure",
+      "sortid": 1715,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criticality_potion_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalityPotionTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Critical Hit Multiplier"
     }
   ],
   "variable_elements": [
