@@ -22764,54 +22764,6 @@
       "path": "~/Staffs/Guardian"
     },
     {
-      "name": "CrystalliteSwordPrismarineTooltip",
-      "type": "procedure",
-      "sortid": 1377,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_prismarine_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordPrismarineTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
-      "name": "CrystalliteAxePrismarineTooltip",
-      "type": "procedure",
-      "sortid": 1378,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_axe_prismarine_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteAxePrismarineTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
       "name": "CrystalliteLeggingsPrismarineTooltip",
       "type": "procedure",
       "sortid": 1379,
@@ -29806,6 +29758,34 @@
         ]
       },
       "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "CrystalliteSwordPrismarineTooltip",
+      "type": "procedure",
+      "sortid": 1712,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_prismarine_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordPrismarineTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
     }
   ],
   "variable_elements": [
@@ -30823,11 +30803,7 @@
       "Items.SUSPICIOUS_STEW",
       "Items.RABBIT_STEW",
       "Items.POTIONITEM",
-      "CUSTOM:ExperiencePotion",
-      "CUSTOM:AscensionPotion",
-      "CUSTOM:DescensionPotion",
-      "CUSTOM:RecallPotion",
-      "CUSTOM:LostSoulsPotion"
+      "TAG:better_tools:utility_potions"
     ],
     "ITEMS:mod:high_knockback_weapons": [
       "CUSTOM:CrystalliteSwordIron",
@@ -31204,6 +31180,13 @@
       "CUSTOM:RubyOre",
       "CUSTOM:TopazOre",
       "CUSTOM:DeepslateRubyOre"
+    ],
+    "ITEMS:mod:utility_potions": [
+      "CUSTOM:ExperiencePotion",
+      "CUSTOM:AscensionPotion",
+      "CUSTOM:DescensionPotion",
+      "CUSTOM:RecallPotion",
+      "CUSTOM:LostSoulsPotion"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:FungalCaves"

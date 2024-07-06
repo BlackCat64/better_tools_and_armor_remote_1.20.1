@@ -9,10 +9,6 @@
     "minecraft:suspicious_stew",
     "minecraft:rabbit_stew",
     "minecraft:potion",
-    "better_tools:experience_potion",
-    "better_tools:ascension_potion",
-    "better_tools:descension_potion",
-    "better_tools:recall_potion",
-    "better_tools:lost_souls_potion"
+    "#better_tools:utility_potions"
   ]
 }
