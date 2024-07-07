@@ -76,9 +76,7 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep some XP on death"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A79Keep all your XP on death"));
+			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
 		}
 
 		@Override
@@ -97,9 +95,7 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep some XP on death"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A79Keep all your XP on death"));
+			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
 		}
 
 		@Override
@@ -118,9 +114,7 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep some XP on death"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A79Keep all your XP on death"));
+			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
 		}
 
 		@Override
@@ -139,9 +133,7 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep some XP on death"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A79Keep all your XP on death"));
+			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
 		}
 
 		@Override

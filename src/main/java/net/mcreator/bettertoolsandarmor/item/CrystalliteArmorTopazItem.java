@@ -76,8 +76,7 @@ public abstract class CrystalliteArmorTopazItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Shocking - Can summon lightning on attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increases chances for lightning"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -97,8 +96,7 @@ public abstract class CrystalliteArmorTopazItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Shocking - Can summon lightning on attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increases chances for lightning"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -118,8 +116,7 @@ public abstract class CrystalliteArmorTopazItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Shocking - Can summon lightning on attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increases chances for lightning"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override
@@ -139,8 +136,7 @@ public abstract class CrystalliteArmorTopazItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Shocking - Can summon lightning on attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increases chances for lightning"));
+			list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 		}
 
 		@Override

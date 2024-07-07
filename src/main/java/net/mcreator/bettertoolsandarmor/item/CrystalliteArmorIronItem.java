@@ -77,8 +77,6 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -98,8 +96,6 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -119,8 +115,6 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override
@@ -140,8 +134,6 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7fSlows melee attackers"));
 		}
 
 		@Override

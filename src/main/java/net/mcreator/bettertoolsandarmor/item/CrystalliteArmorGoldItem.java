@@ -78,8 +78,6 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Gilded - Increased block reach"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increased block reach"));
 		}
 
 		@Override
@@ -104,8 +102,6 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Gilded - Increased block reach"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increased block reach"));
 		}
 
 		@Override
@@ -130,8 +126,6 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Gilded - Increased block reach"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increased block reach"));
 		}
 
 		@Override
@@ -156,8 +150,6 @@ public abstract class CrystalliteArmorGoldItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Gilded - Increased block reach"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Further increased block reach"));
 		}
 
 		@Override

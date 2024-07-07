@@ -22,36 +22,28 @@
       "fixedValue": [
         "§7Upgrade: §fIron",
         "§7Ability:",
-        "§fTough - Increased knockback resistance",
-        "§7Full-set bonus:",
-        "§fSlows melee attackers"
+        "§fTough - Increased knockback resistance"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §fIron",
         "§7Ability:",
-        "§fTough - Increased knockback resistance",
-        "§7Full-set bonus:",
-        "§fSlows melee attackers"
+        "§fTough - Increased knockback resistance"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §fIron",
         "§7Ability:",
-        "§fTough - Increased knockback resistance",
-        "§7Full-set bonus:",
-        "§fSlows melee attackers"
+        "§fTough - Increased knockback resistance"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §fIron",
         "§7Ability:",
-        "§fTough - Increased knockback resistance",
-        "§7Full-set bonus:",
-        "§fSlows melee attackers"
+        "§fTough - Increased knockback resistance"
       ]
     },
     "helmetModelName": "Default",

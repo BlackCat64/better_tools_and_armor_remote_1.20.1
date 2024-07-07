@@ -27,9 +27,7 @@
         "§7Abilities:",
         "§3Deep Dweller - Gain night vision when in the dark",
         "§3Darkness immunity",
-        "§3Enemy detection range reduced",
-        "§7Full-set bonus:",
-        "§3Enemy detection range reduces further"
+        "§3Enemy detection range reduced"
       ]
     },
     "bodySpecialInformation": {
@@ -37,9 +35,7 @@
         "§7Upgrade: §3Sculk",
         "§7Abilities:",
         "§3Warden Heart - Has a chance to launch sonic booms at attackers",
-        "§3Enemy detection range reduced",
-        "§7Full-set bonus:",
-        "§3Enemy detection range reduces further"
+        "§3Enemy detection range reduced"
       ]
     },
     "leggingsSpecialInformation": {
@@ -47,9 +43,7 @@
         "§7Upgrade: §3Sculk",
         "§7Abilities:",
         "§3Sneaky - Increases movement speed while crouching",
-        "§3Enemy detection range reduced",
-        "§7Full-set bonus:",
-        "§3Enemy detection range reduces further"
+        "§3Enemy detection range reduced"
       ]
     },
     "bootsSpecialInformation": {
@@ -57,9 +51,7 @@
         "§7Upgrade: §3Sculk",
         "§7Abilities:",
         "§3Deep Dweller - Increased movement speed in the dark",
-        "§3Enemy detection range reduced",
-        "§7Full-set bonus:",
-        "§3Enemy detection range reduces further"
+        "§3Enemy detection range reduced"
       ]
     },
     "helmetModelName": "Default",

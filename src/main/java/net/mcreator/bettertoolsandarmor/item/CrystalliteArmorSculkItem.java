@@ -83,8 +83,6 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.literal("\u00A73Deep Dweller - Gain night vision when in the dark"));
 			list.add(Component.literal("\u00A73Darkness immunity"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
@@ -113,8 +111,6 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Warden Heart - Has a chance to launch sonic booms at attackers"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
@@ -135,8 +131,6 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Sneaky - Increases movement speed while crouching"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override
@@ -157,8 +151,6 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Deep Dweller - Increased movement speed in the dark"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A73Enemy detection range reduces further"));
 		}
 
 		@Override

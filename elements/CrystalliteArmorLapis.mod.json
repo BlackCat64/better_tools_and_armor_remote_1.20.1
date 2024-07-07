@@ -22,36 +22,28 @@
       "fixedValue": [
         "§7Upgrade: §9Lapis Lazuli",
         "§7Ability:",
-        "§9Magic - Keep some XP on death",
-        "§7Full-set bonus:",
-        "§9Keep all your XP on death"
+        "§9Magic - Keep XP on death"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §9Lapis Lazuli",
         "§7Ability:",
-        "§9Magic - Keep some XP on death",
-        "§7Full-set bonus:",
-        "§9Keep all your XP on death"
+        "§9Magic - Keep XP on death"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §9Lapis Lazuli",
         "§7Ability:",
-        "§9Magic - Keep some XP on death",
-        "§7Full-set bonus:",
-        "§9Keep all your XP on death"
+        "§9Magic - Keep XP on death"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §9Lapis Lazuli",
         "§7Ability:",
-        "§9Magic - Keep some XP on death",
-        "§7Full-set bonus:",
-        "§9Keep all your XP on death"
+        "§9Magic - Keep XP on death"
       ]
     },
     "helmetModelName": "Default",

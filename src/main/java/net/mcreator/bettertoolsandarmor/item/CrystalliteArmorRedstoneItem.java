@@ -77,8 +77,6 @@ public abstract class CrystalliteArmorRedstoneItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7cHearty - Increases max health"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7cFurther increases max health"));
 		}
 
 		@Override
@@ -98,8 +96,6 @@ public abstract class CrystalliteArmorRedstoneItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7cHearty - Increases max health"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7cFurther increases max health"));
 		}
 
 		@Override
@@ -119,8 +115,6 @@ public abstract class CrystalliteArmorRedstoneItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7cHearty - Increases max health"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7cFurther increases max health"));
 		}
 
 		@Override
@@ -140,8 +134,6 @@ public abstract class CrystalliteArmorRedstoneItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7cHearty - Increases max health"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A7cFurther increases max health"));
 		}
 
 		@Override
