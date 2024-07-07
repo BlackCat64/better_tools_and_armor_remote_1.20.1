@@ -44,7 +44,7 @@
       "value": "CUSTOM:ElectricStaffProjectile"
     },
     "onRangedItemUsed": {
-      "name": "StaffSaveDurabilityProcedure"
+      "name": "LightningStaffApplyEnchantments"
     },
     "isFood": false,
     "nutritionalValue": 0,

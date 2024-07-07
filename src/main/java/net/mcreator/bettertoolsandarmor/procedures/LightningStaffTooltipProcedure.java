@@ -35,13 +35,16 @@ public class LightningStaffTooltipProcedure {
 			return;
 		double strikes = 0;
 		double cooldown = 0;
+		double radius = 0;
 		if (itemstack.getItem() == BetterToolsModItems.ELECTRIC_STAFF.get()) {
 			if (Screen.hasShiftDown()) {
-				strikes = 1 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+				strikes = itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) + 1;
+				radius = 2.5 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) * 0.5;
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
-				tooltip.add(Component.literal(("\u00A72 " + ("" + strikes).replace(".0", "") + " Lightning Strike" + (strikes > 1 ? "s" : ""))));
-				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(strikes) + " Lightning Strike" + (strikes > 1 ? "s" : ""))));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(radius) + " Block Radius")));
+				tooltip.add(Component.literal(("\u00A7c " + new java.text.DecimalFormat("##").format(cooldown) + "s Cooldown on hit")));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

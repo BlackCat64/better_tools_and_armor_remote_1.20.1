@@ -30,7 +30,7 @@ public class SetKnockbackResistanceModifierVarProcedure {
 		if (entity == null)
 			return;
 		double modifier = 0;
-		if (world.dayTime() % 10 == 0) {
+		if (world.dayTime() % 40 == 0) {
 			modifier = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE).getValue()
 					- ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE).getBaseValue();
 			if (modifier > 0) {

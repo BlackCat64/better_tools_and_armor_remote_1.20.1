@@ -27,5 +27,6 @@ public class CrystalliteBowNetherDiamondItem extends BowItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A74Pyromaniac - Fires explosive arrows"));
+		list.add(Component.literal("\u00A7cEffect does not work when wet"));
 	}
 }
