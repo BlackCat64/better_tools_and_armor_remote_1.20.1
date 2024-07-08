@@ -47,6 +47,7 @@ public class GuardianStaffItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A73Creates a water pulse, damaging nearby mobs"));
+		list.add(Component.literal("\u00A73More powerful when it is wet"));
 	}
 
 	@Override

@@ -47,6 +47,7 @@ public class WardenStaffItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A73Launches a sonic boom"));
+		list.add(Component.literal("\u00A73Can shoot through walls"));
 	}
 
 	@Override

@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§3Creates a water pulse, damaging nearby mobs"
+        "§3Creates a water pulse, damaging nearby mobs",
+        "§3More powerful when it is wet"
       ]
     },
     "glowCondition": {

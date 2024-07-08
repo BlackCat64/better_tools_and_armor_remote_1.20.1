@@ -40,17 +40,16 @@ public class GuardianStaffTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.GUARDIAN_STAFF.get()) {
 			if (Screen.hasShiftDown()) {
 				damage = 6 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
-				radius = 3 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+				radius = 4 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 				if (entity.isInWaterRainOrBubble()) {
 					damage = damage * 2;
-					radius = radius * 2;
+					radius = radius * 1.5;
 				}
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
 				tooltip.add(Component.literal(("\u00A72 " + ("" + damage).replace(".0", "") + " Water Pulse Damage")));
 				tooltip.add(Component.literal(("\u00A72 " + ("" + radius).replace(".0", "") + " Block Radius")));
 				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown")));
-				tooltip.add(Component.literal("\u00A73Effect doubles when wet"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

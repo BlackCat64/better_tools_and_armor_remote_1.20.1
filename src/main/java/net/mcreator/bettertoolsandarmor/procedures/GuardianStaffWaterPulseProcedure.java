@@ -25,6 +25,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import java.util.List;
 import java.util.Comparator;
@@ -36,28 +37,10 @@ public class GuardianStaffWaterPulseProcedure {
 		double kills = 0;
 		double damage = 0;
 		double range = 0;
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.guardian.attack")), SoundSource.PLAYERS, 7, (float) 1.5);
-			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.guardian.attack")), SoundSource.PLAYERS, 7, (float) 1.5, false);
-			}
-		}
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
-			}
-		}
-		range = 6;
-		damage = 6;
+		range = 4 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+		damage = 6 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		if (entity.isInWaterRainOrBubble()) {
-			range = range * 2;
+			range = range * 1.5;
 			damage = damage * 2;
 		}
 		{
@@ -70,7 +53,7 @@ public class GuardianStaffWaterPulseProcedure {
 								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
 								(float) damage);
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 8, 0.4, 1, 0.4, 0.025);
+							_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 10, 0.4, 1, 0.4, 0.025);
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:guardian_staff_adv"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -79,7 +62,7 @@ public class GuardianStaffWaterPulseProcedure {
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
-						if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == 0) {
+						if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 0) {
 							kills = kills + 1;
 						}
 					}
@@ -87,7 +70,7 @@ public class GuardianStaffWaterPulseProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), x, y, z, (int) Math.pow(range, 3), (range / 2), (range / 2), (range / 2), 0.05);
+			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), x, y, z, (int) Math.pow(range, 3), (range / 2), (range / 2), (range / 2), 0.03);
 		if (kills >= 10) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:guardian_staff_multikill_adv"));
@@ -95,6 +78,24 @@ public class GuardianStaffWaterPulseProcedure {
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())
 						_player.getAdvancements().award(_adv, criteria);
+				}
+			}
+		}
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")), SoundSource.PLAYERS, 7, (float) 1.5);
+			} else {
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")), SoundSource.PLAYERS, 7, (float) 1.5, false);
+			}
+		}
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (200 - 30 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get())));
+			{
+				ItemStack _ist = itemstack;
+				if (_ist.hurt(1, RandomSource.create(), null)) {
+					_ist.shrink(1);
+					_ist.setDamageValue(0);
 				}
 			}
 		}

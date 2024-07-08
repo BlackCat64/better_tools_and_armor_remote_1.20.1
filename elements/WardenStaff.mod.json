@@ -28,7 +28,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§3Launches a sonic boom"
+        "§3Launches a sonic boom",
+        "§3Can shoot through walls"
       ]
     },
     "glowCondition": {

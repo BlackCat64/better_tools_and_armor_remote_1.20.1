@@ -45,7 +45,6 @@ public class WardenStaffTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(damage) + " Sonic Boom Damage")));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(range) + " Blocks Range")));
 				tooltip.add(Component.literal(("\u00A7c " + new java.text.DecimalFormat("##.#").format(cooldown) + "s Cooldown")));
-				tooltip.add(Component.literal("\u00A73Can shoot through walls"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
