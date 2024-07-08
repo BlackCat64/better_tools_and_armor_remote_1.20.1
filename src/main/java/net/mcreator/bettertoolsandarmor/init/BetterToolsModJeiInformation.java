@@ -166,5 +166,10 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_BOOTS.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.thorns_damage_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.FIRE_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.fire_staff_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.ICE_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.ice_staff_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.ELECTRIC_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.lightning_staff_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.WARDEN_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.warden_staff_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.GUARDIAN_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.guardian_staff_info"));
 	}
 }

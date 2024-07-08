@@ -29902,6 +29902,66 @@
         ]
       },
       "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "FireStaffInfo",
+      "type": "jeiinformation",
+      "sortid": 1720,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "IceStaffInfo",
+      "type": "jeiinformation",
+      "sortid": 1721,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "LightningStaffInfo",
+      "type": "jeiinformation",
+      "sortid": 1722,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "WardenStaffInfo",
+      "type": "jeiinformation",
+      "sortid": 1723,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Warden"
+    },
+    {
+      "name": "GuardianStaffInfo",
+      "type": "jeiinformation",
+      "sortid": 1724,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Guardian"
     }
   ],
   "variable_elements": [
@@ -32264,6 +32324,7 @@
       "gui.better_tools.attributes_viewer.label_002": "00",
       "gui.better_tools.attributes_viewer.label_001": "00",
       "gui.better_tools.attributes_viewer.label_000": "attack_damage_mod",
+      "jei.better_tools.guardian_staff_info": "§3When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Water Pulse.\n\nDamage: +1 per level.\nRadius: +2 per level.\n\n\n§3When it is wet:§r\nDamage is doubled.\nRadius increases by 50%.",
       "block.copper_tools_and_armor.nether_diamond_block": "Nether Diamond Block",
       "item.minecraft.potion.effect.potion_of_decay": "Potion of Decay",
       "gui.better_tools.attributes_viewer.label_value": "Value",
@@ -32454,6 +32515,7 @@
       "item.better_tools.crystallite_shovel_topaz": "Crystallite Shovel",
       "item.better_tools.crystallite_shovel_iron": "Crystallite Shovel",
       "block.better_tools.flint_blockwood": "Flint Blockwood",
+      "jei.better_tools.fire_staff_info": "§4When enchanted with Ensorcellation:§r\nProjectiles become explosive.\nExplosion Power increases with level, and when in the Nether.",
       "advancements.frozen_adv.descr": "Freeze a Baby Zombie with an Ice Staff",
       "advancements.hearty_adv.title": "Hearty Fella",
       "item.better_tools.blue_slime_stick": "Blue Slime Stick",
@@ -32645,6 +32707,7 @@
       "item.better_tools.topaz_sword": "Topaz Sword",
       "item.better_tools.crystallite_armor_honey_leggings": "Crystallite Leggings",
       "jei.better_tools.beacon_base_blocks_info": "Better Tools and Armor allows these blocks to be used as Beacon bases.",
+      "jei.better_tools.warden_staff_info": "§1When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Sonic Boom.\n\nDamage: +2 per level.\nRange: +3 per level.",
       "enchantment.better_tools.experience_ench": "Experienced",
       "block.better_tools.dark_polished_iron_wall": "Dark Polished Iron Wall",
       "jei.better_tools.blue_mushroom_info": "Blue Mushrooms generate exclusively on Mushroom Islands, along with giant variants.\nThey can be bone-mealed to become giant.",
@@ -32671,6 +32734,7 @@
       "item.better_tools.crystallite_dagger_honey": "Crystallite Dagger",
       "item.copper_tools_and_armor.golden_potato": "Golden Potato",
       "item.better_tools.crystallite_armor_sky_chestplate": "Crystallite Chestplate",
+      "jei.better_tools.ice_staff_info": "§9When enchanted with Ensorcellation:§r\nProjectiles freeze all mobs in a radius.\nThis applies even when no mob is directly hit.\nRadius increases with level, and in a cold biome.",
       "item.better_tools.crystallite_hoe_sky": "Crystallite Hoe",
       "item.better_tools.iron_gold_carrot_helmet": "Golden Carrot Hat",
       "item.minecraft.potion.effect.luck_potion_2": "Potion of Luck",
@@ -32912,6 +32976,7 @@
       "item.better_tools.crystallite_axe_netherite": "Crystallite Axe",
       "item.minecraft.potion.effect.swift_swim_potion_long": "Potion of Rapidity",
       "gui.better_tools.attributes_viewer.label_attribute_viewer": "Player Attributes",
+      "jei.better_tools.lightning_staff_info": "§6When enchanted with Ensorcellation:§r\nIncreases the number of Lightning Strikes.\nIncreases the radius where the strikes can hit.\nNumber of strikes increases with level, and when in a thunderstorm.",
       "item.minecraft.potion.effect.swift_swim_potion": "Potion of Rapidity",
       "advancements.get_guardian_spike_adv.title": "Spike Collector",
       "advancements.fizzy_drinks_adv.descr": "Survive on only carbonated drinks for a whole day",

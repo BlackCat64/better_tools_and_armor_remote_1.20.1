@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:GuardianStaff"
+      }
+    ],
+    "information": [
+      "§3When enchanted with Ensorcellation:§r",
+      "Increases the damage and range of the Water Pulse.",
+      "",
+      "Damage: +1 per level.",
+      "Radius: +2 per level.",
+      "",
+      "",
+      "§3When it is wet:§r",
+      "Damage is doubled.",
+      "Radius increases by 50%."
+    ]
+  }
+}

@@ -15,7 +15,6 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -159,14 +158,6 @@ public class CrystalliteBowApplyEffectsProcedure {
 								}
 							}
 						}
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Set damage of arrow to " + (new Object() {
-								public double getValue() {
-									CompoundTag dataIndex61 = new CompoundTag();
-									entityiterator.saveWithoutId(dataIndex61);
-									return dataIndex61.getDouble("damage");
-								}
-							}.getValue()))), false);
 					}
 				}
 			});
