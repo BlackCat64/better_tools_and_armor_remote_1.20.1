@@ -40,8 +40,8 @@ public class WardenStaffTooltipProcedure {
 				damage = 10 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
-				tooltip.add(Component.literal(("\u00A72 " + ("" + damage).replace(".0", "") + " Sonic Boom Damage")));
-				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(damage) + " Sonic Boom Damage")));
+				tooltip.add(Component.literal(("\u00A7c " + new java.text.DecimalFormat("##.#").format(cooldown) + "s Cooldown")));
 				tooltip.add(Component.literal("\u00A73Can shoot through walls"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
