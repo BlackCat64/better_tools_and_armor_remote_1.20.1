@@ -29868,6 +29868,40 @@
         ]
       },
       "path": "~/Advancements/Progression"
+    },
+    {
+      "name": "EnchantedStaffAdv",
+      "type": "achievement",
+      "sortid": 1718,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_staff_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/enchanted_staff_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "StaffEnchantmentsAdvProcedure",
+      "type": "procedure",
+      "sortid": 1719,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staff_enchantments_adv_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StaffEnchantmentsAdvProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements/Consumables"
     }
   ],
   "variable_elements": [
@@ -32116,6 +32150,7 @@
       "item.better_tools.crystallite_bow_prismarine": "Crystallite Bow",
       "advancements.all_diamond_effect_armor_adv.title": "Effect God",
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
+      "advancements.enchanted_staff_adv.descr": "Enchant a Magic Staff with both Ensorcellation and Swift Cast",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
       "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
@@ -32380,6 +32415,7 @@
       "item.minecraft.tipped_arrow.effect.criticality_potion_2": "Arrow of Criticality",
       "item.better_tools.spiked_crystal": "Spiked Crystal",
       "item.better_tools.diamond_crying_obsidian_helmet": "Crying Obsidian Helmet",
+      "advancements.enchanted_staff_adv.title": "Serious Sorcery",
       "advancements.flaming_adv.descr": "Ignite a mob with a Fire Staff",
       "block.better_tools.polished_amethyst_wall": "Metallic Amethyst Wall",
       "item.better_tools.crystallite_shovel_emerald": "Crystallite Shovel",
