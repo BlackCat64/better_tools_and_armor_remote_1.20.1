@@ -29,7 +29,7 @@ public class IceStaffProjectileMissesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
+		if (entity instanceof LivingEntity && immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.FREEZE_BOOM.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
 						(int) Math.floor(immediatesourceentity.getPersistentData().getDouble("radius") * 5), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
@@ -64,12 +64,13 @@ public class IceStaffProjectileMissesProcedure {
 					_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(), (int) (immediatesourceentity.getPersistentData().getDouble("radius")
 							* (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get()))));
 			}
-		}
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2);
-			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2, false);
+		} else {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2, false);
+				}
 			}
 		}
 	}

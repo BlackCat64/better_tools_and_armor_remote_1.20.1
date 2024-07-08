@@ -42,25 +42,27 @@ public class FreezingWeaponsProcedureProcedure {
 			return;
 		double time = 0;
 		double chance = 0;
-		if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()) != null) {
-			if (Math.random() < ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue()) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue(), 0, false, false));
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
+		if (sourceentity instanceof LivingEntity) {
+			if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()) != null) {
+				if (Math.random() < ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue()) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue(), 0, false, false));
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
+						}
 					}
-				}
-				if (!(sourceentity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
-						&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
-					if (sourceentity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+					if (!(sourceentity instanceof ServerPlayer _plr6 && _plr6.level() instanceof ServerLevel
+							&& _plr6.getAdvancements().getOrStartProgress(_plr6.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
+						if (sourceentity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
