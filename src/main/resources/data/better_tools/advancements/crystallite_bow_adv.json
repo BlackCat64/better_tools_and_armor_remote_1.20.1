@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_bow_emerald"
+    },
+    "title": {
+      "translate": "advancements.crystallite_bow_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_bow_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_bow_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:crystallite_gem_adv"
+}

@@ -39,7 +39,9 @@ public class CrystalliteToolUpgradeAdvProcedureProcedure {
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
 				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_tool_upgrade_adv"))).isDone() && entity instanceof ServerPlayer _plr1
-				&& _plr1.level() instanceof ServerLevel && _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_armor_upgrade_adv"))).isDone())) {
+				&& _plr1.level() instanceof ServerLevel && _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_armor_upgrade_adv"))).isDone()
+				&& entity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
+				&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_bow_adv"))).isDone())) {
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
 				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
@@ -59,6 +61,16 @@ public class CrystalliteToolUpgradeAdvProcedureProcedure {
 						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:upgraded_crystallite_armor")))) {
 							if (entity instanceof ServerPlayer _player) {
 								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_armor_upgrade_adv"));
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
+						}
+						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:upgraded_crystallite_bows")))) {
+							if (entity instanceof ServerPlayer _player) {
+								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_bow_adv"));
 								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 								if (!_ap.isDone()) {
 									for (String criteria : _ap.getRemainingCriteria())
