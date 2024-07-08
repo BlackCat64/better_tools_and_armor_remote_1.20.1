@@ -35,12 +35,15 @@ public class WardenStaffTooltipProcedure {
 			return;
 		double damage = 0;
 		double cooldown = 0;
+		double range = 0;
 		if (itemstack.getItem() == BetterToolsModItems.WARDEN_STAFF.get()) {
 			if (Screen.hasShiftDown()) {
 				damage = 10 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+				range = 11 + 3 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 				tooltip.add(Component.literal("\u00A77Staff Effects:"));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(damage) + " Sonic Boom Damage")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(range) + " Blocks Range")));
 				tooltip.add(Component.literal(("\u00A7c " + new java.text.DecimalFormat("##.#").format(cooldown) + "s Cooldown")));
 				tooltip.add(Component.literal("\u00A73Can shoot through walls"));
 			} else {
