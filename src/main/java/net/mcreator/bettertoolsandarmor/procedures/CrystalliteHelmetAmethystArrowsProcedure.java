@@ -61,14 +61,30 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 		double raycast = 0;
 		double speed = 0;
 		double charge_time = 0;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
-			charge_time = 71990;
-		} else {
-			charge_time = 71980;
-		}
+		double damage = 0;
+		double base_damage = 0;
 		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows"))))
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get()
 						|| itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items"))))) {
+			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
+				charge_time = 71990;
+			} else {
+				charge_time = 71980;
+			}
+			if (itemstack.getItem() == Items.BOW) {
+				base_damage = 2;
+			} else {
+				if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
+					base_damage = 5;
+				} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
+					base_damage = 1.5;
+				} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
+					base_damage = 4;
+				} else {
+					base_damage = 3.5;
+				}
+			}
+			damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) : base_damage;
 			if (duration <= charge_time) {
 				raycast = 0;
 				for (int index0 = 0; index0 < 7; index0++) {
@@ -146,7 +162,7 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 															entityToSpawn.setCritArrow(true);
 															return entityToSpawn;
 														}
-													}.getArrow(projectileLevel, entity, (float) (1 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5), (int) (1 + itemstack.getEnchantmentLevel(Enchantments.PUNCH_ARROWS) * 0.5));
+													}.getArrow(projectileLevel, entity, (float) base_damage, itemstack.getEnchantmentLevel(Enchantments.PUNCH_ARROWS));
 													_entityToSpawn.setPos(x, (y + 1.5), z);
 													_entityToSpawn.shoot(((entityiterator.getX() - entity.getX()) / distance), ((entityiterator.getY() - entity.getY()) / distance), ((entityiterator.getZ() - entity.getZ()) / distance), (float) speed,
 															0);
@@ -163,7 +179,7 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 															entityToSpawn.setCritArrow(true);
 															return entityToSpawn;
 														}
-													}.getArrow(projectileLevel, entity, (float) (1 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5), (int) (1 + itemstack.getEnchantmentLevel(Enchantments.PUNCH_ARROWS) * 0.5));
+													}.getArrow(projectileLevel, entity, (float) damage, itemstack.getEnchantmentLevel(Enchantments.PUNCH_ARROWS));
 													_entityToSpawn.setPos(x, (y + 1.5), z);
 													_entityToSpawn.shoot(((entityiterator.getX() - entity.getX()) / distance), ((entityiterator.getY() - entity.getY()) / distance), ((entityiterator.getZ() - entity.getZ()) / distance), (float) speed,
 															0);
