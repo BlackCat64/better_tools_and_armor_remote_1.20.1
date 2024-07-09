@@ -133,7 +133,8 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 										if (!(entityiterator == entity)) {
 											distance = Math.sqrt(Math.pow(entityiterator.getX() - entity.getX(), 2) + Math.pow(entityiterator.getY() - entity.getY(), 2) + Math.pow(entityiterator.getZ() - entity.getZ(), 2));
 											if (distance > 10) {
-												speed = distance / 5;
+												speed = distance / 7;
+												damage = damage - distance * 0.1;
 											} else {
 												speed = 2;
 											}
@@ -186,15 +187,19 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 													projectileLevel.addFreshEntity(_entityToSpawn);
 												}
 											}
-											if (entity instanceof Player _player) {
-												ItemStack _stktoremove = new ItemStack(Items.ARROW);
-												_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-											}
-											{
-												ItemStack _ist = itemstack;
-												if (_ist.hurt(1, RandomSource.create(), null)) {
-													_ist.shrink(1);
-													_ist.setDamageValue(0);
+											if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+												if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, itemstack) != 0)) {
+													if (entity instanceof Player _player) {
+														ItemStack _stktoremove = new ItemStack(Items.ARROW);
+														_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+													}
+												}
+												{
+													ItemStack _ist = itemstack;
+													if (_ist.hurt(1, RandomSource.create(), null)) {
+														_ist.shrink(1);
+														_ist.setDamageValue(0);
+													}
 												}
 											}
 											if (world instanceof Level _level) {
