@@ -23,14 +23,14 @@ import java.util.UUID;
 public class TopazArmorSetAttributesProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
-		execute(event, event.getEntity().level(), event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double armor_pieces = 0;
@@ -76,7 +76,7 @@ public class TopazArmorSetAttributesProcedure {
 					chance = chance + 0.05;
 				}
 			}
-			if (world.getLevelData().isThundering()) {
+			if (IsInThunderstormProcedure.execute(world, x, y, z)) {
 				if (crystallite_worn) {
 					chance = chance * 1.5;
 				} else {

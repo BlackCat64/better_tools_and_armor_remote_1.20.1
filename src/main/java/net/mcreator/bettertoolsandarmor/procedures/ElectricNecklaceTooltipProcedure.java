@@ -35,9 +35,8 @@ public class ElectricNecklaceTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.ELECTRIC_NECKLACE.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Arrow Effects:"));
-				tooltip.add(Component.literal("\u00A7910% \u00A76chance for lightning"));
-				tooltip.add(Component.literal("\u00A77When in a thunderstorm:"));
-				tooltip.add(Component.literal("\u00A7920% \u00A76chance for lightning"));
+				tooltip.add(Component.literal("\u00A79+10% Lightning Chance"));
+				tooltip.add(Component.literal("\u00A76Effect doubles in a thunderstorm"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

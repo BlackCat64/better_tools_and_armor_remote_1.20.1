@@ -31,19 +31,19 @@ public class ThunderShotProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity());
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
-		execute(null, world, entity, immediatesourceentity, sourceentity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+		execute(null, world, x, y, z, entity, immediatesourceentity, sourceentity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double LightningChance = 0;
-		if (immediatesourceentity instanceof Arrow && !(sourceentity == null)) {
+		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity) {
 			LightningChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.THUNDER_SHOT.get()) * 0.1;
 			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ELECTRIC_NECKLACE.get(), lv).isPresent() : false) {
 				LightningChance = LightningChance + 0.1;
@@ -51,7 +51,7 @@ public class ThunderShotProcedureProcedure {
 			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_topaz_upgrade")) {
 				LightningChance = LightningChance + 0.2;
 			}
-			if (world.getLevelData().isThundering()) {
+			if (IsInThunderstormProcedure.execute(world, x, y, z)) {
 				LightningChance = LightningChance * 2;
 			}
 			if (LightningChance > 0) {

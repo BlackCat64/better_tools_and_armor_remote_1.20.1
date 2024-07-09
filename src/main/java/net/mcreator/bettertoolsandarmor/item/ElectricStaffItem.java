@@ -87,7 +87,7 @@ public class ElectricStaffItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				LightningStaffApplyEnchantmentsProcedure.execute(world, entity, itemstack);
+				LightningStaffApplyEnchantmentsProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 			}
 		}
 	}

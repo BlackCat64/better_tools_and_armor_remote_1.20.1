@@ -5989,6 +5989,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -29025,38 +29037,6 @@
       "path": "~/Staffs/Ice"
     },
     {
-      "name": "FreezeBlockDisplayUpdateLocation",
-      "type": "procedure",
-      "sortid": 1678,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freeze_block_display_update_location",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FreezeBlockDisplayUpdateLocationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Staffs/Ice"
-    },
-    {
       "name": "FireThornsChance",
       "type": "attribute",
       "sortid": 1679,
@@ -29239,6 +29219,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -29860,6 +29852,18 @@
             "type": "itemstack"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -29974,6 +29978,39 @@
         "files": []
       },
       "path": "~/Staffs/Guardian"
+    },
+    {
+      "name": "IsInThunderstorm",
+      "type": "procedure",
+      "sortid": 1725,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_in_thunderstorm",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsInThunderstormProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [

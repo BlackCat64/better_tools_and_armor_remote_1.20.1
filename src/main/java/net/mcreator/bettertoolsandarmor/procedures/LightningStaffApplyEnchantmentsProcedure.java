@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class LightningStaffApplyEnchantmentsProcedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		StaffSaveDurabilityProcedureProcedure.execute(entity);
@@ -29,7 +29,7 @@ public class LightningStaffApplyEnchantmentsProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity) && entityiterator instanceof ElectricStaffProjectileEntity) {
 						entityiterator.getPersistentData().putDouble("strikes", (itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) + 1));
-						if (world.getLevelData().isThundering()) {
+						if (IsInThunderstormProcedure.execute(world, x, y, z)) {
 							entityiterator.getPersistentData().putDouble("strikes", (entityiterator.getPersistentData().getDouble("strikes") * 2));
 						}
 						entityiterator.getPersistentData().putDouble("radius", (2.5 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) * 0.5));
