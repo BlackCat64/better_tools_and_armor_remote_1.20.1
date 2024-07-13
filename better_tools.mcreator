@@ -30011,6 +30011,34 @@
         ]
       },
       "path": "~/Topaz"
+    },
+    {
+      "name": "DescensionPotionReverseRecipe",
+      "type": "recipe",
+      "sortid": 1726,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descension_potion_reverse_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/DescensionPotionReverseRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "RecallPotionReverseRecipe",
+      "type": "recipe",
+      "sortid": 1727,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_reverse_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/RecallPotionReverseRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [

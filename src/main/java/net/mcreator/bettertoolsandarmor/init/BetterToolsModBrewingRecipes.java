@@ -208,6 +208,16 @@ public class BetterToolsModBrewingRecipes implements IModPlugin {
 		PotionUtils.setPotion(potion, Potions.AWKWARD);
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())));
 		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.FERMENTED_SPIDER_EYE));
+		inputStack.add(new ItemStack(BetterToolsModItems.DESCENSION_POTION.get()));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get())));
+		inputStack.clear();
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.FERMENTED_SPIDER_EYE));
+		inputStack.add(new ItemStack(BetterToolsModItems.RECALL_POTION.get()));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())));
+		inputStack.clear();
+		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
 }
