@@ -3,18 +3,15 @@
   "group": "sapphire_axe",
   "category": "misc",
   "pattern": [
-    "aab",
-    "ac ",
-    " c "
+    "aa",
+    "ab",
+    " b"
   ],
   "key": {
     "a": {
       "item": "better_tools:sapphire"
     },
     "b": {
-      "item": "minecraft:blue_ice"
-    },
-    "c": {
       "item": "minecraft:stick"
     }
   },

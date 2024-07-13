@@ -3,16 +3,13 @@
   "group": "sapphire_chestplate",
   "category": "misc",
   "pattern": [
-    "aba",
+    "a a",
     "aaa",
     "aaa"
   ],
   "key": {
     "a": {
       "item": "better_tools:sapphire"
-    },
-    "b": {
-      "item": "minecraft:blue_ice"
     }
   },
   "result": {

@@ -4,14 +4,11 @@
   "category": "misc",
   "pattern": [
     "a a",
-    "aba"
+    "a a"
   ],
   "key": {
     "a": {
       "item": "better_tools:topaz"
-    },
-    "b": {
-      "item": "minecraft:lightning_rod"
     }
   },
   "result": {

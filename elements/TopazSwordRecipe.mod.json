@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.LIGHTNING_ROD"
+        "value": ""
       },
       {
         "value": "CUSTOM:Topaz"
       },
       {
-        "value": "Blocks.LIGHTNING_ROD"
+        "value": ""
       },
       {
         "value": ""

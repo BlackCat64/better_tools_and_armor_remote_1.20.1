@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.BLUE_ICE"
+        "value": ""
       },
       {
         "value": "CUSTOM:Sapphire"
       },
       {
-        "value": "Blocks.BLUE_ICE"
+        "value": ""
       },
       {
         "value": ""

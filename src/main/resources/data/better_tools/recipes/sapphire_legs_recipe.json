@@ -4,15 +4,12 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
+    "a a",
     "a a"
   ],
   "key": {
     "a": {
       "item": "better_tools:sapphire"
-    },
-    "b": {
-      "item": "minecraft:blue_ice"
     }
   },
   "result": {
