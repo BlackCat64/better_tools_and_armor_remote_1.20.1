@@ -32878,7 +32878,7 @@
       "block.better_tools.polished_gold_slab": "Polished Gold Slab",
       "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
       "block.better_tools.light_polished_iron_slab": "Polished Iron Slab",
-      "jei.better_tools.elemental_crystals_info": "§lElemental Crystals§r\n\nUse in a Smithing Table to upgrade Crystallite equipment with different elemental effects!\nThey can also be used to smith or craft Crystallite Charms.",
+      "jei.better_tools.elemental_crystals_info": "§lElemental Crystals§r\n\nUse in a Smithing Table to upgrade Crystallite equipment with different elemental effects!\nThey can also be used to craft Crystallite Charms.",
       "item.better_tools.nature_ring": "§aNature Ring",
       "item.minecraft.tipped_arrow.effect.karma_potion_2": "Arrow of Karma",
       "item.better_tools.berry_pie": "Sweet Berry Pie",
