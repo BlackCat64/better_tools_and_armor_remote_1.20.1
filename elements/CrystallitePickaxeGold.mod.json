@@ -11,9 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased block reach"
+        "§eGilded - Increased block reach"
       ]
     },
     "creativeTab": {

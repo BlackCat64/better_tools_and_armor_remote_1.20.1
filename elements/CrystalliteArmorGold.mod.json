@@ -20,30 +20,30 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased block reach"
+        "§eGilded - Increased block reach"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased block reach"
+        "§eGilded - Increased block reach"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased block reach"
+        "§eGilded - Increased block reach"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased block reach"
+        "§eGilded - Increased block reach"
       ]
     },
     "helmetModelName": "Default",

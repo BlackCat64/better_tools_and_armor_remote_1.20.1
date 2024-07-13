@@ -11,9 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §6Gold",
+        "§7Upgrade: §eGold",
         "§7Ability:",
-        "§6Gilded - Increased sweeping damage"
+        "§eGilded - Increased sweeping damage"
       ]
     },
     "creativeTab": {

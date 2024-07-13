@@ -24,8 +24,8 @@ public class CrystalliteBowGoldItem extends BowItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Gold"));
+		list.add(Component.literal("\u00A77Upgrade: \u00A7eGold"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Outburst - Arrows deal splash damage"));
+		list.add(Component.literal("\u00A7eOutburst - Arrows deal splash damage"));
 	}
 }

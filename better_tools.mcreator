@@ -7315,8 +7315,8 @@
       "registry_name": "crystallite_sword_gold",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_gold.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordGoldItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordGoldItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_gold.json"
         ]
       },
       "path": "~/Crystallite/Gold"
@@ -7422,8 +7422,8 @@
       "registry_name": "crystallite_shovel_gold",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelGoldItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_gold.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_gold.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelGoldItem.java"
         ]
       },
       "path": "~/Crystallite/Gold"
@@ -19484,8 +19484,8 @@
       "registry_name": "gilded_bracelet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/gilded_bracelet.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GildedBraceletItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GildedBraceletItem.java",
+          "src/main/resources/assets/better_tools/models/item/gilded_bracelet.json"
         ]
       },
       "path": "~/Crystallite/Gold"
@@ -32617,7 +32617,7 @@
       "item.better_tools.winged_boots_boots": "Winged Boots",
       "block.better_tools.light_polished_coal_slab": "Light Metallic Coal Slab",
       "item.copper_tools_and_armor.nether_diamond": "Nether Diamond",
-      "item.better_tools.gilded_bracelet": "§6Gilded Bracelet",
+      "item.better_tools.gilded_bracelet": "§eGilded Bracelet",
       "item.better_tools.crystallite_armor_redstone_boots": "Crystallite Boots",
       "item.better_tools.crystallite_armor_ruby_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_netherite": "Crystallite Hoe",
@@ -32727,7 +32727,7 @@
       "item.better_tools.reflect_charm": "§fReflect Charm",
       "advancements.saved_from_void_adv.title": "A Close Call",
       "item.better_tools.crystallite_armor_redstone_leggings": "Crystallite Leggings",
-      "jei.better_tools.gold_crystallite_info": "§lCrystallite Upgrades: \n§6Gold§r\n\nTheme:\nReach Distance",
+      "jei.better_tools.gold_crystallite_info": "§lCrystallite Upgrades: \n§eGold§r\n\nTheme:\nReach Distance",
       "gui.better_tools.attributes_viewer.label_attack_damage": "Attack Dmg.",
       "gui.better_tools.attributes_viewer.label_multiplier": "Multiplier",
       "item.better_tools.flint_shovel": "Flint Shovel",
