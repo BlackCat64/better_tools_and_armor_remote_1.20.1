@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Effect Emperor",
-    "achievementDescription": "Craft every Iron Plated Effect Armor",
+    "achievementDescription": "Craft every piece of Iron Plated Effect Armor",
     "achievementIcon": {
       "value": "CUSTOM:IronCactusBody.body"
     },
@@ -15,11 +15,11 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 30,
+    "rewardXP": 75,
     "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:AllEffectArmorAdv"
     },
-    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"49\" y=\"63\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }
 }

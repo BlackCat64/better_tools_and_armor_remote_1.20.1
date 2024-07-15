@@ -32,8 +32,5 @@
       }
     }
   },
-  "rewards": {
-    "experience": 2
-  },
   "parent": "better_tools:progression_section"
 }

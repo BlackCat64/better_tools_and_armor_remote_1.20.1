@@ -26,8 +26,5 @@
       }
     }
   },
-  "rewards": {
-    "experience": 2
-  },
   "parent": "better_tools:sugar_clump_adv"
 }

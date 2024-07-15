@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 30
+    "experience": 100
   },
   "parent": "better_tools:aimbot_adv"
 }

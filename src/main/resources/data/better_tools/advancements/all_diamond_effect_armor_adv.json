@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 50
+    "experience": 200
   },
   "parent": "better_tools:all_iron_effect_armor_adv"
 }

@@ -32,8 +32,5 @@
       }
     }
   },
-  "rewards": {
-    "experience": 20
-  },
   "parent": "better_tools:crystallite_cave_adv"
 }

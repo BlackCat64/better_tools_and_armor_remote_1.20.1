@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 50
+    "experience": 250
   },
   "parent": "better_tools:shoot_through_walls_adv"
 }

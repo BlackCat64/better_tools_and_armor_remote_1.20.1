@@ -27,7 +27,7 @@
     }
   },
   "rewards": {
-    "experience": 25
+    "experience": 100
   },
   "parent": "better_tools:berry_pie_adv"
 }

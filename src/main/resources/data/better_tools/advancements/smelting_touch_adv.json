@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 25
-  },
   "parent": "better_tools:desperation_adv"
 }

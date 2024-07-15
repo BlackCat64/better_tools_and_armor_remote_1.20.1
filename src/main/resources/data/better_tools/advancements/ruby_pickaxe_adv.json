@@ -32,8 +32,5 @@
       }
     }
   },
-  "rewards": {
-    "experience": 5
-  },
   "parent": "better_tools:ruby_gem_adv"
 }

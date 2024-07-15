@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 10
+    "experience": 30
   },
   "parent": "better_tools:crystallite_upgrades_section"
 }

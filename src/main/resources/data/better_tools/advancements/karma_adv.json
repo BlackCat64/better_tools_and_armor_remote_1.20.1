@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 5
-  },
   "parent": "better_tools:consumables_section"
 }

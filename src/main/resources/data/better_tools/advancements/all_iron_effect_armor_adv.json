@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 30
+    "experience": 75
   },
   "parent": "better_tools:all_effect_armor_adv"
 }

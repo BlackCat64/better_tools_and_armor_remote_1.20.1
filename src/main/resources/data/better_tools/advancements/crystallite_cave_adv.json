@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 20
-  },
   "parent": "better_tools:progression_section"
 }

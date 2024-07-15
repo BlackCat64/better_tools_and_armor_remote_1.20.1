@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 25
+    "experience": 30
   },
   "parent": "better_tools:warden_staff_adv"
 }

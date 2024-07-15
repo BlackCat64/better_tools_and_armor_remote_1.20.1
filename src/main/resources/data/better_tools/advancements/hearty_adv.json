@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 10
-  },
   "parent": "better_tools:effect_armor_section"
 }

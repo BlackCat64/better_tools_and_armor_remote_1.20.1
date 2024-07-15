@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 15
-  },
   "parent": "better_tools:experienced_adv"
 }

@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 7
-  },
   "parent": "better_tools:sapphire_adv"
 }

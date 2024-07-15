@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 30
+    "experience": 250
   },
   "parent": "better_tools:pirate_adv"
 }

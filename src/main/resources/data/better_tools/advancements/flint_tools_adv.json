@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 15
+    "experience": 20
   },
   "parent": "better_tools:flint_axe_adv"
 }

@@ -15,7 +15,7 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 25,
+    "rewardXP": 100,
     "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:BerryPieAdv"

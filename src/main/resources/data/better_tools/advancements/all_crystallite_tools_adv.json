@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 50
+    "experience": 100
   },
   "parent": "better_tools:crystallite_tool_upgrade_adv"
 }
