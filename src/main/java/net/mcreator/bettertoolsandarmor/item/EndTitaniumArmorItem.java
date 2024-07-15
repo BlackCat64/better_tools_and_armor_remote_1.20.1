@@ -18,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.procedures.EndTitaniumLeggingsProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.EndTitaniumArmorProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -87,14 +86,6 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/end_titanium__layer_1.png";
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				EndTitaniumArmorProcedureProcedure.execute(entity);
-			}
 		}
 	}
 
