@@ -30054,6 +30054,90 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/world/features/BlackstoneMagmaReplaceNormalMagmaFeature.java"
         ]
       }
+    },
+    {
+      "name": "AscensionAdv",
+      "type": "achievement",
+      "sortid": 1731,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascension_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/ascension_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "DescensionAdv",
+      "type": "achievement",
+      "sortid": 1732,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descension_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/descension_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "LostSoulsPotionAdv",
+      "type": "achievement",
+      "sortid": 1733,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/lost_souls_potion_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "RecallPotionAdv",
+      "type": "achievement",
+      "sortid": 1734,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/recall_potion_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "AscendToTopOfWorld",
+      "type": "achievement",
+      "sortid": 1735,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ascend_to_top_of_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/ascend_to_top_of_world.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
+    },
+    {
+      "name": "DescendToBottomOfWorld",
+      "type": "achievement",
+      "sortid": 1736,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "descend_to_bottom_of_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/descend_to_bottom_of_world.json"
+        ]
+      },
+      "path": "~/Advancements/Consumables"
     }
   ],
   "variable_elements": [
@@ -32201,6 +32285,7 @@
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
       "advancements.high_crit_multiplier_adv.descr": "Deal at least double your weapon\u0027s regular damage with a critical hit",
+      "advancements.descend_to_bottom_of_world.descr": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
       "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
@@ -32265,6 +32350,7 @@
       "item.better_tools.crystallite_bow_lapis": "Crystallite Bow",
       "item.better_tools.crystallite_bow_diamond": "Crystallite Bow",
       "block.better_tools.polished_gold_wall": "Polished Gold Wall",
+      "advancements.lost_souls_potion_adv.descr": "Use a Potion of Lost Souls",
       "advancements.progression_section.title": "BT+A - Progression",
       "item.better_tools.golden_potato": "Golden Potato",
       "advancements.golden_potato_adv.title": "Gilded Gardening",
@@ -32276,6 +32362,7 @@
       "subtitles.rick_roll": "",
       "block.better_tools.polished_gold_stairs": "Polished Gold Stairs",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
+      "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
       "block.better_tools.polished_diamond_stairs": "Metallic Diamond Stairs",
       "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
@@ -32493,6 +32580,7 @@
       "enchantment.better_tools.thunder_shot.desc": "Shots have a chance to summon lightning on the target",
       "advancements.blackstone_rabbit_adv.descr": "Wear Blackstone Leggings and Rabbit Boots at the same time",
       "effect.better_tools.karma_potion.description": "Deals (2 * level) damage to any attackers",
+      "advancements.descend_to_bottom_of_world.title": "ALL the way Down",
       "block.better_tools.light_polished_copper_trapdoor": "Polished Copper Trapdoor",
       "itemGroup.tabeffect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.polished_nether_diamond_slab": "Metallic Nether Diamond Slab",
@@ -32911,6 +32999,7 @@
       "block.better_tools.dark_polished_emerald_block": "Dark Metallic Emerald Block",
       "item.minecraft.tipped_arrow.effect.double_jump_potion_long": "Arrow of Double Jump",
       "item.better_tools.warden_headband": "§3Warden Headband",
+      "advancements.ascend_to_top_of_world.descr": "Use an Ascension Potion to teleport from the bottom of the Overworld to the top",
       "item.better_tools.crystallite_axe_redstone": "Crystallite Axe",
       "item.better_tools.gold_carrot_helmet": "Golden Carrot Hat",
       "advancements.golden_potato_adv.descr": "Eat a Golden Potato",
@@ -32923,6 +33012,7 @@
       "item.minecraft.tipped_arrow.effect.karma_potion_2": "Arrow of Karma",
       "item.better_tools.berry_pie": "Sweet Berry Pie",
       "item.better_tools.icy_bracelet": "§bIcy Bracelet",
+      "advancements.recall_potion_adv.title": "Home Sweet Home",
       "block.better_tools.dark_polished_copper_wall": "Dark Polished Copper Wall",
       "jei.better_tools.prismarine_crystallite_info": "§lCrystallite Upgrades: \n§3Prismarine§r\n\nTheme:\nWater",
       "item.better_tools.crystallite_armor_netherite_helmet": "Crystallite Helmet",
@@ -32944,6 +33034,7 @@
       "item.copper_tools_and_armor.copper_ingot": "Copper Ingot",
       "item.copper_tools_and_armor.shrunk_music.desc": "Gareth Coker",
       "advancements.all_iron_effect_armor_adv.descr": "Craft every piece of Iron Plated Effect Armor",
+      "advancements.ascension_adv.title": "Well, that escalated quickly!",
       "advancements.shocking_adv.title": "Shocking Staff!",
       "item.better_tools.crystal_leggings": "Crystal Leggings",
       "item.better_tools.iron_rabbit_boots": "Rabbit Boots",
@@ -32990,6 +33081,7 @@
       "itemGroup.tabtools_and_armor_tab": "BT+A - Tools and Armor Sets",
       "item.better_tools.crystallite_armor_nether_diamond_helmet": "Crystallite Helmet",
       "item.better_tools.crystallite_axe_ruby": "Crystallite Axe",
+      "advancements.descension_adv.title": "Down to the Depths",
       "item.copper_tools_and_armor.nether_diamond_axe": "Nether Diamond Axe",
       "gui.better_tools.attributes_viewer.label_00": "00",
       "block.better_tools.light_polished_emerald_stairs": "Metallic Emerald Stairs",
@@ -33052,9 +33144,11 @@
       "item.better_tools.crystallite_armor_diamond_chestplate": "Crystallite Chestplate",
       "block.better_tools.light_polished_copper_block": "Polished Copper Block",
       "advancements.luck_adv.title": "Lucky Leprechaun",
+      "advancements.descension_adv.descr": "Use a Descension Potion",
       "item.better_tools.crystallite_armor_ruby_helmet": "Crystallite Helmet",
       "entity.better_tools.projectile_ice_staff_projectile_from_dispenser": "Dispenser using Ice Staff",
       "advancements.ruby_sugar_adv.title": "More Speed, More Haste",
+      "advancements.lost_souls_potion_adv.title": "Guide to the Grave",
       "item.better_tools.gilded_crystal": "Gilded Crystal",
       "block.better_tools.dark_polished_coal_trapdoor": "Dark Metallic Coal Trapdoor",
       "advancements.ore_location_adv.title": "X-ray Hacks?",
@@ -33067,6 +33161,7 @@
       "gui.better_tools.attributes_viewer.label_attribute_viewer": "Player Attributes",
       "jei.better_tools.lightning_staff_info": "§6When enchanted with Ensorcellation:§r\nIncreases the number of Lightning Strikes.\nIncreases the radius where the strikes can hit.\nNumber of strikes increases with level, and when in a thunderstorm.",
       "item.minecraft.potion.effect.swift_swim_potion": "Potion of Rapidity",
+      "advancements.ascend_to_top_of_world.title": "Going up in the World",
       "advancements.fizzy_drinks_adv.descr": "Survive on only carbonated drinks for a whole day",
       "item.better_tools.crystallite_shovel_prismarine": "Crystallite Shovel",
       "enchantment.better_tools.karma_curse": "Curse of Karma",
@@ -33077,6 +33172,7 @@
       "itemGroup.tabblocks_tab": "BT+A - Building Blocks",
       "gui.better_tools.attributes_viewer.label_crit_multiplier": "Critical Hit",
       "block.better_tools.cut_crystallite_block": "Cut Crystallite Block",
+      "advancements.ascension_adv.descr": "Use an Ascension Potion",
       "death.attack.shockwave_damage": "%1$s was killed by a shockwave from %2$s",
       "item.better_tools.crystallite_armor_prismarine_helmet": "Crystallite Helmet",
       "item.better_tools.ruby_shovel": "Ruby Shovel",
