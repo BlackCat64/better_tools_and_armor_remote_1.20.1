@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "better_tools:nether_diamond_tools_adv"
+  "parent": "better_tools:nether_diamond_armor_adv"
 }

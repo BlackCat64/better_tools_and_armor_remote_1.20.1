@@ -38,9 +38,6 @@
     "damageOnCrafting": false,
     "onEntityHitWith": {
       "name": "NetherDiamondSwordProcedure"
-    },
-    "onItemInInventoryTick": {
-      "name": "NetherDiamondToolsProcedure"
     }
   }
 }

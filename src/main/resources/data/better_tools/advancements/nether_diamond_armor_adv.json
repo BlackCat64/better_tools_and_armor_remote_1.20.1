@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "better_tools:nether_diamond_pickaxe"
+      "item": "better_tools:nether_diamond_chestplate"
     },
     "title": {
-      "translate": "advancements.nether_diamond_tools_adv.title"
+      "translate": "advancements.nether_diamond_armor_adv.title"
     },
     "description": {
-      "translate": "advancements.nether_diamond_tools_adv.descr"
+      "translate": "advancements.nether_diamond_armor_adv.descr"
     },
     "frame": "goal",
     "show_toast": true,
@@ -15,9 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "nether_diamond_tools_adv_0": {
+    "nether_diamond_armor_adv_0": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "experience": 40
   },
   "parent": "better_tools:nether_diamond_adv"
 }

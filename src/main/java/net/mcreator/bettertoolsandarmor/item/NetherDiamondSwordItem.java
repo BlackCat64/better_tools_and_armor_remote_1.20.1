@@ -9,10 +9,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.NetherDiamondToolsProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.NetherDiamondSwordProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -59,11 +57,5 @@ public class NetherDiamondSwordItem extends SwordItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A74Has a chance set the target on fire"));
 		list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		NetherDiamondToolsProcedureProcedure.execute(entity);
 	}
 }
