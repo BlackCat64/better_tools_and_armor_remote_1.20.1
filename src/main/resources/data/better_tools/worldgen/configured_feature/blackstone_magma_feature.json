@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "target": {
+              "Name": "minecraft:basalt",
+              "Properties": {
+                "axis": "y"
+              }
+            },
+            "state": {
+              "Name": "better_tools:blackstone_magma"
+            },
+            "radius": {
+              "type": "uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 5
+              }
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "target": {
+              "Name": "minecraft:blackstone"
+            },
+            "state": {
+              "Name": "better_tools:blackstone_magma"
+            },
+            "radius": {
+              "type": "uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 5
+              }
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

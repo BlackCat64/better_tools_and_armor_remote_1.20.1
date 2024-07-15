@@ -122,7 +122,7 @@
     "onEntityWalksOn": {
       "name": "MagmaDamageProcedure"
     },
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "basalt_deltas"
@@ -134,8 +134,8 @@
       }
     ],
     "generationShape": "TRIANGLE",
-    "frequencyPerChunks": 24,
-    "frequencyOnChunk": 28,
+    "frequencyPerChunks": 16,
+    "frequencyOnChunk": 40,
     "minGenerateHeight": -64,
     "maxGenerateHeight": 128
   }

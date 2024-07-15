@@ -1,9 +1,9 @@
 {
-  "feature": "better_tools:blackstone_magma",
+  "feature": "better_tools:blackstone_magma_feature",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 24
+      "count": 25
     },
     {
       "type": "minecraft:in_square"
