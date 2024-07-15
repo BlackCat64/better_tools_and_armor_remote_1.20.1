@@ -26,5 +26,5 @@
       }
     }
   },
-  "parent": "better_tools:luck_adv"
+  "parent": "better_tools:consumables_section"
 }

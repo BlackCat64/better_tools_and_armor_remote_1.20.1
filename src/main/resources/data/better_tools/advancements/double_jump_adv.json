@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "better_tools:exp_potion_adv"
+  "parent": "better_tools:luck_adv"
 }

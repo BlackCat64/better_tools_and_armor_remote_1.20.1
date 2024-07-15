@@ -22,5 +22,5 @@
   "rewards": {
     "experience": 50
   },
-  "parent": "better_tools:get_guardian_spike_adv"
+  "parent": "better_tools:double_jump_adv"
 }
