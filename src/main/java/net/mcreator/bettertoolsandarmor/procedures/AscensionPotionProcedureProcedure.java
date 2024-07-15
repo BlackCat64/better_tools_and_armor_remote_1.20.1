@@ -34,6 +34,16 @@ public class AscensionPotionProcedureProcedure {
 				y_iterator = y_iterator + 1;
 			}
 			if (y_iterator <= 320) {
+				if (entity.getY() <= -60 && y_iterator >= 320) {
+					if (entity instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ascend_to_top_of_world"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
 				{
 					Entity _ent = entity;
 					_ent.teleportTo(x, y_iterator, z);
@@ -53,16 +63,6 @@ public class AscensionPotionProcedureProcedure {
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())
 							_player.getAdvancements().award(_adv, criteria);
-					}
-				}
-				if (y <= -60 && y_iterator >= 320) {
-					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ascend_to_top_of_world"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
 					}
 				}
 			} else {

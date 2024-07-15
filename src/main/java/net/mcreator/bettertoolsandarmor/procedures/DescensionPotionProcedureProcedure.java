@@ -40,6 +40,16 @@ public class DescensionPotionProcedureProcedure {
 				y_iterator = y_iterator - 1;
 			}
 			if (y_iterator >= min_world_height) {
+				if (y_iterator <= -60 && entity.getY() >= 320) {
+					if (entity instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:descend_to_bottom_of_world"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
 				{
 					Entity _ent = entity;
 					_ent.teleportTo(x, y_iterator, z);
@@ -59,16 +69,6 @@ public class DescensionPotionProcedureProcedure {
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())
 							_player.getAdvancements().award(_adv, criteria);
-					}
-				}
-				if (y_iterator <= -60 && y >= 320) {
-					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:descend_to_bottom_of_world"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
 					}
 				}
 			} else {
