@@ -1,8 +1,8 @@
 {
-  "type": "better_tools:blackstone_magma_feature",
+  "type": "better_tools:blackstone_magma_replace_normal_magma",
   "config": {
     "target": {
-      "Name": "minecraft:blackstone"
+      "Name": "minecraft:magma_block"
     },
     "state": {
       "Name": "better_tools:blackstone_magma"
@@ -10,8 +10,8 @@
     "radius": {
       "type": "uniform",
       "value": {
-        "min_inclusive": 2,
-        "max_inclusive": 4
+        "min_inclusive": 8,
+        "max_inclusive": 12
       }
     }
   }

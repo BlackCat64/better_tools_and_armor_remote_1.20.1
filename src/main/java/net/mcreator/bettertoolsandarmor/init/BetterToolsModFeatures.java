@@ -22,6 +22,8 @@ import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster32Featu
 import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster32DeepslateFeatureFeature;
 import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster30FeatureFeature;
 import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster30DeepslateFeatureFeature;
+import net.mcreator.bettertoolsandarmor.world.features.BlackstoneMagmaReplaceNormalMagmaFeature;
+import net.mcreator.bettertoolsandarmor.world.features.BlackstoneMagmaFeatureFeature;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 @Mod.EventBusSubscriber
@@ -38,4 +40,6 @@ public class BetterToolsModFeatures {
 	public static final RegistryObject<Feature<?>> CRYSTALLITE_CLUSTER_32_DEEPSLATE_FEATURE = REGISTRY.register("crystallite_cluster_32_deepslate_feature", CrystalliteCluster32DeepslateFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> CRYSTALLITE_CLUSTER_34_DEEPSLATE_FEATURE = REGISTRY.register("crystallite_cluster_34_deepslate_feature", CrystalliteCluster34DeepslateFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> CRYSTALLITE_CLUSTER_36_DEEPSLATE_FEATURE = REGISTRY.register("crystallite_cluster_36_deepslate_feature", CrystalliteCluster36DeepslateFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> BLACKSTONE_MAGMA_FEATURE = REGISTRY.register("blackstone_magma_feature", BlackstoneMagmaFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> BLACKSTONE_MAGMA_REPLACE_NORMAL_MAGMA = REGISTRY.register("blackstone_magma_replace_normal_magma", BlackstoneMagmaReplaceNormalMagmaFeature::new);
 }
