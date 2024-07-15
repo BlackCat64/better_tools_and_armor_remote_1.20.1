@@ -18,7 +18,7 @@ public class CriticalHitEffectAppliedProcedure {
 						(((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.CRITICALITY.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.CRITICALITY.get()).getAmplifier() : 0) + 1) * 0.25),
 						AttributeModifier.Operation.ADDITION)))))
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get())
-					.addTransientModifier((new AttributeModifier(UUID.fromString("3ba804d9-a7f7-4d3d-b7c0-7e4220fc54f5"), "criticality_effect",
+					.addPermanentModifier((new AttributeModifier(UUID.fromString("3ba804d9-a7f7-4d3d-b7c0-7e4220fc54f5"), "criticality_effect",
 							(((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.CRITICALITY.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.CRITICALITY.get()).getAmplifier() : 0) + 1) * 0.25),
 							AttributeModifier.Operation.ADDITION)));
 	}
