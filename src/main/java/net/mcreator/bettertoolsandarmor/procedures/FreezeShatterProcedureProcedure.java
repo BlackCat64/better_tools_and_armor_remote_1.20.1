@@ -81,7 +81,7 @@ public class FreezeShatterProcedureProcedure {
 						});
 					}
 				}
-				world.levelEvent(2001, BlockPos.containing(x, y + 1, z), Block.getId(Blocks.ICE.defaultBlockState()));
+				world.levelEvent(2001, BlockPos.containing(x, y + entity.getBbHeight() / 2, z), Block.getId(Blocks.ICE.defaultBlockState()));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, 1);

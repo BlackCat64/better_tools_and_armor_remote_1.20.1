@@ -49,6 +49,6 @@ public class CrystalliteSwordEmeraldItem extends SwordItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7aPoison Barbed - Poisons the target"));
+		list.add(Component.literal("\u00A7aPitfall - Critical hits trap the target in the ground"));
 	}
 }
