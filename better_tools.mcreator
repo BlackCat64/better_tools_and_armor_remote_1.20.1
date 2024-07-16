@@ -17359,30 +17359,6 @@
       "path": "~/Crystallite/Sculk"
     },
     {
-      "name": "CrystalliteSwordEmeraldProcedure",
-      "type": "procedure",
-      "sortid": 1154,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_emerald_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordEmeraldProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
       "name": "CrystalliteLeggingsEmeraldProcedure",
       "type": "procedure",
       "sortid": 1155,
@@ -30170,6 +30146,106 @@
         ]
       },
       "path": "~/Advancements/Crystallite Upgrades"
+    },
+    {
+      "name": "CrystalliteSwordEmeraldTrap",
+      "type": "procedure",
+      "sortid": 1741,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_emerald_trap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordEmeraldTrapProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "isvanillacritical",
+            "type": "logic"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "TrappedInGroundStopMovement",
+      "type": "procedure",
+      "sortid": 1742,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapped_in_ground_stop_movement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TrappedInGroundStopMovementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "TrappedInGroundOnDeath",
+      "type": "procedure",
+      "sortid": 1743,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapped_in_ground_on_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TrappedInGroundOnDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
     }
   ],
   "variable_elements": [
@@ -30712,10 +30788,6 @@
       "TAG:minecraft:shovels",
       "CUSTOM:CrystallitePickaxeEmerald"
     ],
-    "ITEMS:mod:poison_barbed_weapons": [
-      "CUSTOM:CrystalliteSwordEmerald",
-      "CUSTOM:CrystalliteDaggerEmerald"
-    ],
     "ITEMS:mod:daggers": [
       "CUSTOM:WoodDagger",
       "CUSTOM:StoneDagger",
@@ -31211,6 +31283,10 @@
       "CUSTOM:CrystalliteSwordIron",
       "CUSTOM:CrystalliteDaggerIron",
       "CUSTOM:BlueSlimeStick"
+    ],
+    "ITEMS:mod:pitfall_weapons": [
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald"
     ],
     "ITEMS:mod:magic_damage_tools": [
       "CUSTOM:CrystalliteSwordLapis",

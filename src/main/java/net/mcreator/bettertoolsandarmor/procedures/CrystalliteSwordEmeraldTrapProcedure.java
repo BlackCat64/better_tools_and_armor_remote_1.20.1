@@ -1,0 +1,71 @@
+package net.mcreator.bettertoolsandarmor.procedures;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.CriticalHitEvent;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+
+import javax.annotation.Nullable;
+
+@Mod.EventBusSubscriber
+public class CrystalliteSwordEmeraldTrapProcedure {
+	@SubscribeEvent
+	public static void onPlayerCriticalHit(CriticalHitEvent event) {
+		execute(event, event.getTarget(), event.getEntity(), event.isVanillaCritical());
+	}
+
+	public static void execute(Entity entity, Entity sourceentity, boolean isvanillacritical) {
+		execute(null, entity, sourceentity, isvanillacritical);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity, boolean isvanillacritical) {
+		if (entity == null || sourceentity == null)
+			return;
+		double speed = 0;
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:pitfall_weapons")))) {
+			if (entity instanceof LivingEntity) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0 && entity.getPersistentData().getDouble("trapped_ticks") <= 0) {
+					if (entity.onGround()) {
+						if (isvanillacritical) {
+							speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue();
+							{
+								Entity _ent = entity;
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands()
+											.performPrefixedCommand(
+													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+															_ent.getDisplayName(), _ent.level().getServer(), _ent),
+													("attribute @s minecraft:generic.movement_speed modifier add 585176c4-a1ed-4d0e-995c-f5ca0cb3843c trapped_in_ground -" + speed + " add"));
+								}
+							}
+							entity.clearFire();
+							{
+								Entity _ent = entity;
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+													_ent.getDisplayName(), _ent.level().getServer(), _ent),
+											("summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[" + ("" + entity.getBbWidth() * 1.25) + "f,0.5f," + ("" + entity.getBbWidth() * 1.25)
+													+ "f],translation:[-" + ("" + entity.getBbWidth() * 0.625) + "f,0f,-" + ("" + entity.getBbWidth() * 0.625) + "f]},block_state:{Name:mud},ForgeData:{trapped_in_ground:1b}}"));
+								}
+							}
+							entity.getPersistentData().putDouble("trapped_ticks", 100);
+						}
+					} else {
+						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-2), (entity.getDeltaMovement().z())));
+					}
+				}
+			}
+		}
+	}
+}
