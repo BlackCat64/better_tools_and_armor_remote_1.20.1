@@ -5,7 +5,7 @@
     "achievementName": "Complete Crystallite Catalogue",
     "achievementDescription": "Craft a full set of Crystallite tools",
     "achievementIcon": {
-      "value": "CUSTOM:CrystalliteSwordNetherite"
+      "value": "CUSTOM:CrystalliteSwordEmerald"
     },
     "background": "Default",
     "disableDisplay": false,

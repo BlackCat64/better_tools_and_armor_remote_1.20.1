@@ -30,7 +30,7 @@ public class WitheredGauntletProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity, boolean isvanillacritical) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (isvanillacritical == true) {
+		if (isvanillacritical) {
 			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.WITHERED_GAUNTLET.get(), lv).isPresent() : false) {
 				if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.WITHER))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

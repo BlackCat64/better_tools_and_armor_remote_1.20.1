@@ -2,10 +2,10 @@
   "_fv": 60,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Natural Medicine",
-    "achievementDescription": "Wear a Nature Ring and Emerald-upgraded Crystallite Chestplate at the same time for maximum natural regeneration",
+    "achievementName": "Sharpshooter",
+    "achievementDescription": "Deal over 35 damage with a single Arrow",
     "achievementIcon": {
-      "value": "CUSTOM:NatureCrystal"
+      "value": "CUSTOM:CrystalliteBowNetherite"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -15,10 +15,10 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 50,
-    "achievementType": "goal",
+    "rewardXP": 100,
+    "achievementType": "challenge",
     "parent": {
-      "value": "CUSTOM:CrystalliteSwordEmeraldAdv"
+      "value": "CUSTOM:CrystalliteBowAdv"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }
