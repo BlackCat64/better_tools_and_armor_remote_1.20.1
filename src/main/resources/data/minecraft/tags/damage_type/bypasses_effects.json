@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "better_tools:karma_curse_damage",
-    "better_tools:karma_damage"
+    "better_tools:karma_damage",
+    "better_tools:poison_mushroom_damage"
   ]
 }

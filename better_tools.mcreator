@@ -30354,6 +30354,20 @@
         ]
       },
       "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "OverrideWeaponDamage",
+      "type": "damagetype",
+      "sortid": 1747,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "override_weapon_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/damage_type/override_weapon_damage.json"
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
     }
   ],
   "variable_elements": [
@@ -30666,7 +30680,8 @@
     ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
-      "CUSTOM:KarmaDamage"
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:PoisonMushroomDamage"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -31031,7 +31046,8 @@
     ],
     "DAMAGE_TYPES:minecraft:bypasses_effects": [
       "CUSTOM:KarmaCurseDamage",
-      "CUSTOM:KarmaDamage"
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:PoisonMushroomDamage"
     ],
     "ITEMS:forge:tools/axes": [
       "TAG:minecraft:axes",
@@ -31258,7 +31274,8 @@
     ],
     "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
       "CUSTOM:MagicWeaponDamage",
-      "CUSTOM:KarmaDamage"
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:OverrideWeaponDamage"
     ],
     "ITEMS:mod:flaming_tools": [
       "CUSTOM:NetherDiamondSword",
@@ -32559,6 +32576,7 @@
       "advancements.guardian_staff_adv.title": "Soaking Staff!",
       "item.better_tools.diamond_glass_armor_boots": "Glass Boots",
       "item.minecraft.tipped_arrow.effect.potion_of_decay": "Arrow of Decay",
+      "death.attack.override_weapon_damage.player": "%1$s died whilst trying to escape %2$s",
       "block.better_tools.dark_polished_lapis_wall": "Metallic Lapis Lazuli Wall",
       "item_group.better_tools.effect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.dark_polished_lapis_stairs": "Metallic Lapis Lazuli Stairs",
@@ -32817,6 +32835,7 @@
       "enchantment.better_tools.thunder_shot": "Thunder Shot",
       "death.attack.armor_thorns": "%1$s was pricked to death while trying to hurt %2$s",
       "item.better_tools.topaz_chestplate": "Topaz Chestplate",
+      "death.attack.override_weapon_damage": "%1$s was slain by %2$s",
       "item.better_tools.heal_crystal": "Heal Crystal",
       "advancements.guardian_staff_multikill_adv.descr": "Kill 10 mobs with one water pulse using a Guardian Staff",
       "entity.better_tools.projectile_fire_staff_projectile": "Fire Staff",
@@ -33148,6 +33167,7 @@
       "block.better_tools.four_leaf_clover": "Four Leaf Clover",
       "attribute.better_tools.fire_thorns_chance": "Fire Thorns Chance",
       "advancements.progression_section.descr": "Advancements to do with progression",
+      "death.attack.override_weapon_damage.item": "%1$s was slain by %2$s using %3$s",
       "advancements.blackstone_rabbit_adv.title": "Resistant Rabbit",
       "item.better_tools.crystallite_chestplate": "Crystallite Chestplate",
       "item.better_tools.diamond_glass_armor_helmet": "Glass Helmet",
