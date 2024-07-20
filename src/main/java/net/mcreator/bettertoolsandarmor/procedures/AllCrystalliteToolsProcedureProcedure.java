@@ -51,7 +51,7 @@ public class AllCrystalliteToolsProcedureProcedure {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_swords")))) {
+						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_swords"))) || itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_daggers")))) {
 							sword = true;
 						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_pickaxes")))) {
 							pickaxe = true;
@@ -61,13 +61,11 @@ public class AllCrystalliteToolsProcedureProcedure {
 							shovel = true;
 						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_hoes")))) {
 							hoe = true;
-						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_daggers")))) {
-							dagger = true;
 						}
 					}
 				}
 			}
-			if (sword == true && pickaxe == true && axe == true && shovel == true && hoe == true && dagger == true) {
+			if (sword && pickaxe && axe && shovel && hoe) {
 				if (entity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:all_crystallite_tools_adv"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
