@@ -12,7 +12,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §bDiamond",
-        "§7Ability:",
+        "§7Abilities:",
+        "§bPrecision - Deals increased damage to targets on full HP",
         "§bDiamond Hard - Increased Durability"
       ]
     },

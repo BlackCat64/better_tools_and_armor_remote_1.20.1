@@ -8206,8 +8206,8 @@
       "registry_name": "crystallite_sword_diamond",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_diamond.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_diamond.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordDiamondItem.java"
         ]
       },
       "path": "~/Crystallite/Diamond"
@@ -30298,6 +30298,62 @@
         ]
       },
       "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteSwordDiamondProcedure",
+      "type": "procedure",
+      "sortid": 1745,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_diamond_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordDiamondProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "CrystalliteSwordDiamondTooltip",
+      "type": "procedure",
+      "sortid": 1746,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_diamond_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordDiamondTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
     }
   ],
   "variable_elements": [
@@ -30857,6 +30913,11 @@
     ],
     "ITEMS:forge:tools": [
       "TAG:minecraft:tools"
+    ],
+    "ITEMS:mod:precision_weapons": [
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteDaggerDiamond"
     ],
     "ITEMS:minecraft:walls": [
       "CUSTOM:DarkPolishedCoalWall",
