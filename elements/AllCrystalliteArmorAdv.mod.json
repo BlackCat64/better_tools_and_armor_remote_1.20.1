@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Sparkling Success",
-    "achievementDescription": "Wear a full set of Crystallite armor",
+    "achievementDescription": "Upgrade and Wear a full set of Crystallite armor",
     "achievementIcon": {
       "value": "CUSTOM:CrystalliteArmorSapphire.legs"
     },

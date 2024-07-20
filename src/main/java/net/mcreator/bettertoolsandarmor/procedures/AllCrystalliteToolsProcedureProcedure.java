@@ -51,16 +51,18 @@ public class AllCrystalliteToolsProcedureProcedure {
 				if (_iitemhandlerref.get() != null) {
 					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_swords"))) || itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_daggers")))) {
-							sword = true;
-						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_pickaxes")))) {
-							pickaxe = true;
-						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_axes")))) {
-							axe = true;
-						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_shovels")))) {
-							shovel = true;
-						} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_hoes")))) {
-							hoe = true;
+						if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:upgraded_crystallite_tools")))) {
+							if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_swords"))) || itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_daggers")))) {
+								sword = true;
+							} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_pickaxes")))) {
+								pickaxe = true;
+							} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_axes")))) {
+								axe = true;
+							} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_shovels")))) {
+								shovel = true;
+							} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_hoes")))) {
+								hoe = true;
+							}
 						}
 					}
 				}

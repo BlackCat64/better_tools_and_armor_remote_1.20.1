@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Complete Crystallite Catalogue",
-    "achievementDescription": "Craft a full set of Crystallite tools",
+    "achievementDescription": "Upgrade a full set of Crystallite tools",
     "achievementIcon": {
       "value": "CUSTOM:CrystalliteSwordEmerald"
     },
