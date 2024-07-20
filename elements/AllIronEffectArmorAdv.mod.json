@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Effect Emperor",
-    "achievementDescription": "Craft every piece of Iron Plated Effect Armor",
+    "achievementDescription": "Craft every piece of Iron Plated Effect Armor (auto-grants previous)",
     "achievementIcon": {
       "value": "CUSTOM:IronCactusBody.body"
     },

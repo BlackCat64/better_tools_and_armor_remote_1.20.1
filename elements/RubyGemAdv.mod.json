@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "I thought this was removed...?",
-    "achievementDescription": "Mine a Ruby Ore",
+    "achievementDescription": "Obtain a Ruby",
     "achievementIcon": {
       "value": "CUSTOM:Ruby"
     },
