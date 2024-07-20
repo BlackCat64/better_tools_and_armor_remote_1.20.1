@@ -56,6 +56,8 @@ public class ReflectCharmProcedureProcedure {
 				if (!(sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.REFLECT_CHARM.get(), lv).isPresent() : false)) {
 					if ((immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0) > 0) {
 						projectile_speed = Math.pow(immediatesourceentity.getDeltaMovement().x(), 2) + Math.pow(immediatesourceentity.getDeltaMovement().y(), 2) + Math.pow(immediatesourceentity.getDeltaMovement().z(), 2);
+					}
+					if (immediatesourceentity instanceof Arrow) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
 						}
@@ -67,8 +69,6 @@ public class ReflectCharmProcedureProcedure {
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
-					}
-					if (immediatesourceentity instanceof Arrow) {
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
@@ -88,6 +88,17 @@ public class ReflectCharmProcedureProcedure {
 						}
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 1);
 					} else if (immediatesourceentity instanceof LargeFireball) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
@@ -109,6 +120,17 @@ public class ReflectCharmProcedureProcedure {
 						}
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.FIREBALL)), 4);
 					} else if (immediatesourceentity instanceof SmallFireball) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
@@ -130,6 +152,17 @@ public class ReflectCharmProcedureProcedure {
 						}
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.FIREBALL)), 1);
 					} else if (immediatesourceentity instanceof Snowball) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
@@ -145,6 +178,17 @@ public class ReflectCharmProcedureProcedure {
 							projectileLevel.addFreshEntity(_entityToSpawn);
 						}
 					} else if (immediatesourceentity instanceof ThrownEgg) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
@@ -160,6 +204,17 @@ public class ReflectCharmProcedureProcedure {
 							projectileLevel.addFreshEntity(_entityToSpawn);
 						}
 					} else if (immediatesourceentity instanceof LlamaSpit) {
+						if (event != null && event.isCancelable()) {
+							event.setCanceled(true);
+						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 						if (!immediatesourceentity.level().isClientSide())
 							immediatesourceentity.discard();
 						if (world instanceof ServerLevel projectileLevel) {
