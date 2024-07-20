@@ -409,8 +409,8 @@
       "registry_name": "flint_dagger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_dagger.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintDaggerItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintDaggerItem.java",
+          "src/main/resources/assets/better_tools/models/item/flint_dagger.json"
         ]
       },
       "path": "~/Flint Tools"
@@ -1676,8 +1676,8 @@
       "registry_name": "ruby_dagger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/ruby_dagger.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/RubyDaggerItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/RubyDaggerItem.java",
+          "src/main/resources/assets/better_tools/models/item/ruby_dagger.json"
         ]
       },
       "path": "~/Ruby"

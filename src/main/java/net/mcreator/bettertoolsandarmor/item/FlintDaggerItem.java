@@ -1,12 +1,16 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.bettertoolsandarmor.procedures.FlintToolsProcedureProcedure;
 
 public class FlintDaggerItem extends SwordItem {
 	public FlintDaggerItem() {
@@ -35,5 +39,11 @@ public class FlintDaggerItem extends SwordItem {
 				return Ingredient.of(new ItemStack(Items.FLINT));
 			}
 		}, 3, -1.2f, new Item.Properties());
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		FlintToolsProcedureProcedure.execute(entity);
 	}
 }

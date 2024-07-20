@@ -20,14 +20,12 @@ public class FlintToolsProcedureProcedure {
 				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_AXE.get())) : false) {
 					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_SHOVEL.get())) : false) {
 						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_HOE.get())) : false) {
-							if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_DAGGER.get())) : false) {
-								if (entity instanceof ServerPlayer _player) {
-									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:flint_tools_adv"));
-									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-									if (!_ap.isDone()) {
-										for (String criteria : _ap.getRemainingCriteria())
-											_player.getAdvancements().award(_adv, criteria);
-									}
+							if (entity instanceof ServerPlayer _player) {
+								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:flint_tools_adv"));
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
 								}
 							}
 						}
