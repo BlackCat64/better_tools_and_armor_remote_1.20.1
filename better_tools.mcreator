@@ -22205,8 +22205,8 @@
       "registry_name": "guardian_necklace",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java",
+          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json"
         ]
       },
       "path": "~/Crystallite/Prismarine"
@@ -30376,6 +30376,34 @@
         ]
       },
       "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "GuardianNecklaceTooltip",
+      "type": "procedure",
+      "sortid": 1748,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_necklace_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GuardianNecklaceTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
     }
   ],
   "variable_elements": [
