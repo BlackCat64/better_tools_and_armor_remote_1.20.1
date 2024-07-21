@@ -8,10 +8,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.TopazSwordProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -43,13 +41,6 @@ public class TopazAxeItem extends AxeItem {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.TOPAZ.get()));
 			}
 		}, 1, -3f, new Item.Properties());
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TopazSwordProcedureProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
-		return retval;
 	}
 
 	@Override

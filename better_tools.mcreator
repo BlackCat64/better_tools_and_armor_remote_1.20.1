@@ -4490,20 +4490,12 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "sourceentity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -30404,6 +30396,26 @@
         ]
       },
       "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "TopazSwordCooldownUpdate",
+      "type": "procedure",
+      "sortid": 1749,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_sword_cooldown_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazSwordCooldownUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
