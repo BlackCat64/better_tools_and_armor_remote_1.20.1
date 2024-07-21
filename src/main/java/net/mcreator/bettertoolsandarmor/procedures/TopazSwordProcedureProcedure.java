@@ -29,18 +29,20 @@ public class TopazSwordProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity());
+			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
-		execute(null, world, entity, immediatesourceentity, sourceentity);
+	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
+		execute(null, world, entity, immediatesourceentity, sourceentity, amount);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		Entity closest = null;
+		boolean continue_chain = false;
+		boolean success = false;
 		double chance = 0;
 		double range = 0;
 		double particle_x = 0;
@@ -49,8 +51,7 @@ public class TopazSwordProcedureProcedure {
 		double increment_x = 0;
 		double increment_y = 0;
 		double increment_z = 0;
-		boolean continue_chain = false;
-		boolean success = false;
+		double chain_count = 0;
 		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:lightning_tools")))) {
 			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:upgraded_crystallite_tools")))) {
 				chance = 0.5;
@@ -68,6 +69,7 @@ public class TopazSwordProcedureProcedure {
 			closest = entity;
 			if (Math.random() < chance) {
 				continue_chain = true;
+				chain_count = 1;
 			}
 			while (closest instanceof LivingEntity && continue_chain) {
 				closest.getPersistentData().putBoolean("can_electric_chain", false);
@@ -91,7 +93,7 @@ public class TopazSwordProcedureProcedure {
 								particle_y = particle_y + increment_y;
 								particle_z = particle_z + increment_z;
 							}
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), sourceentity), 1);
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), sourceentity), (float) (amount / 2));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0.25, 1, 0.25, 0.01);
 							closest = entityiterator;
@@ -104,6 +106,7 @@ public class TopazSwordProcedureProcedure {
 				}
 				if (Math.random() < chance) {
 					continue_chain = true;
+					chain_count = chain_count + 1;
 				} else {
 					continue_chain = false;
 				}
