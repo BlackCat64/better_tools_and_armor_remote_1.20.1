@@ -31,7 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7When worn:",
-        "§9Deals continuous damage to nearby hostile mobs"
+        "§9Deals continuous damage to nearby hostile mobs",
+        "§3More powerful when it is wet"
       ]
     },
     "hasGlow": false,

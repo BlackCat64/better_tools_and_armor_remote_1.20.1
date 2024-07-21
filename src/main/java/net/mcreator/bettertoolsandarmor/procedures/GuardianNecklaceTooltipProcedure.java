@@ -46,10 +46,6 @@ public class GuardianNecklaceTooltipProcedure {
 				tooltip.add(Component.literal("\u00A77Charm Effects:"));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(damage) + " Water Pulse Damage")));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(radius) + " Block Radius")));
-				if (!entity.isInWaterRainOrBubble()) {
-					tooltip.add(Component.literal("\u00A77When it is wet:"));
-					tooltip.add(Component.literal("\u00A79+1 Damage"));
-				}
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
