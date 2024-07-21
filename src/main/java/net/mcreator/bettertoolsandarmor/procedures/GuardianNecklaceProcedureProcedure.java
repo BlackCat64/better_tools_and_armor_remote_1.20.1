@@ -59,7 +59,7 @@ public class GuardianNecklaceProcedureProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("better_tools:hostile_mobs"))) || (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == entity) {
-						if (world.dayTime() % 100 == 0) {
+						if (entity.getPersistentData().getDouble("guardian_necklace_damage_timer") == 0) {
 							entityiterator.hurt(
 									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
 									(float) (entityiterator instanceof Drowned || entityiterator instanceof LivingEntity _livEnt7 && _livEnt7.getMobType() == MobType.WATER ? damage * 2 : damage));
@@ -67,10 +67,10 @@ public class GuardianNecklaceProcedureProcedure {
 								_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 8, 0.3, 1, 0.3, 0.05);
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.hurt_drown")),
+									_level.playSound(null, BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")),
 											SoundSource.AMBIENT, 1, 1);
 								} else {
-									_level.playLocalSound((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.hurt_drown")), SoundSource.AMBIENT, 1, 1,
+									_level.playLocalSound((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")), SoundSource.AMBIENT, 1, 1,
 											false);
 								}
 							}
@@ -78,6 +78,11 @@ public class GuardianNecklaceProcedureProcedure {
 					}
 				}
 			}
+		}
+		if (entity.getPersistentData().getDouble("guardian_necklace_damage_timer") == 0) {
+			entity.getPersistentData().putDouble("guardian_necklace_damage_timer", 60);
+		} else {
+			entity.getPersistentData().putDouble("guardian_necklace_damage_timer", (entity.getPersistentData().getDouble("guardian_necklace_damage_timer") - 1));
 		}
 	}
 }

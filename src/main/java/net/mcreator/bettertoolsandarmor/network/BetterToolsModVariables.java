@@ -91,7 +91,6 @@ public class BetterToolsModVariables {
 			clone.last_food_was_carbonated = original.last_food_was_carbonated;
 			if (!event.isWasDeath()) {
 				clone.time_since_last_hurt = original.time_since_last_hurt;
-				clone.slow_falling_cooldown = original.slow_falling_cooldown;
 				clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
 				clone.blocks_broken_with_sculk_crystallite_pickaxe = original.blocks_broken_with_sculk_crystallite_pickaxe;
 				clone.critical_hit = original.critical_hit;
@@ -152,7 +151,6 @@ public class BetterToolsModVariables {
 		public double extra_jumps = 0.0;
 		public double charms_equipped = 0.0;
 		public double time_since_last_hurt = 0;
-		public boolean slow_falling_cooldown = false;
 		public double crystallite_emerald_heal_timer = 0.0;
 		public double blocks_broken_with_sculk_crystallite_pickaxe = 0;
 		public boolean critical_hit = false;
@@ -199,7 +197,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("extra_jumps", extra_jumps);
 			nbt.putDouble("charms_equipped", charms_equipped);
 			nbt.putDouble("time_since_last_hurt", time_since_last_hurt);
-			nbt.putBoolean("slow_falling_cooldown", slow_falling_cooldown);
 			nbt.putDouble("crystallite_emerald_heal_timer", crystallite_emerald_heal_timer);
 			nbt.putDouble("blocks_broken_with_sculk_crystallite_pickaxe", blocks_broken_with_sculk_crystallite_pickaxe);
 			nbt.putBoolean("critical_hit", critical_hit);
@@ -243,7 +240,6 @@ public class BetterToolsModVariables {
 			extra_jumps = nbt.getDouble("extra_jumps");
 			charms_equipped = nbt.getDouble("charms_equipped");
 			time_since_last_hurt = nbt.getDouble("time_since_last_hurt");
-			slow_falling_cooldown = nbt.getBoolean("slow_falling_cooldown");
 			crystallite_emerald_heal_timer = nbt.getDouble("crystallite_emerald_heal_timer");
 			blocks_broken_with_sculk_crystallite_pickaxe = nbt.getDouble("blocks_broken_with_sculk_crystallite_pickaxe");
 			critical_hit = nbt.getBoolean("critical_hit");
@@ -306,7 +302,6 @@ public class BetterToolsModVariables {
 					variables.extra_jumps = message.data.extra_jumps;
 					variables.charms_equipped = message.data.charms_equipped;
 					variables.time_since_last_hurt = message.data.time_since_last_hurt;
-					variables.slow_falling_cooldown = message.data.slow_falling_cooldown;
 					variables.crystallite_emerald_heal_timer = message.data.crystallite_emerald_heal_timer;
 					variables.blocks_broken_with_sculk_crystallite_pickaxe = message.data.blocks_broken_with_sculk_crystallite_pickaxe;
 					variables.critical_hit = message.data.critical_hit;

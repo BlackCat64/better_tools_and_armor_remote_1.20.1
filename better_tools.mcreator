@@ -30404,12 +30404,6 @@
       "value": "0"
     },
     {
-      "name": "slow_falling_cooldown",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
       "name": "crystallite_emerald_heal_timer",
       "type": "number",
       "scope": "player_lifetime",
