@@ -4486,6 +4486,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -9326,8 +9330,8 @@
       "registry_name": "crystallite_axe_topaz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_topaz.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeTopazItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeTopazItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_topaz.json"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -9413,8 +9417,8 @@
       "registry_name": "crystallite_dagger_topaz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -11174,46 +11178,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "CrystalliteSwordTopazProcedure",
-      "type": "procedure",
-      "sortid": 885,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_topaz_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordTopazProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },

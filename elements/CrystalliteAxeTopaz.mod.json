@@ -44,9 +44,6 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "CrystalliteSwordTopazProcedure"
-    },
     "onItemInInventoryTick": {
       "name": "CrystalliteTopazFortuneProcedure"
     }
