@@ -13,8 +13,9 @@
       "fixedValue": [
         "§7Upgrade: §6Topaz",
         "§7Abilities:",
-        "§6Shocking - Can summon lightning on enemies",
-        "§6Charged - Has Fortune IV"
+        "§6Shocking - Attacks can chain electrically onto nearby mobs",
+        "§6Charged - Has Fortune IV",
+        "§6Attack Chaining is stronger in a thunderstorm"
       ]
     },
     "creativeTab": {

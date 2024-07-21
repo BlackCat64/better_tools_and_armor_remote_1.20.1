@@ -50,8 +50,9 @@ public class CrystalliteAxeTopazItem extends AxeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A76Shocking - Can summon lightning on enemies"));
+		list.add(Component.literal("\u00A76Shocking - Attacks can chain electrically onto nearby mobs"));
 		list.add(Component.literal("\u00A76Charged - Has Fortune IV"));
+		list.add(Component.literal("\u00A76Attack Chaining is stronger in a thunderstorm"));
 	}
 
 	@Override
