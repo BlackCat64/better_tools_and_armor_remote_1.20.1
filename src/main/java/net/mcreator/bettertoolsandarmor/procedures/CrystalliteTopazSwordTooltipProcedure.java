@@ -33,11 +33,12 @@ public class CrystalliteTopazSwordTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_TOPAZ.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_TOPAZ.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_AXE_TOPAZ.get()) {
+			tooltip.add(Component.literal("\u00A72 50% Chain Chance"));
+			tooltip.add(Component.literal("\u00A72 3 Block Radius"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
-				tooltip.add(Component.literal("\u00A7920% \u00A76chance for lightning"));
 				tooltip.add(Component.literal("\u00A77When in a thunderstorm:"));
-				tooltip.add(Component.literal("\u00A7930% \u00A76chance for lightning"));
+				tooltip.add(Component.literal("\u00A79+25% Chain Chance"));
+				tooltip.add(Component.literal("\u00A79+3 Block Radius"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
