@@ -36,6 +36,8 @@ public class TopazSwordTooltipProcedure {
 			tooltip.add(Component.literal("\u00A72 25% Chain Chance"));
 			tooltip.add(Component.literal("\u00A72 3 Block Radius"));
 			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A77Chain Attack Damage:"));
+				tooltip.add(Component.literal("\u00A7950% of Weapon Damage"));
 				tooltip.add(Component.literal("\u00A77When in a thunderstorm:"));
 				tooltip.add(Component.literal("\u00A79+12.5% Chain Chance"));
 				tooltip.add(Component.literal("\u00A79+3 Block Radius"));
