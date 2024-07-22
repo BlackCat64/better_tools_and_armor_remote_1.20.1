@@ -9,10 +9,10 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteGoldSweepingEdgeProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.CrystalliteSwordGoldSplashDamageProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -51,12 +51,13 @@ public class CrystalliteSwordGoldItem extends SwordItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7eGold"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7eGilded - Increased sweeping damage"));
+		list.add(Component.literal("\u00A7eSpin Attack - Deals damage to all close mobs"));
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CrystalliteGoldSweepingEdgeProcedure.execute(entity, itemstack);
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		CrystalliteSwordGoldSplashDamageProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		return retval;
 	}
 }

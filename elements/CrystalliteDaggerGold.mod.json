@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §eGold",
         "§7Ability:",
-        "§eGilded - Increased sweeping damage"
+        "§eSpin Attack - Deals damage to all close mobs"
       ]
     },
     "creativeTabs": [
@@ -45,8 +45,8 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "CrystalliteGoldSweepingEdge"
+    "onEntitySwing": {
+      "name": "CrystalliteSwordGoldSplashDamage"
     }
   }
 }
