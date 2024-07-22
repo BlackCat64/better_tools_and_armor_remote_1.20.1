@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "topaz_leggings",
     "enableBoots": true,
     "textureBoots": "topaz_boots",
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "armorTextureFile": "topaz_",
     "helmetName": "Topaz Helmet",
     "bodyName": "Topaz Chestplate",

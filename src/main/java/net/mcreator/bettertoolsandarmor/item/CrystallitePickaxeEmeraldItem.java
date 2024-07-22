@@ -45,7 +45,7 @@ public class CrystallitePickaxeEmeraldItem extends TieredItem {
 			}
 
 			public int getLevel() {
-				return 5;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {
@@ -60,16 +60,7 @@ public class CrystallitePickaxeEmeraldItem extends TieredItem {
 
 	@Override
 	public boolean isCorrectToolForDrops(BlockState blockstate) {
-		int tier = 5;
-		if (tier < 3 && blockstate.is(BlockTags.NEEDS_DIAMOND_TOOL)) {
-			return false;
-		} else if (tier < 2 && blockstate.is(BlockTags.NEEDS_IRON_TOOL)) {
-			return false;
-		} else {
-			return tier < 1 && blockstate.is(BlockTags.NEEDS_STONE_TOOL)
-					? false
-					: (blockstate.is(BlockTags.MINEABLE_WITH_AXE) || blockstate.is(BlockTags.MINEABLE_WITH_HOE) || blockstate.is(BlockTags.MINEABLE_WITH_PICKAXE) || blockstate.is(BlockTags.MINEABLE_WITH_SHOVEL));
-		}
+		return blockstate.is(BlockTags.MINEABLE_WITH_AXE) || blockstate.is(BlockTags.MINEABLE_WITH_HOE) || blockstate.is(BlockTags.MINEABLE_WITH_PICKAXE) || blockstate.is(BlockTags.MINEABLE_WITH_SHOVEL);
 	}
 
 	@Override

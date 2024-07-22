@@ -150,6 +150,8 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 											}
 											if (event != null && event.isCancelable()) {
 												event.setCanceled(true);
+											} else if (event != null && event.hasResult()) {
+												event.setResult(Event.Result.DENY);
 											}
 											if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, itemstack) != 0) {
 												if (world instanceof ServerLevel projectileLevel) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Warden Staff",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:BetterToolsAndArmorMisc"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 12,
     "useDuration": 72000,
@@ -43,6 +45,7 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:ElectricStaffProjectile"
     },

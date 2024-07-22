@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -13,9 +13,11 @@
     "onBootsTick": {
       "name": "SugarBootsProcedure"
     },
-    "creativeTab": {
-      "value": "CUSTOM:EffectArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:EffectArmorTab"
+      }
+    ],
     "armorTextureFile": "sugar_",
     "helmetName": "Iron Sugar Boots Helmet",
     "bodyName": "Iron Sugar Boots Body",

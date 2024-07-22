@@ -17,7 +17,7 @@ import java.util.List;
 
 public class LightPolishedEmeraldStairsBlock extends StairBlock {
 	public LightPolishedEmeraldStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

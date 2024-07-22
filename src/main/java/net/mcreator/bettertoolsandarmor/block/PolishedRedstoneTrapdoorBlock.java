@@ -16,7 +16,7 @@ import java.util.List;
 
 public class PolishedRedstoneTrapdoorBlock extends TrapDoorBlock {
 	public PolishedRedstoneTrapdoorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.FIRE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape(), BlockSetType.STONE);
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.FIRE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops(), BlockSetType.STONE);
 	}
 
 	@Override

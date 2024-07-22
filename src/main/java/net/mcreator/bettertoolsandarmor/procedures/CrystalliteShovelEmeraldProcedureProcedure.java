@@ -67,6 +67,8 @@ public class CrystalliteShovelEmeraldProcedureProcedure {
 						}
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						{
 							ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);

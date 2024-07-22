@@ -34,7 +34,7 @@ public class CrystalliteAxeSapphireItem extends AxeItem {
 			}
 
 			public int getLevel() {
-				return 5;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {

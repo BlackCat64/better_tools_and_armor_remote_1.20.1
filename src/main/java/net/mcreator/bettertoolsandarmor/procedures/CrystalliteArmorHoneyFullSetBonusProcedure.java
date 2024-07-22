@@ -47,10 +47,12 @@ public class CrystalliteArmorHoneyFullSetBonusProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Bee) {
-						CompoundTag dataIndex9 = new CompoundTag();
-						entityiterator.saveWithoutId(dataIndex9);
-						dataIndex9.putDouble("AngerTime", 0);
-						entityiterator.load(dataIndex9);
+						{
+							CompoundTag dataIndex = new CompoundTag();
+							entityiterator.saveWithoutId(dataIndex);
+							dataIndex.putDouble("AngerTime", 0);
+							entityiterator.load(dataIndex);
+						}
 					}
 				}
 			}

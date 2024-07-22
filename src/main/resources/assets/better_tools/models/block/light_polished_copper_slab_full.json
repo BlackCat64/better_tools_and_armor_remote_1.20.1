@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "better_tools:block/polished_copper_block",
     "bottom": "better_tools:block/polished_copper_block",
     "top": "better_tools:block/polished_copper_block",
     "side": "better_tools:block/polished_copper_block"

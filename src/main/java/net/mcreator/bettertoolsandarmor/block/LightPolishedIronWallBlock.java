@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LightPolishedIronWallBlock extends WallBlock {
 	public LightPolishedIronWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

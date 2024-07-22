@@ -36,9 +36,9 @@ public class LostSoulsPotionProcedureProcedure {
 		valid_spawn = true;
 		if ((new Object() {
 			public String getValue() {
-				CompoundTag dataIndex0 = new CompoundTag();
-				entity.saveWithoutId(dataIndex0);
-				return dataIndex0.getCompound("LastDeathLocation").getString("dimension");
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				return dataIndex.getCompound("LastDeathLocation").getString("dimension");
 			}
 		}.getValue()).isEmpty()) {
 			valid_spawn = false;
@@ -51,9 +51,9 @@ public class LostSoulsPotionProcedureProcedure {
 			}
 		} else if (("ResourceKey[minecraft:dimension / " + (new Object() {
 			public String getValue() {
-				CompoundTag dataIndex2 = new CompoundTag();
-				entity.saveWithoutId(dataIndex2);
-				return dataIndex2.getCompound("LastDeathLocation").getString("dimension");
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				return dataIndex.getCompound("LastDeathLocation").getString("dimension");
 			}
 		}.getValue()) + "]").equals("" + entity.level().dimension())) {
 			if (world

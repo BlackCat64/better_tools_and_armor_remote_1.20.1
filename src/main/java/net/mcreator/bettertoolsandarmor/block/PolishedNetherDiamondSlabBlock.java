@@ -16,7 +16,7 @@ import java.util.List;
 
 public class PolishedNetherDiamondSlabBlock extends SlabBlock {
 	public PolishedNetherDiamondSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

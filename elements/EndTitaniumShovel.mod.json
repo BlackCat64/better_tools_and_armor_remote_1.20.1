@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -14,15 +14,26 @@
         "§5Mines End Stone instantly"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "efficiency": 12.0,
     "attackSpeed": 1.0,
     "enchantability": 18,
     "damageVsEntity": 8.5,
     "usageCount": 2700,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
     "blocksAffected": [
       {
         "value": "CUSTOM:SugarBlock"
@@ -124,15 +135,6 @@
         "value": "Blocks.CONCRETE_POWDER#15"
       }
     ],
-    "glowCondition": {
-      "fixedValue": false
-    },
-    "repairItems": [
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      }
-    ],
-    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -13,9 +13,11 @@
     "onBootsTick": {
       "name": "PhantomBootsProcedure"
     },
-    "creativeTab": {
-      "value": "CUSTOM:EffectArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:EffectArmorTab"
+      }
+    ],
     "armorTextureFile": "diamond_phantom_",
     "helmetName": "Diamond Phantom Boots Helmet",
     "bodyName": "Diamond Phantom Boots Body",

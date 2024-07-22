@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LightPolishedGoldWallBlock extends WallBlock {
 	public LightPolishedGoldWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

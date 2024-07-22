@@ -16,7 +16,7 @@ import java.util.List;
 
 public class LightPolishedEmeraldTrapdoorBlock extends TrapDoorBlock {
 	public LightPolishedEmeraldTrapdoorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape(), BlockSetType.STONE);
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops(), BlockSetType.STONE);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LightPolishedNetherDiamondWallBlock extends WallBlock {
 	public LightPolishedNetherDiamondWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

@@ -45,9 +45,9 @@ public class CrystalliteBowNetherDiamondImpactExplodeProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator.getPersistentData().getBoolean("crystallite_nether_diamond_upgrade") && new Object() {
 						public boolean getValue() {
-							CompoundTag dataIndex3 = new CompoundTag();
-							entityiterator.saveWithoutId(dataIndex3);
-							return dataIndex3.getBoolean("inGround");
+							CompoundTag dataIndex = new CompoundTag();
+							entityiterator.saveWithoutId(dataIndex);
+							return dataIndex.getBoolean("inGround");
 						}
 					}.getValue()) {
 						if (!entityiterator.isInWaterRainOrBubble()) {
@@ -60,9 +60,9 @@ public class CrystalliteBowNetherDiamondImpactExplodeProcedure {
 							}
 							if ((new Object() {
 								public String getValue() {
-									CompoundTag dataIndex6 = new CompoundTag();
-									entityiterator.saveWithoutId(dataIndex6);
-									return dataIndex6.getString("Potion");
+									CompoundTag dataIndex = new CompoundTag();
+									entityiterator.saveWithoutId(dataIndex);
+									return dataIndex.getString("Potion");
 								}
 							}.getValue()).length() > 0) {
 								{
@@ -72,9 +72,9 @@ public class CrystalliteBowNetherDiamondImpactExplodeProcedure {
 												_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 												("summon minecraft:area_effect_cloud ~ ~ ~ {Duration:600,DurationOnUse:0,Potion:\"" + "" + (new Object() {
 													public String getValue() {
-														CompoundTag dataIndex7 = new CompoundTag();
-														entityiterator.saveWithoutId(dataIndex7);
-														return dataIndex7.getString("Potion");
+														CompoundTag dataIndex = new CompoundTag();
+														entityiterator.saveWithoutId(dataIndex);
+														return dataIndex.getString("Potion");
 													}
 												}.getValue()) + "\",Particle:\"minecraft:entity_effect\",Radius:3.0f,RadiusOnUse:-0.5f,RadiusPerTick:-0.005f,ReapplicationDelay:20,WaitTime:0}"));
 									}

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DarkPolishedCoalWallBlock extends WallBlock {
 	public DarkPolishedCoalWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

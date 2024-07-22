@@ -43,6 +43,8 @@ public class CrystalliteHoeSculkProcedureProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_SCULK.get()) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (blockstate.is(BlockTags.create(new ResourceLocation("better_tools:can_drop_when_mined_silently")))) {

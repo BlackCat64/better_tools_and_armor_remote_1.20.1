@@ -16,7 +16,7 @@ import java.util.List;
 
 public class LightPolishedIronSlabBlock extends SlabBlock {
 	public LightPolishedIronSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

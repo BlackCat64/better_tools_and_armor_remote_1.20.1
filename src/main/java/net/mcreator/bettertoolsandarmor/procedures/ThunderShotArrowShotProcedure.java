@@ -50,9 +50,9 @@ public class ThunderShotArrowShotProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity) && entityiterator instanceof Arrow && !(new Object() {
 							public boolean getValue() {
-								CompoundTag dataIndex7 = new CompoundTag();
-								entityiterator.saveWithoutId(dataIndex7);
-								return dataIndex7.getBoolean("inGround");
+								CompoundTag dataIndex = new CompoundTag();
+								entityiterator.saveWithoutId(dataIndex);
+								return dataIndex.getBoolean("inGround");
 							}
 						}.getValue())) {
 							entityiterator.getPersistentData().putBoolean("thunder_shot", true);

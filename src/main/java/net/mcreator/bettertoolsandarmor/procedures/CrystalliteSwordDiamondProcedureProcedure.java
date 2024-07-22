@@ -45,6 +45,8 @@ public class CrystalliteSwordDiamondProcedureProcedure {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
+					} else if (event != null && event.hasResult()) {
+						event.setResult(Event.Result.DENY);
 					}
 					BetterToolsModVariables.being_damaged_flag = true;
 					damage = amount;

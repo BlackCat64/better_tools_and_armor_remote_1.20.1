@@ -56,6 +56,8 @@ public class CryingObsidianHelmetProcedureProcedure {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getDamageValue() <= threshold) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth(1);

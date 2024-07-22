@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -14,22 +14,24 @@
         "§5Breaks hard blocks quickly"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "efficiency": 12.0,
     "attackSpeed": 1.2,
     "enchantability": 18,
     "damageVsEntity": 8.0,
     "usageCount": 2700,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:EndTitaniumIngot"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

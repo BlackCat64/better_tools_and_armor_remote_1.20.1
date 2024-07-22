@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "particle",
   "definition": {
     "texture": "freeze_boom.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 1.0,
     "height": 1.0,
-    "scale": 6.0,
+    "scale": {
+      "fixedValue": 6.0
+    },
     "speedFactor": 0.0,
     "gravity": 0.0,
     "maxAge": 12,

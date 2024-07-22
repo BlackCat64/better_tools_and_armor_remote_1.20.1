@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LightPolishedLapisWallBlock extends WallBlock {
 	public LightPolishedLapisWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

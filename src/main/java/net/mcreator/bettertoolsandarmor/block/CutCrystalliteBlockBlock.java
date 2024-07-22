@@ -16,8 +16,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -49,13 +47,5 @@ public class CutCrystalliteBlockBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 4;
-		else
-			return super.canHarvestBlock(state, world, pos, player);
 	}
 }

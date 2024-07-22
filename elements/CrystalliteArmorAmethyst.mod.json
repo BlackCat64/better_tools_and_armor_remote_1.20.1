@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -13,9 +13,11 @@
     "onBodyTick": {
       "name": "CrystalliteChestplateAmethystProcedure"
     },
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "armorTextureFile": "crystallite_amethyst_",
     "helmetName": "Crystallite Helmet",
     "bodyName": "Crystallite Chestplate",

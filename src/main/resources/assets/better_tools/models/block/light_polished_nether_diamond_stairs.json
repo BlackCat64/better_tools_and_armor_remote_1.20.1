@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "better_tools:block/light_polished_nether_diamond_block",
     "bottom": "better_tools:block/light_polished_nether_diamond_block",
     "top": "better_tools:block/light_polished_nether_diamond_block",
     "side": "better_tools:block/light_polished_nether_diamond_block"

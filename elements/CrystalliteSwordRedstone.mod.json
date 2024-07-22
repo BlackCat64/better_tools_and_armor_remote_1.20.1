@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -16,16 +16,16 @@
         "§cLeech - Kills heal you a little"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 1.6,
     "enchantability": 20,
     "damageVsEntity": 9.0,
     "usageCount": 1800,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -41,6 +41,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

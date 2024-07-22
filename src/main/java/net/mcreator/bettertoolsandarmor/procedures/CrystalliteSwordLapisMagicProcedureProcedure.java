@@ -44,6 +44,8 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:magic_damage_tools")))) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				BetterToolsModVariables.being_damaged_flag = true;
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:magic_weapon_damage"))), sourceentity,

@@ -132,11 +132,6 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.better_tools.attributes_viewer.label_attribute_viewer"), 42, 5, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.better_tools.attributes_viewer.label_attribute"), 19, 19, -12829636, false);

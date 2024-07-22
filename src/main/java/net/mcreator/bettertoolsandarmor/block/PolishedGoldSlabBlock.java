@@ -16,7 +16,7 @@ import java.util.List;
 
 public class PolishedGoldSlabBlock extends SlabBlock {
 	public PolishedGoldSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

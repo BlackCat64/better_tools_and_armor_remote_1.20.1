@@ -59,6 +59,8 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 							(float) (amount * ((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue()));
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
+					} else if (event != null && event.hasResult()) {
+						event.setResult(Event.Result.DENY);
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.CRIT, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 10, 0.5, 1, 0.5, 0.05);

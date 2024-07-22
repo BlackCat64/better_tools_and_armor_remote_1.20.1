@@ -32,7 +32,7 @@ public class SwiftSwimPotionTooltipProcedure {
 			return;
 		String potion_tooltip = "";
 		if (itemstack.getItem() == Items.POTION || itemstack.getItem() == Items.SPLASH_POTION || itemstack.getItem() == Items.LINGERING_POTION) {
-			potion_tooltip = tooltip.get((tooltip.size() - 1)).toString();
+			potion_tooltip = tooltip.get((tooltip.size() - 1)).getString();
 			if (potion_tooltip.contains("effect.better_tools.swift_swim")) {
 				tooltip.add(Component.literal(""));
 				tooltip.add(Component.literal("\u00A75When Applied:"));

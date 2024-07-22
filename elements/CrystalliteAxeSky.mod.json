@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -17,16 +17,16 @@
         "§fAir Proficiency - Increased critical hit damage"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 10.5,
     "usageCount": 1800,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -42,6 +42,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

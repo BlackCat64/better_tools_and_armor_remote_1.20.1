@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -16,9 +16,11 @@
     "onBodyTick": {
       "name": "CrystalliteChestplatePrismarineMiningFatigueRemove"
     },
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "armorTextureFile": "crystallite_prismarine_",
     "helmetName": "Crystallite Helmet",
     "bodyName": "Crystallite Chestplate",

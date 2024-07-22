@@ -14,13 +14,13 @@ public class IsNearestItemEntityNaturallyDroppedProcedure {
 		double dupe_chance = 0;
 		return new Object() {
 			public double getValue() {
-				CompoundTag dataIndex1 = new CompoundTag();
+				CompoundTag dataIndex = new CompoundTag();
 				((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf((x + 0.5), (y + 0.8), (z + 0.5))).findFirst().orElse(null)).saveWithoutId(dataIndex1);
-				return dataIndex1.getDouble("Age");
+				}.compareDistOf((x + 0.5), (y + 0.8), (z + 0.5))).findFirst().orElse(null)).saveWithoutId(dataIndex);
+				return dataIndex.getDouble("Age");
 			}
 		}.getValue() <= 5 && !((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {

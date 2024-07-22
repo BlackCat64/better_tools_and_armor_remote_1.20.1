@@ -1,7 +1,6 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "minecraft:air",
     "better_tools:heart_charm",
     "better_tools:diamond_hard_plate",
     "better_tools:poison_charm",

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class LightPolishedAmethystSlabBlock extends SlabBlock {
 	public LightPolishedAmethystSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

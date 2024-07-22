@@ -1,10 +1,10 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "minecraft:air",
     "better_tools:tough_necklace",
     "better_tools:speedy_necklace",
     "better_tools:electric_necklace",
-    "better_tools:guardian_necklace"
+    "better_tools:guardian_necklace",
+    null
   ]
 }

@@ -22,8 +22,6 @@ import javax.annotation.Nullable;
 public class CrystallitePickaxeHoneyProcedureProcedure {
 	@SubscribeEvent
 	public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
-			return;
 		execute(event, event.getLevel().getBlockState(event.getPos()), event.getEntity());
 	}
 

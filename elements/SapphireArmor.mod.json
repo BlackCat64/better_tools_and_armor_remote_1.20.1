@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "sapphire_leggings",
     "enableBoots": true,
     "textureBoots": "sapphire_boots",
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "armorTextureFile": "sapphire_",
     "helmetName": "Sapphire Helmet",
     "bodyName": "Sapphire Chestplate",

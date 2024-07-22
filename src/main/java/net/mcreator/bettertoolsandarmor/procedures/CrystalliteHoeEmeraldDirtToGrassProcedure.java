@@ -48,6 +48,8 @@ public class CrystalliteHoeEmeraldDirtToGrassProcedure {
 			if (entity.isShiftKeyDown()) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				if (blockstate.is(BlockTags.create(new ResourceLocation("better_tools:can_be_turned_into_grass")))) {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.GRASS_BLOCK.defaultBlockState(), 3);

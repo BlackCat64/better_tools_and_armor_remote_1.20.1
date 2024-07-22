@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "netherdiamond_leggings",
     "enableBoots": true,
     "textureBoots": "netherdiamond_boots",
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "armorTextureFile": "netherdiamond_",
     "helmetName": "Nether Diamond Helmet",
     "bodyName": "Nether Diamond Chestplate",

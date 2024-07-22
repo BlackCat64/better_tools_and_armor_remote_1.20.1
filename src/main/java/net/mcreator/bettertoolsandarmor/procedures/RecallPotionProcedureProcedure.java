@@ -36,18 +36,18 @@ public class RecallPotionProcedureProcedure {
 		valid_spawn = true;
 		if ((new Object() {
 			public String getValue() {
-				CompoundTag dataIndex0 = new CompoundTag();
-				entity.saveWithoutId(dataIndex0);
-				return dataIndex0.getString("SpawnDimension");
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				return dataIndex.getString("SpawnDimension");
 			}
 		}.getValue()).isEmpty()) {
 			valid_spawn = false;
 			world_spawn = true;
 		} else if (("ResourceKey[minecraft:dimension / " + (new Object() {
 			public String getValue() {
-				CompoundTag dataIndex1 = new CompoundTag();
-				entity.saveWithoutId(dataIndex1);
-				return dataIndex1.getString("SpawnDimension");
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				return dataIndex.getString("SpawnDimension");
 			}
 		}.getValue()) + "]").equals("" + entity.level().dimension())) {
 			if (world

@@ -46,16 +46,16 @@ public class ThunderShotLightningRodProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator.getPersistentData().getBoolean("thunder_shot") && new Object() {
 						public boolean getValue() {
-							CompoundTag dataIndex3 = new CompoundTag();
-							entityiterator.saveWithoutId(dataIndex3);
-							return dataIndex3.getBoolean("inGround");
+							CompoundTag dataIndex = new CompoundTag();
+							entityiterator.saveWithoutId(dataIndex);
+							return dataIndex.getBoolean("inGround");
 						}
 					}.getValue()) {
 						if ((new Object() {
 							public String getValue() {
-								CompoundTag dataIndex4 = new CompoundTag();
-								entityiterator.saveWithoutId(dataIndex4);
-								return dataIndex4.getCompound("inBlockState").getString("Name");
+								CompoundTag dataIndex = new CompoundTag();
+								entityiterator.saveWithoutId(dataIndex);
+								return dataIndex.getCompound("inBlockState").getString("Name");
 							}
 						}.getValue()).equals("minecraft:lightning_rod")) {
 							if (world instanceof ServerLevel _level) {

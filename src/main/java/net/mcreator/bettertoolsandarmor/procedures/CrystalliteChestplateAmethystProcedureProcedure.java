@@ -15,16 +15,18 @@ public class CrystalliteChestplateAmethystProcedureProcedure {
 		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_absorption_timer == 0) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_hurt > 200) {
 				if ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < 4) {
-					CompoundTag dataIndex2 = new CompoundTag();
-					entity.saveWithoutId(dataIndex2);
-					dataIndex2.putDouble("AbsorptionAmount", (new Object() {
-						public double getValue() {
-							CompoundTag dataIndex1 = new CompoundTag();
-							entity.saveWithoutId(dataIndex1);
-							return dataIndex1.getDouble("AbsorptionAmount");
-						}
-					}.getValue() + 1));
-					entity.load(dataIndex2);
+					{
+						CompoundTag dataIndex = new CompoundTag();
+						entity.saveWithoutId(dataIndex);
+						dataIndex.putDouble("AbsorptionAmount", (new Object() {
+							public double getValue() {
+								CompoundTag dataIndex = new CompoundTag();
+								entity.saveWithoutId(dataIndex);
+								return dataIndex.getDouble("AbsorptionAmount");
+							}
+						}.getValue() + 1));
+						entity.load(dataIndex);
+					}
 					{
 						double _setval = 300;
 						entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

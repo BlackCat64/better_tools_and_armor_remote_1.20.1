@@ -40,9 +40,9 @@ public class CrystalliteBowNetherDiamondExplosionProcedure {
 				}
 				if ((new Object() {
 					public String getValue() {
-						CompoundTag dataIndex3 = new CompoundTag();
-						immediatesourceentity.saveWithoutId(dataIndex3);
-						return dataIndex3.getString("Potion");
+						CompoundTag dataIndex = new CompoundTag();
+						immediatesourceentity.saveWithoutId(dataIndex);
+						return dataIndex.getString("Potion");
 					}
 				}.getValue()).length() > 0) {
 					{
@@ -51,9 +51,9 @@ public class CrystalliteBowNetherDiamondExplosionProcedure {
 							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
 									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("summon minecraft:area_effect_cloud ~ ~ ~ {Duration:600,DurationOnUse:0,Potion:\"" + "" + (new Object() {
 										public String getValue() {
-											CompoundTag dataIndex4 = new CompoundTag();
-											immediatesourceentity.saveWithoutId(dataIndex4);
-											return dataIndex4.getString("Potion");
+											CompoundTag dataIndex = new CompoundTag();
+											immediatesourceentity.saveWithoutId(dataIndex);
+											return dataIndex.getString("Potion");
 										}
 									}.getValue()) + "\",Particle:\"minecraft:entity_effect\",Radius:3.0f,RadiusOnUse:-0.5f,RadiusPerTick:-0.005f,ReapplicationDelay:20,WaitTime:0}"));
 						}

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class LightPolishedLapisSlabBlock extends SlabBlock {
 	public LightPolishedLapisSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

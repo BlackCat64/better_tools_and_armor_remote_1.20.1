@@ -56,25 +56,27 @@ public class CrystalliteBowApplyEffectsProcedure {
 						if (!(entityiterator == entity) && entityiterator instanceof Arrow) {
 							if (!(new Object() {
 								public boolean getValue() {
-									CompoundTag dataIndex7 = new CompoundTag();
-									entityiterator.saveWithoutId(dataIndex7);
-									return dataIndex7.getBoolean("inGround");
+									CompoundTag dataIndex = new CompoundTag();
+									entityiterator.saveWithoutId(dataIndex);
+									return dataIndex.getBoolean("inGround");
 								}
 							}.getValue())) {
 								if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
 									entityiterator.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
 								} else {
 									if (duration <= 71990) {
-										CompoundTag dataIndex12 = new CompoundTag();
-										entityiterator.saveWithoutId(dataIndex12);
-										dataIndex12.putDouble("damage", (new Object() {
-											public double getValue() {
-												CompoundTag dataIndex11 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex11);
-												return dataIndex11.getDouble("damage");
-											}
-										}.getValue() + 1.5));
-										entityiterator.load(dataIndex12);
+										{
+											CompoundTag dataIndex = new CompoundTag();
+											entityiterator.saveWithoutId(dataIndex);
+											dataIndex.putDouble("damage", (new Object() {
+												public double getValue() {
+													CompoundTag dataIndex = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex);
+													return dataIndex.getDouble("damage");
+												}
+											}.getValue() + 1.5));
+											entityiterator.load(dataIndex);
+										}
 										if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_iron_upgrade", true);
 											((AbstractArrow) entityiterator).setKnockback(((AbstractArrow) entityiterator).getKnockback() + 2);
@@ -86,16 +88,18 @@ public class CrystalliteBowApplyEffectsProcedure {
 											entityiterator.getPersistentData().putBoolean("crystallite_redstone_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items")))) {
 											if (Math.random() < 0.25) {
-												CompoundTag dataIndex28 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex28);
-												dataIndex28.putDouble("damage", (new Object() {
-													public double getValue() {
-														CompoundTag dataIndex27 = new CompoundTag();
-														entityiterator.saveWithoutId(dataIndex27);
-														return dataIndex27.getDouble("damage");
-													}
-												}.getValue() + 2.5));
-												entityiterator.load(dataIndex28);
+												{
+													CompoundTag dataIndex = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex);
+													dataIndex.putDouble("damage", (new Object() {
+														public double getValue() {
+															CompoundTag dataIndex = new CompoundTag();
+															entityiterator.saveWithoutId(dataIndex);
+															return dataIndex.getDouble("damage");
+														}
+													}.getValue() + 2.5));
+													entityiterator.load(dataIndex);
+												}
 												if (world instanceof Level _level) {
 													if (!_level.isClientSide()) {
 														_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2);
@@ -105,27 +109,31 @@ public class CrystalliteBowApplyEffectsProcedure {
 												}
 											}
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
-											CompoundTag dataIndex33 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex33);
-											dataIndex33.putDouble("damage", (new Object() {
-												public double getValue() {
-													CompoundTag dataIndex32 = new CompoundTag();
-													entityiterator.saveWithoutId(dataIndex32);
-													return dataIndex32.getDouble("damage");
-												}
-											}.getValue() + 1.5));
-											entityiterator.load(dataIndex33);
+											{
+												CompoundTag dataIndex = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex);
+												dataIndex.putDouble("damage", (new Object() {
+													public double getValue() {
+														CompoundTag dataIndex = new CompoundTag();
+														entityiterator.saveWithoutId(dataIndex);
+														return dataIndex.getDouble("damage");
+													}
+												}.getValue() + 1.5));
+												entityiterator.load(dataIndex);
+											}
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
-											CompoundTag dataIndex37 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex37);
-											dataIndex37.putDouble("damage", (new Object() {
-												public double getValue() {
-													CompoundTag dataIndex36 = new CompoundTag();
-													entityiterator.saveWithoutId(dataIndex36);
-													return dataIndex36.getDouble("damage");
-												}
-											}.getValue() - 2));
-											entityiterator.load(dataIndex37);
+											{
+												CompoundTag dataIndex = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex);
+												dataIndex.putDouble("damage", (new Object() {
+													public double getValue() {
+														CompoundTag dataIndex = new CompoundTag();
+														entityiterator.saveWithoutId(dataIndex);
+														return dataIndex.getDouble("damage");
+													}
+												}.getValue() - 2));
+												entityiterator.load(dataIndex);
+											}
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_sapphire_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
@@ -134,35 +142,41 @@ public class CrystalliteBowApplyEffectsProcedure {
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_nether_diamond_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-											CompoundTag dataIndex51 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex51);
-											dataIndex51.putDouble("damage", (new Object() {
-												public double getValue() {
-													CompoundTag dataIndex50 = new CompoundTag();
-													entityiterator.saveWithoutId(dataIndex50);
-													return dataIndex50.getDouble("damage");
-												}
-											}.getValue() + 0.5));
-											entityiterator.load(dataIndex51);
-											CompoundTag dataIndex52 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex52);
-											dataIndex52.putDouble("PierceLevel", 100);
-											entityiterator.load(dataIndex52);
+											{
+												CompoundTag dataIndex = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex);
+												dataIndex.putDouble("damage", (new Object() {
+													public double getValue() {
+														CompoundTag dataIndex = new CompoundTag();
+														entityiterator.saveWithoutId(dataIndex);
+														return dataIndex.getDouble("damage");
+													}
+												}.getValue() + 0.5));
+												entityiterator.load(dataIndex);
+											}
+											{
+												CompoundTag dataIndex = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex);
+												dataIndex.putDouble("PierceLevel", 100);
+												entityiterator.load(dataIndex);
+											}
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
 											entityiterator.setNoGravity(true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_prismarine_upgrade", true);
 											if (entityiterator.isInWaterRainOrBubble()) {
-												CompoundTag dataIndex61 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex61);
-												dataIndex61.putDouble("damage", (new Object() {
-													public double getValue() {
-														CompoundTag dataIndex60 = new CompoundTag();
-														entityiterator.saveWithoutId(dataIndex60);
-														return dataIndex60.getDouble("damage");
-													}
-												}.getValue() + 2.5));
-												entityiterator.load(dataIndex61);
+												{
+													CompoundTag dataIndex = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex);
+													dataIndex.putDouble("damage", (new Object() {
+														public double getValue() {
+															CompoundTag dataIndex = new CompoundTag();
+															entityiterator.saveWithoutId(dataIndex);
+															return dataIndex.getDouble("damage");
+														}
+													}.getValue() + 2.5));
+													entityiterator.load(dataIndex);
+												}
 											}
 										}
 									}

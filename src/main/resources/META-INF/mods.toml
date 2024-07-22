@@ -19,7 +19,7 @@ description="Adds many new ores and resources which improve the progression and 
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 [[dependencies.better_tools]]
@@ -48,3 +48,6 @@ description="Adds many new ores and resources which improve the progression and 
     ordering="NONE"
     side="BOTH"
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

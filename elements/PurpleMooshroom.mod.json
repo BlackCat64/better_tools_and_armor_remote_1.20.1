@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Purple Mooshroom",
@@ -20,9 +20,11 @@
       "value": -6902353,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:BetterToolsAndArmorMisc"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -137,6 +139,15 @@
         "value": "CUSTOM:FungalCaves"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

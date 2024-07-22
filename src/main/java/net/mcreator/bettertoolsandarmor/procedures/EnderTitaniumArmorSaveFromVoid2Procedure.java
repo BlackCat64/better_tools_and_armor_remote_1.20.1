@@ -61,6 +61,8 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).save_from_void_cooldown == 0) {
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
+					} else if (event != null && event.hasResult()) {
+						event.setResult(Event.Result.DENY);
 					}
 					entity.fallDistance = 0;
 					if (!world.getBlockState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x,

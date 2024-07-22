@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "better_tools:block/polished_redstone_block",
     "bottom": "better_tools:block/polished_redstone_block",
     "top": "better_tools:block/polished_redstone_block",
     "side": "better_tools:block/polished_redstone_block"

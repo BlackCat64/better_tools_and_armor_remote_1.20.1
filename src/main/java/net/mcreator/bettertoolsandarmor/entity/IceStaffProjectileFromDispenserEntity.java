@@ -93,6 +93,10 @@ public class IceStaffProjectileFromDispenserEntity extends AbstractArrow impleme
 		return shoot(world, entity, source, 1f, 0.2, 0);
 	}
 
+	public static IceStaffProjectileFromDispenserEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 0.2, 0);
+	}
+
 	public static IceStaffProjectileFromDispenserEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		IceStaffProjectileFromDispenserEntity entityarrow = new IceStaffProjectileFromDispenserEntity(BetterToolsModEntities.ICE_STAFF_PROJECTILE_FROM_DISPENSER.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

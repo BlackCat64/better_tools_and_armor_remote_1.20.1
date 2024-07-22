@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -16,16 +16,16 @@
         "§bDiamond Hard - Increased Durability"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "efficiency": 11.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 8.0,
     "usageCount": 3600,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -41,6 +41,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

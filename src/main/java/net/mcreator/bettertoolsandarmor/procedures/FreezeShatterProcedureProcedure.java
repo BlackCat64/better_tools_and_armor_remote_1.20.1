@@ -59,6 +59,8 @@ public class FreezeShatterProcedureProcedure {
 					_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				BetterToolsModVariables.being_damaged_flag = false;
 				if ((sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {

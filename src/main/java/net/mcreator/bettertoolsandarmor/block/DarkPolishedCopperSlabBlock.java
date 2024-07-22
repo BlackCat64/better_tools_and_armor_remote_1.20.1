@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DarkPolishedCopperSlabBlock extends SlabBlock {
 	public DarkPolishedCopperSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

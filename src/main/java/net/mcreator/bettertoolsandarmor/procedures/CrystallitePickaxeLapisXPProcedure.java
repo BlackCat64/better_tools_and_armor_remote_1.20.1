@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 public class CrystallitePickaxeLapisXPProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState(), event.getPlayer(), event.getExpToDrop());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity, double xpAmount) {

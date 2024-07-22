@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
-    "harvestLevel": 2,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "efficiency": 5.0,
     "attackSpeed": 0.8,
     "enchantability": 10,
     "damageVsEntity": 5.5,
     "usageCount": 600,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Sapphire"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

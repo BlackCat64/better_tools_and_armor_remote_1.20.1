@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "particle",
   "definition": {
     "texture": "ice_effect.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 1.5,
+    "scale": {
+      "fixedValue": 1.5
+    },
     "speedFactor": 0.005,
     "gravity": 0.5,
     "maxAge": 10,

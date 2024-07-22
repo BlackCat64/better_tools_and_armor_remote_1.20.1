@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DarkPolishedLapisWallBlock extends WallBlock {
 	public DarkPolishedLapisWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.LAPIS).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.LAPIS).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DarkPolishedCoalSlabBlock extends SlabBlock {
 	public DarkPolishedCoalSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

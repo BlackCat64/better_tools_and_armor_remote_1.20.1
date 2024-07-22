@@ -47,25 +47,25 @@ public class CrystalliteLeggingsAmethystClimbWallsProcedure {
 			if (world.getBlockState(BlockPos.containing(x + x_offset, y, z + z_offset)).canOcclude()) {
 				if (entity.getDeltaMovement().x() != 0 || entity.getDeltaMovement().z() != 0) {
 					PlaceClimbableWallProcedure.execute(world, x, y, z);
-					PlaceClimbableWallProcedure.execute(world, x, (y + 1), z);
-					PlaceClimbableWallProcedure.execute(world, x, (y - 1), z);
+					PlaceClimbableWallProcedure.execute(world, x, y + 1, z);
+					PlaceClimbableWallProcedure.execute(world, x, y - 1, z);
 					if (entity.getDeltaMovement().y() < -0.5) {
-						PlaceClimbableWallProcedure.execute(world, x, (y - 2), z);
+						PlaceClimbableWallProcedure.execute(world, x, y - 2, z);
 					}
 					if (x_offset == 0) {
-						PlaceClimbableWallProcedure.execute(world, (x - 1), (y - 1), z);
-						PlaceClimbableWallProcedure.execute(world, (x - 1), y, z);
-						PlaceClimbableWallProcedure.execute(world, (x - 1), (y + 1), z);
-						PlaceClimbableWallProcedure.execute(world, (x + 1), (y - 1), z);
-						PlaceClimbableWallProcedure.execute(world, (x + 1), y, z);
-						PlaceClimbableWallProcedure.execute(world, (x + 1), (y + 1), z);
+						PlaceClimbableWallProcedure.execute(world, x - 1, y - 1, z);
+						PlaceClimbableWallProcedure.execute(world, x - 1, y, z);
+						PlaceClimbableWallProcedure.execute(world, x - 1, y + 1, z);
+						PlaceClimbableWallProcedure.execute(world, x + 1, y - 1, z);
+						PlaceClimbableWallProcedure.execute(world, x + 1, y, z);
+						PlaceClimbableWallProcedure.execute(world, x + 1, y + 1, z);
 					} else if (z_offset == 0) {
-						PlaceClimbableWallProcedure.execute(world, x, (y - 1), (z - 1));
-						PlaceClimbableWallProcedure.execute(world, x, y, (z - 1));
-						PlaceClimbableWallProcedure.execute(world, x, (y + 1), (z - 1));
-						PlaceClimbableWallProcedure.execute(world, x, (y - 1), (z + 1));
-						PlaceClimbableWallProcedure.execute(world, x, y, (z + 1));
-						PlaceClimbableWallProcedure.execute(world, x, (y + 1), (z + 1));
+						PlaceClimbableWallProcedure.execute(world, x, y - 1, z - 1);
+						PlaceClimbableWallProcedure.execute(world, x, y, z - 1);
+						PlaceClimbableWallProcedure.execute(world, x, y + 1, z - 1);
+						PlaceClimbableWallProcedure.execute(world, x, y - 1, z + 1);
+						PlaceClimbableWallProcedure.execute(world, x, y, z + 1);
+						PlaceClimbableWallProcedure.execute(world, x, y + 1, z + 1);
 					}
 				}
 			}

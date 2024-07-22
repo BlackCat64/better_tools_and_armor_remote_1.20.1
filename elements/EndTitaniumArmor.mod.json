@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -13,9 +13,11 @@
     "onLeggingsTick": {
       "name": "EndTitaniumLeggingsProcedure"
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "armorTextureFile": "end_titanium_",
     "helmetName": "Ender Titanium Helmet",
     "bodyName": "Ender Titanium Chestplate",

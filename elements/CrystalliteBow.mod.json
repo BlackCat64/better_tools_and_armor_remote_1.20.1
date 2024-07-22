@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Crystallite Bow",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 20,
     "useDuration": 72000,
@@ -42,6 +44,7 @@
     },
     "enableRanged": true,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },

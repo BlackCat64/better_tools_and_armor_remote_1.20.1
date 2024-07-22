@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DarkPolishedCopperWallBlock extends WallBlock {
 	public DarkPolishedCopperWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

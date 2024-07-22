@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,16 +14,16 @@
         "§5Increased attack damage in The End"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
     "efficiency": 12.0,
     "attackSpeed": 1.6,
     "enchantability": 18,
     "damageVsEntity": 10.0,
     "usageCount": 2700,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -33,6 +33,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInInventoryTick": {

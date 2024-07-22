@@ -93,6 +93,10 @@ public class IceStaffProjectileEntity extends AbstractArrow implements ItemSuppl
 		return shoot(world, entity, source, 1f, 0.2, 0);
 	}
 
+	public static IceStaffProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 0.2, 0);
+	}
+
 	public static IceStaffProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		IceStaffProjectileEntity entityarrow = new IceStaffProjectileEntity(BetterToolsModEntities.ICE_STAFF_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

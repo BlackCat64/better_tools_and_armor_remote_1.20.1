@@ -16,7 +16,7 @@ import java.util.List;
 
 public class PolishedDiamondSlabBlock extends SlabBlock {
 	public PolishedDiamondSlabBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

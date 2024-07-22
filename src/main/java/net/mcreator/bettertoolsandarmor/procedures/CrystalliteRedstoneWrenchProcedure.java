@@ -41,6 +41,8 @@ public class CrystalliteRedstoneWrenchProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:block_rotating_tools")))) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection())
 						.getAxis() == Direction.Axis.Y) {

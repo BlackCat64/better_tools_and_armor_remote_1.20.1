@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "blue_slime_block",
@@ -43,9 +43,11 @@
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:BetterToolsAndArmorMisc"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -106,7 +108,7 @@
     },
     "luminance": 3,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

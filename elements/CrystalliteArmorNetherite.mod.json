@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "crystallite_leggings_netherite",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_netherite",
-    "creativeTab": {
-      "value": "CUSTOM:CrystalliteTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
     "armorTextureFile": "crystallite_netherite_",
     "helmetName": "Crystallite Helmet",
     "bodyName": "Crystallite Chestplate",

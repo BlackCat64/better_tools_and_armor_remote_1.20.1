@@ -60,6 +60,8 @@ public class ReflectCharmProcedureProcedure {
 					if (immediatesourceentity instanceof Arrow) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
@@ -90,6 +92,8 @@ public class ReflectCharmProcedureProcedure {
 					} else if (immediatesourceentity instanceof LargeFireball) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
@@ -122,6 +126,8 @@ public class ReflectCharmProcedureProcedure {
 					} else if (immediatesourceentity instanceof SmallFireball) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
@@ -154,6 +160,8 @@ public class ReflectCharmProcedureProcedure {
 					} else if (immediatesourceentity instanceof Snowball) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
@@ -180,6 +188,8 @@ public class ReflectCharmProcedureProcedure {
 					} else if (immediatesourceentity instanceof ThrownEgg) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));
@@ -206,6 +216,8 @@ public class ReflectCharmProcedureProcedure {
 					} else if (immediatesourceentity instanceof LlamaSpit) {
 						if (event != null && event.isCancelable()) {
 							event.setCanceled(true);
+						} else if (event != null && event.hasResult()) {
+							event.setResult(Event.Result.DENY);
 						}
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:reflect_projectile_adv"));

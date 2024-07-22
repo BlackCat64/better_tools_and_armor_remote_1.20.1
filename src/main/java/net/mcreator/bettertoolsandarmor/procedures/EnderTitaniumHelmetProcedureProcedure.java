@@ -34,6 +34,8 @@ public class EnderTitaniumHelmetProcedureProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get() && sourceentity instanceof EnderMan) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 		}
 	}
