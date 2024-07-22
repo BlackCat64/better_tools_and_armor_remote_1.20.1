@@ -1,23 +1,26 @@
 {
   "display": {
     "icon": {
-      "item": "better_tools:topaz_chestplate"
+      "item": "better_tools:topaz_sword"
     },
     "title": {
-      "translate": "advancements.topaz_adv.title"
+      "translate": "advancements.topaz_sword_adv.title"
     },
     "description": {
-      "translate": "advancements.topaz_adv.descr"
+      "translate": "advancements.topaz_sword_adv.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "topaz_adv_0": {
+    "topaz_sword_adv_0": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "experience": 20
   },
   "parent": "better_tools:topaz_gem_adv"
 }
