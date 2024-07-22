@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,14 +32,7 @@ public class CrystalliteLapisPickaxeTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_LAPIS.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Tool Effects:"));
-				tooltip.add(Component.literal("\u00A79x2 XP Drops from ores"));
-				tooltip.add(Component.literal("\u00A79All ores drop at least 5XP"));
-				tooltip.add(Component.literal("\u00A79Bonus XP caps at 500"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A79+5 Experience from Ores"));
 		}
 	}
 }
