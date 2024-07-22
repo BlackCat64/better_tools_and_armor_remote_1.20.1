@@ -102,7 +102,7 @@ public class TopazSwordProcedureProcedure {
 												sourceentity), (float) (amount / 2));
 								if (world instanceof ServerLevel _level)
 									_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0.25, 1, 0.25, 0.01);
-								if (chain_count >= 3) {
+								if (chain_count >= 2) {
 									if (sourceentity instanceof ServerPlayer _player) {
 										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:topaz_sword_adv"));
 										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
