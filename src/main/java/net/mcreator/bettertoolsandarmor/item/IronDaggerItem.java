@@ -24,7 +24,7 @@ public class IronDaggerItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {

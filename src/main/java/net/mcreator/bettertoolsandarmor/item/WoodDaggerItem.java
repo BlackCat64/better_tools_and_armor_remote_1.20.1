@@ -37,7 +37,8 @@ public class WoodDaggerItem extends SwordItem {
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.OAK_PLANKS), new ItemStack(Blocks.SPRUCE_PLANKS), new ItemStack(Blocks.BIRCH_PLANKS), new ItemStack(Blocks.JUNGLE_PLANKS), new ItemStack(Blocks.ACACIA_PLANKS),
-						new ItemStack(Blocks.DARK_OAK_PLANKS), new ItemStack(Blocks.CRIMSON_PLANKS), new ItemStack(Blocks.WARPED_PLANKS), new ItemStack(Blocks.MANGROVE_PLANKS));
+						new ItemStack(Blocks.DARK_OAK_PLANKS), new ItemStack(Blocks.CRIMSON_PLANKS), new ItemStack(Blocks.WARPED_PLANKS), new ItemStack(Blocks.MANGROVE_PLANKS), new ItemStack(Blocks.CHERRY_PLANKS),
+						new ItemStack(Blocks.BAMBOO_PLANKS));
 			}
 		}, 3, -1.5f, new Item.Properties());
 	}

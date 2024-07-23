@@ -24,7 +24,7 @@ public class NetheriteDaggerItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {

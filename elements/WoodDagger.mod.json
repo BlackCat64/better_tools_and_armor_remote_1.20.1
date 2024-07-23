@@ -15,6 +15,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:ToolsAndArmorTab"
+      },
+      {
+        "value": "COMBAT"
       }
     ],
     "efficiency": 2.0,
@@ -52,6 +55,12 @@
       },
       {
         "value": "Blocks.MANGROVE_PLANKS"
+      },
+      {
+        "value": "Blocks.CHERRY_PLANKS"
+      },
+      {
+        "value": "Blocks.BAMBOO_PLANKS"
       }
     ],
     "immuneToFire": false,

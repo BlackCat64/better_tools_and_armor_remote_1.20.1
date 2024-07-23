@@ -24,7 +24,7 @@ public class GoldDaggerItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 0;
 			}
 
 			public int getEnchantmentValue() {

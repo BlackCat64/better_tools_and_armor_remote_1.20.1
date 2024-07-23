@@ -15,6 +15,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:ToolsAndArmorTab"
+      },
+      {
+        "value": "COMBAT"
       }
     ],
     "efficiency": 4.0,
@@ -31,7 +34,7 @@
       }
     ],
     "immuneToFire": false,
-    "blockDropsTier": "STONE",
+    "blockDropsTier": "GOLD",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
