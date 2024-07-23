@@ -173,5 +173,29 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.GUARDIAN_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.guardian_staff_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_GOLD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_GOLD.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.crystallite_sword_gold_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.SUGAR_CLUMP.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.sugar_clump_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.RANDOM_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.mixed_ore_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.DEEPSLATE_RANDOM_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.deepslate_mixed_ore_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.NATURE_RING.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.nature_ring_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_EMERALD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_EMERALD.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.stuck_in_mud_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.SAPPHIRE_SWORD.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_AXE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_DAGGER.get()),
+				new ItemStack(BetterToolsModItems.SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_LEGGINGS.get()),
+				new ItemStack(BetterToolsModItems.SAPPHIRE_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_SAPPHIRE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_SAPPHIRE.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_SAPPHIRE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get()), new ItemStack(BetterToolsModItems.ICE_STAFF.get()),
+				new ItemStack(BetterToolsModItems.ICY_BRACELET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.frozen_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.TOPAZ_SWORD.get()), new ItemStack(BetterToolsModItems.TOPAZ_AXE.get()), new ItemStack(BetterToolsModItems.TOPAZ_DAGGER.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_TOPAZ.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.electric_chaining_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.infinite_arrows_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_chestplate_amethyst_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_HONEY.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_sword_honey_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.combo_mining_info"));
 	}
 }

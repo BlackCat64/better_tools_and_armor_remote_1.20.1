@@ -32,15 +32,16 @@ public class TopazSwordProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getSource(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity(), event.getAmount());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity(),
+					event.getAmount());
 		}
 	}
 
-	public static void execute(LevelAccessor world, DamageSource damagesource, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
-		execute(null, world, damagesource, entity, immediatesourceentity, sourceentity, amount);
+	public static void execute(LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
+		execute(null, world, x, y, z, damagesource, entity, immediatesourceentity, sourceentity, amount);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
 		if (damagesource == null || entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		Entity closest = null;
@@ -63,7 +64,7 @@ public class TopazSwordProcedureProcedure {
 					chance = 0.25;
 				}
 				range = 3;
-				if (world.getLevelData().isThundering() == true) {
+				if (IsInThunderstormProcedure.execute(world, x, y, z)) {
 					chance = chance * 1.5;
 					range = range * 2;
 				}

@@ -40,6 +40,7 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
 				tooltip.add(Component.literal("\u00A72 20% Sonic Boom Chance"));
+				tooltip.add(Component.literal("\u00A72 10 Sonic Boom Damage"));
 			}
 			range = 100;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
