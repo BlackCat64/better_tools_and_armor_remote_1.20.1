@@ -8,8 +8,8 @@
     "name": "§7Tough Necklace",
     "rarity": "COMMON",
     "slotType": "NECKLACE",
-    "baubleModel": "Modeltough_necklace",
-    "baubleModelTexture": "tough_necklace_model.png",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
     "creativeTab": {
       "value": "CUSTOM:CrystalliteTab"
     },

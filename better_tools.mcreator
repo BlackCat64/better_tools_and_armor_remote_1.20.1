@@ -29530,6 +29530,14 @@
       "CUSTOM:MagicRing",
       "CUSTOM:CrystalliteBowLapis"
     ],
+    "ITEMS:curios:hands": [
+      "CUSTOM:GildedBracelet",
+      "CUSTOM:MagicRing",
+      "CUSTOM:WitheredGauntlet",
+      "CUSTOM:IcyBracelet",
+      "CUSTOM:NatureRing",
+      "CUSTOM:BouncyBracelet"
+    ],
     "ITEMS:mod:nether_diamond_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordNetherDiamond",
       "CUSTOM:CrystallitePickaxeNetherDiamond",
@@ -29892,6 +29900,12 @@
       "CUSTOM:IronGlassArmor.body",
       "CUSTOM:IronGlassArmor.legs",
       "CUSTOM:IronGlassArmor.boots"
+    ],
+    "ITEMS:curios:head": [
+      "CUSTOM:WardenHeadband",
+      "CUSTOM:EnderGoggles",
+      "CUSTOM:FlamingCirclet",
+      "CUSTOM:EarthCirclet"
     ],
     "ITEMS:mod:mines_nether_wood_instantly": [
       "CUSTOM:CrystalliteShovelNetherite",
@@ -31031,6 +31045,12 @@
     "ITEMS:mod:safe_honey_harvesters": [
       "CUSTOM:CrystalliteShovelHoney",
       "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:curios:necklace": [
+      "CUSTOM:ToughNecklace",
+      "CUSTOM:SpeedyNecklace",
+      "CUSTOM:ElectricNecklace",
+      "CUSTOM:GuardianNecklace"
     ]
   },
   "tab_element_order": {},
