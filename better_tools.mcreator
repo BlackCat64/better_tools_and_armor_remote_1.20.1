@@ -641,8 +641,7 @@
           "src/main/resources/assets/better_tools/blockstates/sugar_block.json",
           "src/main/resources/assets/better_tools/models/block/sugar_block.json"
         ]
-      },
-      "path": "~/Effect Armor/Sugar Boots"
+      }
     },
     {
       "name": "SugarBlockRecipe",
@@ -654,8 +653,7 @@
         "files": [
           "src/main/resources/data/better_tools/recipes/sugar_block_recipe.json"
         ]
-      },
-      "path": "~/Effect Armor/Sugar Boots"
+      }
     },
     {
       "name": "SugarBoots",
@@ -28740,6 +28738,25 @@
         "files": []
       },
       "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CheckForNetheriteTierTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_for_netherite_tier_tool",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CheckForNetheriteTierToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -29257,11 +29274,6 @@
       "~CUSTOM:RandomOre",
       "~CUSTOM:NetherDiamondBlock"
     ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~CUSTOM:CutCrystalliteBlock",
-      "~CUSTOM:CrystalliteBlock",
-      "~CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:mod:combo_weapons": [
       "CUSTOM:CrystalliteSwordHoney",
       "CUSTOM:CrystalliteAxeHoney",
@@ -29330,7 +29342,8 @@
     "BLOCKS:forge:needs_netherite_tool": [
       "CUSTOM:EndTitaniumBlock",
       "CUSTOM:CrystalliteBlock",
-      "CUSTOM:CutCrystalliteBlock"
+      "CUSTOM:CutCrystalliteBlock",
+      "CUSTOM:EndTitaniumOre"
     ],
     "BLOCKS:forge:ores_in_ground/deepslate": [
       "CUSTOM:DeepslateRubyOre",
@@ -29805,6 +29818,9 @@
       "CUSTOM:CrystalliteSwordEmerald",
       "CUSTOM:CrystalliteDaggerEmerald"
     ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:SugarBlock"
+    ],
     "ITEMS:mod:magic_damage_tools": [
       "CUSTOM:CrystalliteSwordLapis",
       "CUSTOM:CrystalliteAxeLapis",
@@ -30066,6 +30082,26 @@
     ],
     "ITEMS:forge:tools/knives": [
       "TAG:better_tools:daggers"
+    ],
+    "ITEMS:mod:netherite_tier_tools": [
+      "Items.NETHERITE_SWORD",
+      "Items.NETHERITE_SHOVEL",
+      "Items.NETHERITE_PICKAXE",
+      "Items.NETHERITE_AXE",
+      "Items.NETHERITE_HOE",
+      "CUSTOM:NetheriteDagger",
+      "CUSTOM:EndTitaniumSword",
+      "CUSTOM:EndTitaniumPickaxe",
+      "CUSTOM:EndTitaniumAxe",
+      "CUSTOM:EndTitaniumShovel",
+      "CUSTOM:EndTitaniumHoe",
+      "CUSTOM:EndTitaniumDagger",
+      "TAG:better_tools:crystallite_swords",
+      "TAG:better_tools:crystallite_pickaxes",
+      "TAG:better_tools:crystallite_axes",
+      "TAG:better_tools:crystallite_shovels",
+      "TAG:better_tools:crystallite_hoes",
+      "TAG:better_tools:crystallite_daggers"
     ],
     "ITEMS:mod:iron_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordIron",

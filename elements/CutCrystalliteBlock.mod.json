@@ -58,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 10,
     "material": {
-      "value": "ICE"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -102,7 +102,10 @@
     },
     "luminance": 4,
     "unbreakable": false,
-    "vanillaToolTier": "DIAMOND",
+    "vanillaToolTier": "NONE",
+    "additionalHarvestCondition": {
+      "name": "CheckForNetheriteTierTool"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
