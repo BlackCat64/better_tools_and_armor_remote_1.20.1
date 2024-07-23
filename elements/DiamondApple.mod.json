@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:BetterToolsAndArmorMisc"
+      },
+      {
+        "value": "FOOD"
       }
     ],
     "stackSize": 64,
@@ -43,6 +46,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:ElectricStaffProjectile"
+    },
     "isFood": true,
     "nutritionalValue": 4,
     "saturation": 1.2,

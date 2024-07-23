@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:BetterToolsAndArmorMisc"
+      },
+      {
+        "value": "FOOD"
       }
     ],
     "stackSize": 16,

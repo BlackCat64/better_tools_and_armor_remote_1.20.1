@@ -31473,6 +31473,19 @@
       "GlassArmor",
       "IronGlassArmor",
       "DiamondGlassArmor"
+    ],
+    "FOOD": [
+      "SugarClump",
+      "GoldenPotato",
+      "BerryPie",
+      "AppleJuice",
+      "BerrySmoothie",
+      "DiamondApple",
+      "ExperiencePotion",
+      "AscensionPotion",
+      "DescensionPotion",
+      "RecallPotion",
+      "LostSoulsPotion"
     ]
   },
   "language_map": {

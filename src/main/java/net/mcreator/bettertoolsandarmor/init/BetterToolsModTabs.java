@@ -538,6 +538,18 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.GOLD_DAGGER.get());
 			tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 			tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
+			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
+			tabData.accept(BetterToolsModItems.BERRY_PIE.get());
+			tabData.accept(BetterToolsModItems.APPLE_JUICE.get());
+			tabData.accept(BetterToolsModItems.BERRY_SMOOTHIE.get());
+			tabData.accept(BetterToolsModItems.DIAMOND_APPLE.get());
+			tabData.accept(BetterToolsModItems.EXPERIENCE_POTION.get());
+			tabData.accept(BetterToolsModItems.ASCENSION_POTION.get());
+			tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
+			tabData.accept(BetterToolsModItems.RECALL_POTION.get());
+			tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
 		}
 	}
 }
