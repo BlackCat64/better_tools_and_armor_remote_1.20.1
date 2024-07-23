@@ -940,6 +940,7 @@
   "advancements.ascension_adv.descr": "Use an Ascension Potion",
   "death.attack.shockwave_damage": "%1$s was killed by a shockwave from %2$s",
   "item.better_tools.crystallite_armor_prismarine_helmet": "Crystallite Helmet",
+  "jei.better_tools.crystallite_sword_gold_info": "Spin Attack damage increases by 10% per level of Sweeping Edge.",
   "item.better_tools.ruby_shovel": "Ruby Shovel",
   "advancements.diamond_apple_adv.descr": "Eat a Diamond Apple",
   "advancements.shoot_through_walls_adv.title": "Literal Wall Hacks",
