@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "minecraft:potion",
+      "nbt": {
+      	"Potion": "minecraft:awkward"
+      }
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "better_tools:experience_potion"
+    }
+  ]
+}
