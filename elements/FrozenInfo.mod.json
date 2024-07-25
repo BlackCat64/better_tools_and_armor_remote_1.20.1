@@ -53,7 +53,7 @@
       }
     ],
     "information": [
-      "§l§bFrozen Mobs§r",
+      "§bFrozen Mobs§r",
       "Frozen mobs cannot move or jump.",
       "Attack them to shatter the ice, dealing §9+3 Damage§r.",
       "Frozen Players can jump repeatedly to shorten the effect time."

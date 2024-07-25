@@ -197,5 +197,12 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_sword_honey_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.combo_mining_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.RANDOM_ORE.get()), new ItemStack(BetterToolsModBlocks.DEEPSLATE_RANDOM_ORE.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.mixed_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.RUBY_ORE.get()), new ItemStack(BetterToolsModBlocks.DEEPSLATE_RUBY_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.ruby_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.SAPPHIRE_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.sapphire_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.TOPAZ_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.topaz_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.NETHER_DIAMOND_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.nether_diamond_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.END_TITANIUM_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.ender_titanium_ore_gen_info"));
 	}
 }

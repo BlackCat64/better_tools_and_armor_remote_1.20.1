@@ -23,8 +23,8 @@
       }
     ],
     "information": [
-      "§l§6Electric Chaining§r",
-      "An Electric Chain damages any mobs it touches, for 50% of the original Weapon Damage.",
+      "§6Electric Chaining§r",
+      "An Electric Chain damages any mobs it touches.",
       "Any mob hit by an Electric Chain has a chance to continue the chain, to another mob close by.",
       "The chance and radius increase during a thunderstorm."
     ]
