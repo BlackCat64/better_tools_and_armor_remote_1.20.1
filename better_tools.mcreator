@@ -28930,6 +28930,30 @@
         "files": []
       },
       "path": "~/Ender Titanium"
+    },
+    {
+      "name": "QuarkMonsterBoxLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "quark_monster_box_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/monster_box.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyQuarkMonsterBoxLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_quark_monster_box_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_quark_monster_box_loot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
