@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Ooh, sparkly!",
-    "achievementDescription": "Find a rare Crystallite Cluster and mine a Crystallite Block",
+    "achievementDescription": "Mine a Crystallite Block with a Netherite Pickaxe, or better",
     "achievementIcon": {
       "value": "CUSTOM:CrystalliteBlock"
     },

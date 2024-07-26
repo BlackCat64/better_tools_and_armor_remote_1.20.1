@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Frosty Fighting",
-    "achievementDescription": "Freeze a mob with a sapphire sword",
+    "achievementDescription": "Freeze a mob with a melee attack",
     "achievementIcon": {
       "value": "CUSTOM:SapphireSword"
     },

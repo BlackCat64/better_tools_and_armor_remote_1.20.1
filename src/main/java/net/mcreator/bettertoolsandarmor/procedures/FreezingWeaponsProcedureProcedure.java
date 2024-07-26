@@ -44,9 +44,9 @@ public class FreezingWeaponsProcedureProcedure {
 		double chance = 0;
 		if (sourceentity instanceof LivingEntity) {
 			if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()) != null) {
-				if (Math.random() < ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue()) {
+				if (Math.random() < ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue()) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue(), 0, false, false));
+						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) ((LivingEntity) sourceentity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue(), 0, false, false));
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);

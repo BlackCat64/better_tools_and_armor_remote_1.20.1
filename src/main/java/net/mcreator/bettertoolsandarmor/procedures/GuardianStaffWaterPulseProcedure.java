@@ -41,7 +41,7 @@ public class GuardianStaffWaterPulseProcedure {
 		damage = 6 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		if (entity.isInWaterRainOrBubble()) {
 			range = range * 1.5;
-			damage = damage * 2;
+			damage = damage * 1.5;
 		}
 		{
 			final Vec3 _center = new Vec3(x, y, z);
