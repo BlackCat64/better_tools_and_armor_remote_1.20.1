@@ -43,7 +43,7 @@ public class GuardianNecklaceTooltipProcedure {
 				radius = radius * 2;
 			}
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Charm Effects:"));
+				tooltip.add(Component.literal("\u00A77Every 3s:"));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(damage) + " Water Pulse Damage")));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(radius) + " Block Radius")));
 			} else {

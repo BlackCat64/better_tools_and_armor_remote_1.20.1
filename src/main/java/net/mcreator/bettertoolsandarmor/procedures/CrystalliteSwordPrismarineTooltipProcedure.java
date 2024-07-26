@@ -57,6 +57,9 @@ public class CrystalliteSwordPrismarineTooltipProcedure {
 				}
 				damage_str = new java.text.DecimalFormat("##.#").format(damage);
 				initial_lines = tooltip.size();
+				if (((ItemTooltipEvent) event).getFlags().isAdvanced()) {
+					initial_lines = initial_lines - 2;
+				}
 				tooltip.set((int) (initial_lines - 2), Component.literal("\u00A72 " + damage_str + " Attack Damage"));
 			} else {
 				if (Screen.hasShiftDown()) {

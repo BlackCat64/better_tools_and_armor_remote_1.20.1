@@ -67,6 +67,11 @@ public class CrystalliteBootsPrismarineTooltipProcedure {
 				} else {
 					tooltip.add(Component.literal("\u00A78Press Shift for details"));
 				}
+			} else {
+				if (!rain) {
+					tooltip.add(Component.literal("\u00A77When in rain:"));
+					tooltip.add(Component.literal("\u00A79+30% Speed"));
+				}
 			}
 		}
 	}
