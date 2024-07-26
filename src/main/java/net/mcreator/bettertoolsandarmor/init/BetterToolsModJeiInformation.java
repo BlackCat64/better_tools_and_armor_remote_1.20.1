@@ -195,5 +195,15 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.TOPAZ_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.topaz_ore_gen_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.NETHER_DIAMOND_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.nether_diamond_ore_gen_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.END_TITANIUM_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.ender_titanium_ore_gen_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.RUBY.get()), new ItemStack(BetterToolsModBlocks.PURPLE_MUSHROOM.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()),
+				new ItemStack(BetterToolsModItems.GOLDEN_POTATO.get()), new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get()), new ItemStack(BetterToolsModItems.BERRY_PIE.get()), new ItemStack(BetterToolsModItems.SUGAR_CLUMP.get()),
+				new ItemStack(BetterToolsModItems.ASCENSION_POTION.get()), new ItemStack(BetterToolsModItems.DESCENSION_POTION.get()), new ItemStack(BetterToolsModItems.RECALL_POTION.get()), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.supplementaries_urns_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.RUBY.get()), new ItemStack(BetterToolsModBlocks.PURPLE_MUSHROOM.get()), new ItemStack(BetterToolsModItems.GOLDEN_POTATO.get()),
+				new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get()), new ItemStack(BetterToolsModItems.BERRY_PIE.get()), new ItemStack(BetterToolsModItems.SUGAR_CLUMP.get()), new ItemStack(BetterToolsModItems.ASCENSION_POTION.get()),
+				new ItemStack(BetterToolsModItems.DESCENSION_POTION.get()), new ItemStack(BetterToolsModItems.RECALL_POTION.get()), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get()), new ItemStack(BetterToolsModItems.RUBY_PICKAXE.get()), new ItemStack(BetterToolsModItems.RUBY_SWORD.get()),
+				new ItemStack(BetterToolsModItems.RABBIT_BOOTS.get()), new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SUGAR_BOOTS.get()), new ItemStack(BetterToolsModItems.HEARTY_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.quark_monster_box_info"));
 	}
 }

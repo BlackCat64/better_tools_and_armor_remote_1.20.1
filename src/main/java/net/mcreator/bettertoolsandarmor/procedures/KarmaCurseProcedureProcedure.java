@@ -39,7 +39,7 @@ public class KarmaCurseProcedureProcedure {
 		if (!BetterToolsModVariables.being_damaged_flag) {
 			if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.KARMA_CURSE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 				BetterToolsModVariables.being_damaged_flag = true;
-				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_curse_damage"))), sourceentity),
+				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_curse_damage")))),
 						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.KARMA_CURSE.get()));
 				BetterToolsModVariables.being_damaged_flag = false;
 			}
