@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 36,
+    "recipeRetstackSize": 32,
     "group": "polished_topaz_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,

@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class EndTitaniumSwordTooltipProcedure {
+public class EnderTitaniumSwordTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -54,6 +54,9 @@ public class EndTitaniumSwordTooltipProcedure {
 				}
 				damage_str = new java.text.DecimalFormat("##.#").format(damage);
 				initial_lines = tooltip.size();
+				if (((ItemTooltipEvent) event).getFlags().isAdvanced()) {
+					initial_lines = initial_lines - 2;
+				}
 				tooltip.set((int) (initial_lines - 2), Component.literal("\u00A72 " + damage_str + " Attack Damage"));
 			} else {
 				if (Screen.hasShiftDown()) {

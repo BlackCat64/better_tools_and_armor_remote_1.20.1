@@ -52,7 +52,7 @@ public class NetherDiamondArmorSetAttributesProcedure {
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.1;
-				time = 200;
+				time = 10;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.NETHER_DIAMOND_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
