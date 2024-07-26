@@ -26977,8 +26977,7 @@
             "type": "tooltip"
           }
         ]
-      },
-      "path": "~/Crystallite"
+      }
     },
     {
       "name": "CrystalliteBowGoldTooltip",
@@ -27620,8 +27619,7 @@
             "type": "tooltip"
           }
         ]
-      },
-      "path": "~/Blue Mushrooms"
+      }
     },
     {
       "name": "BowKnockbackTooltip",
@@ -27643,8 +27641,7 @@
             "type": "tooltip"
           }
         ]
-      },
-      "path": "~/Crystallite/Iron"
+      }
     },
     {
       "name": "FireAspectTooltip",
@@ -27670,8 +27667,7 @@
             "type": "tooltip"
           }
         ]
-      },
-      "path": "~/Nether Diamond"
+      }
     },
     {
       "name": "FlameEnchTooltip",
@@ -27693,8 +27689,7 @@
             "type": "tooltip"
           }
         ]
-      },
-      "path": "~/Nether Diamond"
+      }
     },
     {
       "name": "ArmorThorns",
@@ -28952,6 +28947,28 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/modify_quark_monster_box_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "ExperiencedTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experienced_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ExperiencedTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
         ]
       }
     }
