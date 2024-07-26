@@ -40,7 +40,9 @@ public class CrystalliteSwordGoldSplashDamageProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity)) {
-						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), entity), (float) (sword_damage * multiplier));
+						if (Math.abs(entity.getY() - entityiterator.getY()) <= 0.5) {
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), entity), (float) (sword_damage * multiplier));
+						}
 					}
 				}
 			}

@@ -9,18 +9,23 @@ public class IsPlayerInTheDarkProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return false;
-		if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
-			return true;
-		} else if (!(world instanceof Level _lvl2 && _lvl2.isDay()) || world.getLevelData().isThundering() || !((entity.level().dimension()) == Level.OVERWORLD)) {
-			if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		double time = 0;
+		time = world.dayTime() % 24000;
+		if (time % 2 == 0) {
+			if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
 				return true;
-			} else {
-				if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
+			} else if (time >= 13000 || !((entity.level().dimension()) == Level.OVERWORLD)) {
+				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 					return true;
 				} else {
-					return false;
+					if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
+						return true;
+					} else {
+						return false;
+					}
 				}
 			}
+			return false;
 		}
 		return false;
 	}

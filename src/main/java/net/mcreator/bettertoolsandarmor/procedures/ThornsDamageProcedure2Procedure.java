@@ -65,7 +65,7 @@ public class ThornsDamageProcedure2Procedure {
 							}
 						}
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_THORNS_PARTICLE.get()), x, y, z, 25, 0.5, 1, 0.5, 0.025);
+							_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_THORNS_PARTICLE.get()), x, (y + 0.5), z, 32, 0.5, 0.05, 0.5, 0.005);
 					}
 					immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity),
 							(float) ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()).getValue());
