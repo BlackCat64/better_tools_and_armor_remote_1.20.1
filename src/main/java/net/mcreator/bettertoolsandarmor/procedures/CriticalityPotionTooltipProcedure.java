@@ -33,10 +33,10 @@ public class CriticalityPotionTooltipProcedure {
 		String potion_tooltip = "";
 		if (itemstack.getItem() == Items.POTION || itemstack.getItem() == Items.SPLASH_POTION || itemstack.getItem() == Items.LINGERING_POTION) {
 			potion_tooltip = tooltip.get((tooltip.size() - 1)).getString();
-			if (potion_tooltip.contains("effect.better_tools.criticality")) {
+			if (potion_tooltip.contains("effect.better_tools.criticality") || potion_tooltip.contains("Criticality")) {
 				tooltip.add(Component.literal(""));
 				tooltip.add(Component.literal("\u00A75When Applied:"));
-				tooltip.add(Component.literal(("\u00A79+" + (potion_tooltip.contains("potion.potency.1") ? "1" : "0.5") + "x Critical Hit Multiplier")));
+				tooltip.add(Component.literal(("\u00A79+" + (potion_tooltip.contains("potion.potency.1") || potion_tooltip.contains("II") ? "1" : "0.5") + "x Critical Hit Multiplier")));
 			}
 		}
 	}
