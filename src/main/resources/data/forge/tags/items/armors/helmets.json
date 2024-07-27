@@ -35,6 +35,7 @@
     "minecraft:iron_helmet",
     "minecraft:golden_helmet",
     "minecraft:diamond_helmet",
-    "minecraft:netherite_helmet"
+    "minecraft:netherite_helmet",
+    "better_tools:crystallite_armor_honey_helmet"
   ]
 }

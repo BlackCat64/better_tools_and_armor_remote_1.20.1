@@ -13,7 +13,11 @@
       }
     ],
     "excludeEnchantments": true,
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "TAG:forge:armors/chestplates"
+      }
+    ],
     "excludeItems": false,
     "isTreasureEnchantment": false,
     "isCurse": false,

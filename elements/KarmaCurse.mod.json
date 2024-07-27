@@ -9,7 +9,17 @@
     "damageModifier": 0,
     "compatibleEnchantments": [],
     "excludeEnchantments": false,
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "TAG:minecraft:swords"
+      },
+      {
+        "value": "TAG:minecraft:axes"
+      },
+      {
+        "value": "TAG:better_tools:daggers"
+      }
+    ],
     "excludeItems": false,
     "isTreasureEnchantment": false,
     "isCurse": true,

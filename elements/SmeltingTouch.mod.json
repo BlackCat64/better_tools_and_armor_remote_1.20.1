@@ -13,7 +13,11 @@
       }
     ],
     "excludeEnchantments": true,
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "TAG:minecraft:pickaxes"
+      }
+    ],
     "excludeItems": false,
     "isTreasureEnchantment": true,
     "isCurse": false,
