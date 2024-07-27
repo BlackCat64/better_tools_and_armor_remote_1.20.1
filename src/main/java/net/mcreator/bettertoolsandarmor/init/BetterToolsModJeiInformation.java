@@ -205,5 +205,8 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get()), new ItemStack(BetterToolsModItems.RUBY_PICKAXE.get()), new ItemStack(BetterToolsModItems.RUBY_SWORD.get()),
 				new ItemStack(BetterToolsModItems.RABBIT_BOOTS.get()), new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SUGAR_BOOTS.get()), new ItemStack(BetterToolsModItems.HEARTY_CHESTPLATE.get()),
 				new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.quark_monster_box_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_NETHER_DIAMOND.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_bow_nether_diamond_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_bow_prismarine_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.BLACKSTONE_MAGMA.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.blackstone_magma_info"));
 	}
 }
