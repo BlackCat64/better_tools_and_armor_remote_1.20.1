@@ -36,7 +36,7 @@ public class CriticalityPotionTooltipProcedure {
 			if (potion_tooltip.contains("effect.better_tools.criticality") || potion_tooltip.contains("Criticality")) {
 				tooltip.add(Component.literal(""));
 				tooltip.add(Component.literal("\u00A75When Applied:"));
-				tooltip.add(Component.literal(("\u00A79+" + (potion_tooltip.contains("potion.potency.1") || potion_tooltip.contains("II") ? "1" : "0.5") + "x Critical Hit Multiplier")));
+				tooltip.add(Component.literal(("\u00A79+" + (potion_tooltip.contains("potion.potency.1") || potion_tooltip.contains("II") ? "0.5" : "0.25") + "x Critical Hit Multiplier")));
 			}
 		}
 	}

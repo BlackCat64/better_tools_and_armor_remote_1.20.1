@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 50
+    "experience": 75
   },
   "parent": "better_tools:double_jump_adv"
 }
