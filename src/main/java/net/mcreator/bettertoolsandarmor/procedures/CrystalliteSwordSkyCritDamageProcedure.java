@@ -73,7 +73,7 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
-					if (((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() >= 2) {
+					if (((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() >= 2.5) {
 						if (immediatesourceentity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:high_crit_multiplier_adv"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

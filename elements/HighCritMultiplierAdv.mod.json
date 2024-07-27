@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Crit Mattered",
-    "achievementDescription": "Deal at least double your weapon's regular damage with a critical hit",
+    "achievementDescription": "Deal at least 2.5x your weapon's regular damage with a critical hit",
     "achievementIcon": {
       "value": "CUSTOM:GuardianSpike"
     },

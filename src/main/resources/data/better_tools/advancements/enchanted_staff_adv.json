@@ -19,5 +19,8 @@
       "trigger": "minecraft:impossible"
     }
   },
+  "rewards": {
+    "experience": 40
+  },
   "parent": "better_tools:smelting_touch_adv"
 }
