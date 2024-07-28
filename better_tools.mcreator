@@ -2650,7 +2650,7 @@
       "name": "ObsidianStick",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "obsidian_stick",
       "metadata": {
         "files": [
@@ -9572,7 +9572,7 @@
       "name": "BlueSlimeStick",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "blue_slime_stick",
       "metadata": {
         "files": [
