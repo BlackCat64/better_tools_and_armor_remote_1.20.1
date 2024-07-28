@@ -14,7 +14,9 @@ public class MagmaDamageProcedureProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.BLACKSTONE_MAGMA.get()) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
+			if (!entity.isShiftKeyDown()) {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
+			}
 		}
 	}
 }

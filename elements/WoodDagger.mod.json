@@ -30,37 +30,7 @@
     },
     "repairItems": [
       {
-        "value": "Blocks.PLANKS#0"
-      },
-      {
-        "value": "Blocks.PLANKS#1"
-      },
-      {
-        "value": "Blocks.PLANKS#2"
-      },
-      {
-        "value": "Blocks.PLANKS#3"
-      },
-      {
-        "value": "Blocks.PLANKS#4"
-      },
-      {
-        "value": "Blocks.PLANKS#5"
-      },
-      {
-        "value": "Blocks.CRIMSON_PLANKS"
-      },
-      {
-        "value": "Blocks.WARPED_PLANKS"
-      },
-      {
-        "value": "Blocks.MANGROVE_PLANKS"
-      },
-      {
-        "value": "Blocks.CHERRY_PLANKS"
-      },
-      {
-        "value": "Blocks.BAMBOO_PLANKS"
+        "value": "TAG:minecraft:planks"
       }
     ],
     "immuneToFire": false,
