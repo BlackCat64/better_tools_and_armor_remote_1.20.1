@@ -29027,6 +29027,21 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "CherryTreehouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_treehouse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/worldgen/structure_set/cherry_treehouse.json",
+          "src/main/resources/data/better_tools/worldgen/template_pool/cherry_treehouse.json",
+          "src/main/resources/data/better_tools/worldgen/structure/cherry_treehouse.json"
+        ]
+      },
+      "path": "~/Treehouses"
     }
   ],
   "variable_elements": [
