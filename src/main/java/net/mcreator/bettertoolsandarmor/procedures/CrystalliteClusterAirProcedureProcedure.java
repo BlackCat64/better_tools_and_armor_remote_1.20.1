@@ -90,9 +90,9 @@ public class CrystalliteClusterAirProcedureProcedure {
 				if (found == true && y < 60) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(found_x, found_y, found_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_shimmer")), SoundSource.BLOCKS, 10, 1);
+							_level.playSound(null, BlockPos.containing(found_x, found_y, found_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.resonate")), SoundSource.NEUTRAL, 10, 1);
 						} else {
-							_level.playLocalSound(found_x, found_y, found_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_shimmer")), SoundSource.BLOCKS, 10, 1, false);
+							_level.playLocalSound(found_x, found_y, found_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.resonate")), SoundSource.NEUTRAL, 10, 1, false);
 						}
 					}
 				}
