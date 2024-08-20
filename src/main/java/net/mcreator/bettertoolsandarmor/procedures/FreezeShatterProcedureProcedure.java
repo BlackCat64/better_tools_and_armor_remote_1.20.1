@@ -47,7 +47,7 @@ public class FreezeShatterProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		if (!BetterToolsModVariables.being_damaged_flag) {
-			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get())) {
+			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get()) && entity.getPersistentData().getDouble("frozen_ticks") >= 5) {
 				if (immediatesourceentity instanceof Arrow) {
 					if (!immediatesourceentity.level().isClientSide())
 						immediatesourceentity.discard();

@@ -29046,6 +29046,25 @@
         ]
       },
       "path": "~/Treehouses"
+    },
+    {
+      "name": "FrozenTimeTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_time_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FrozenTimeTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
     }
   ],
   "variable_elements": [
