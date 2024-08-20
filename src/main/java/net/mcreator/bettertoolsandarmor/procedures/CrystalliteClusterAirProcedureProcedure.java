@@ -49,12 +49,12 @@ public class CrystalliteClusterAirProcedureProcedure {
 								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(16)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
 								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(16)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ())))
 						.getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
-			sx = -8;
-			for (int index0 = 0; index0 < 16; index0++) {
-				sy = -8;
-				for (int index1 = 0; index1 < 16; index1++) {
-					sz = -8;
-					for (int index2 = 0; index2 < 16; index2++) {
+			sx = -16;
+			for (int index0 = 0; index0 < 32; index0++) {
+				sy = -16;
+				for (int index1 = 0; index1 < 32; index1++) {
+					sz = -16;
+					for (int index2 = 0; index2 < 32; index2++) {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
 							world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), Blocks.AIR.defaultBlockState(), 3);
 						}
