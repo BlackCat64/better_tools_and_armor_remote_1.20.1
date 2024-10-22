@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "oak_log_unstrip",
+  "group": "log_unstrip",
   "category": "misc",
   "ingredients": [
     {

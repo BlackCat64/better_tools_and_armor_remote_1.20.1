@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "mangrove_wood_unstrip",
+  "group": "wood_unstrip",
   "category": "misc",
   "ingredients": [
     {
