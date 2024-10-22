@@ -374,6 +374,10 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
+				tabData.accept(BetterToolsModItems.WOODEN_HELMET.get());
+				tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.WOODEN_BOOTS.get());
 			})
 
 					.build());

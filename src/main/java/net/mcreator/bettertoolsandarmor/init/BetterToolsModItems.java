@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.bettertoolsandarmor.item.WoodenArmorItem;
 import net.mcreator.bettertoolsandarmor.item.WoodDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.WitheredGauntletItem;
 import net.mcreator.bettertoolsandarmor.item.WingedBootsItem;
@@ -792,6 +793,10 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_PRISMARINE = REGISTRY.register("crystallite_bow_prismarine", () -> new CrystalliteBowPrismarineItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_HONEY = REGISTRY.register("crystallite_bow_honey", () -> new CrystalliteBowHoneyItem());
 	public static final RegistryObject<Item> BARK = REGISTRY.register("bark", () -> new BarkItem());
+	public static final RegistryObject<Item> WOODEN_HELMET = REGISTRY.register("wooden_helmet", () -> new WoodenArmorItem.Helmet());
+	public static final RegistryObject<Item> WOODEN_CHESTPLATE = REGISTRY.register("wooden_chestplate", () -> new WoodenArmorItem.Chestplate());
+	public static final RegistryObject<Item> WOODEN_LEGGINGS = REGISTRY.register("wooden_leggings", () -> new WoodenArmorItem.Leggings());
+	public static final RegistryObject<Item> WOODEN_BOOTS = REGISTRY.register("wooden_boots", () -> new WoodenArmorItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items
