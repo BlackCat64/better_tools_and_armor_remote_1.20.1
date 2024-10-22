@@ -29162,6 +29162,266 @@
         ]
       },
       "path": "~/Wood Armor"
+    },
+    {
+      "name": "OakLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/oak_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "OakWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/oak_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "BirchLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/birch_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "BirchWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/birch_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "SpruceLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/spruce_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "SpruceWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/spruce_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "JungleLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/jungle_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "JungleWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/jungle_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "AcaciaLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/acacia_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "AcaciaWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/acacia_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "DarkOakLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_oak_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "DarkOakWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_oak_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "MangroveLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangrove_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/mangrove_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "MangroveWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangrove_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/mangrove_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "CherryLogUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_log_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cherry_log_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "CherryWoodUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_wood_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cherry_wood_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "CrimsonStemUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_stem_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crimson_stem_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "CrimsonHyphaeUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_hyphae_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crimson_hyphae_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "WarpedStemUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_stem_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/warped_stem_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "WarpedHyphaeUnstripRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_hyphae_unstrip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/warped_hyphae_unstrip_recipe.json"
+        ]
+      },
+      "path": "~/Wood Armor"
     }
   ],
   "variable_elements": [
