@@ -29096,6 +29096,10 @@
             "type": "blockstate"
           },
           {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
