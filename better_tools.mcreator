@@ -31795,6 +31795,7 @@
       "ObsidianStick",
       "BlackstoneMagma",
       "FourLeafClover",
+      "Bark",
       "GuardianSpike",
       "PurpleMushroom",
       "PurpleMushroomBlock",
@@ -31820,8 +31821,16 @@
       "IceStaff",
       "ElectricStaff",
       "WardenStaff",
-      "GuardianStaff",
-      "Bark"
+      "GuardianStaff"
+    ],
+    "COMBAT": [
+      "WoodenArmor",
+      "WoodDagger",
+      "StoneDagger",
+      "IronDagger",
+      "GoldDagger",
+      "DiamondDagger",
+      "NetheriteDagger"
     ],
     "CUSTOM:CrystalliteTab": [
       "JewelleryTable",
@@ -32063,14 +32072,14 @@
       "FlintShovel",
       "FlintHoe",
       "FlintDagger",
+      "WoodenArmor",
       "WoodDagger",
       "StoneDagger",
       "IronDagger",
       "GoldDagger",
       "DiamondDagger",
       "NetheriteDagger",
-      "BattleAxe",
-      "WoodenArmor"
+      "BattleAxe"
     ],
     "CUSTOM:BlocksTab": [
       "ChargedIceOn",

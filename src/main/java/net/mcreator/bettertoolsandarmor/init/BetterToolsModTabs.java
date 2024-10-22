@@ -30,6 +30,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.OBSIDIAN_STICK.get());
 				tabData.accept(BetterToolsModBlocks.BLACKSTONE_MAGMA.get().asItem());
 				tabData.accept(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get().asItem());
+				tabData.accept(BetterToolsModItems.BARK.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_SPIKE.get());
 				tabData.accept(BetterToolsModBlocks.PURPLE_MUSHROOM.get().asItem());
 				tabData.accept(BetterToolsModBlocks.PURPLE_MUSHROOM_BLOCK.get().asItem());
@@ -56,7 +57,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.ELECTRIC_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
-				tabData.accept(BetterToolsModItems.BARK.get());
 			})
 
 					.build());
@@ -367,6 +367,10 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
 				tabData.accept(BetterToolsModItems.FLINT_HOE.get());
 				tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
+				tabData.accept(BetterToolsModItems.WOODEN_HELMET.get());
+				tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.WOODEN_BOOTS.get());
 				tabData.accept(BetterToolsModItems.WOOD_DAGGER.get());
 				tabData.accept(BetterToolsModItems.STONE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.IRON_DAGGER.get());
@@ -374,10 +378,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
-				tabData.accept(BetterToolsModItems.WOODEN_HELMET.get());
-				tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.WOODEN_BOOTS.get());
 			})
 
 					.build());
@@ -537,6 +537,10 @@ public class BetterToolsModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(BetterToolsModItems.WOODEN_HELMET.get());
+			tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
+			tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
+			tabData.accept(BetterToolsModItems.WOODEN_BOOTS.get());
 			tabData.accept(BetterToolsModItems.WOOD_DAGGER.get());
 			tabData.accept(BetterToolsModItems.STONE_DAGGER.get());
 			tabData.accept(BetterToolsModItems.IRON_DAGGER.get());
