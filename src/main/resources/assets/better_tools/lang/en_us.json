@@ -476,6 +476,7 @@
   "advancements.smelting_touch_adv.descr": "Enchant a Pickaxe with Smelting Touch",
   "advancements.daggers_adv.descr": "Craft every type of Dagger",
   "item.better_tools.crystallite_armor_topaz_chestplate": "Crystallite Chestplate",
+  "item.better_tools.bark": "Bark",
   "enchantment.better_tools.smelting_touch.desc": "All ore drops are instantly smelted",
   "advancements.effect_armor_section.title": "BT+A - Effect Armor",
   "jei.better_tools.frozen_info": "§bFrozen Mobs§r\nFrozen mobs cannot move or jump.\nAttack them to shatter the ice, dealing §9+3 Damage§r.\nFrozen Players can jump repeatedly to shorten the effect time.",

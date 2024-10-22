@@ -296,6 +296,7 @@ import net.mcreator.bettertoolsandarmor.item.BlackstoneLegsItem;
 import net.mcreator.bettertoolsandarmor.item.BerrySmoothieItem;
 import net.mcreator.bettertoolsandarmor.item.BerryPieItem;
 import net.mcreator.bettertoolsandarmor.item.BattleAxeItem;
+import net.mcreator.bettertoolsandarmor.item.BarkItem;
 import net.mcreator.bettertoolsandarmor.item.AscensionPotionItem;
 import net.mcreator.bettertoolsandarmor.item.AppleJuiceItem;
 import net.mcreator.bettertoolsandarmor.item.AmogusItem;
@@ -790,6 +791,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_AMETHYST = REGISTRY.register("crystallite_bow_amethyst", () -> new CrystalliteBowAmethystItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_PRISMARINE = REGISTRY.register("crystallite_bow_prismarine", () -> new CrystalliteBowPrismarineItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_HONEY = REGISTRY.register("crystallite_bow_honey", () -> new CrystalliteBowHoneyItem());
+	public static final RegistryObject<Item> BARK = REGISTRY.register("bark", () -> new BarkItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
