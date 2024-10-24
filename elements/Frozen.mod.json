@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Frozen",
-    "icon": "ice_effect.png",
+    "icon": "ice_effect",
     "color": {
       "value": -5650177,
       "falpha": 0.0

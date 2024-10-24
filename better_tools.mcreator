@@ -18990,6 +18990,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           }
         ]
       },
@@ -29491,6 +29503,56 @@
         ]
       },
       "path": "~/Wood Armor"
+    },
+    {
+      "name": "DeleteIceBlocksOnLoad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_ice_blocks_on_load",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteIceBlocksOnLoadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "DeleteIceBlocksOnDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_ice_blocks_on_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteIceBlocksOnDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
     }
   ],
   "variable_elements": [

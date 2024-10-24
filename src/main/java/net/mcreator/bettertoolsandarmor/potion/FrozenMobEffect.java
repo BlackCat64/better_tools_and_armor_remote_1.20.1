@@ -17,7 +17,7 @@ public class FrozenMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		FrozenEffectAppliedProcedure.execute(entity);
+		FrozenEffectAppliedProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
