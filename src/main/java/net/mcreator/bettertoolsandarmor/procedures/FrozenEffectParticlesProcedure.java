@@ -9,6 +9,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Display;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -22,6 +23,12 @@ public class FrozenEffectParticlesProcedure {
 		if (entity == null)
 			return;
 		Entity display = null;
+		{
+			CompoundTag dataIndex = new CompoundTag();
+			entity.saveWithoutId(dataIndex);
+			dataIndex.putDouble("Fire", 0);
+			entity.load(dataIndex);
+		}
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
