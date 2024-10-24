@@ -5,8 +5,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -31,15 +29,12 @@ public class FrozenEffectStopJumpingProcedure {
 		if (entity == null)
 			return;
 		double time = 0;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get())) {
-			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-			if (entity instanceof Player) {
-				time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 10), 0, true, false));
-			}
+		if (entity instanceof Player) {
+			time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 10), 0, true, false));
 		}
 	}
 }
