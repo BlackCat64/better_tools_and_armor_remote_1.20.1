@@ -23,11 +23,13 @@ public class FrozenEffectParticlesProcedure {
 		if (entity == null)
 			return;
 		Entity display = null;
-		{
-			CompoundTag dataIndex = new CompoundTag();
-			entity.saveWithoutId(dataIndex);
-			dataIndex.putDouble("Fire", 0);
-			entity.load(dataIndex);
+		if (entity.getRemainingFireTicks() > 0) {
+			{
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				dataIndex.putDouble("Fire", 0);
+				entity.load(dataIndex);
+			}
 		}
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
