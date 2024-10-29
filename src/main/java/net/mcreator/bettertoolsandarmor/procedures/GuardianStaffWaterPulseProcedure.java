@@ -11,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
@@ -98,6 +99,13 @@ public class GuardianStaffWaterPulseProcedure {
 					_ist.setDamageValue(0);
 				}
 			}
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.MAIN_HAND, true);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.OFF_HAND, true);
 		}
 	}
 }
