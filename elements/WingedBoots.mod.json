@@ -63,6 +63,30 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 35,
     "damageValueHelmet": 4,
     "damageValueBody": 8,
@@ -72,7 +96,7 @@
     "toughness": 2.5,
     "knockbackResistance": 0.125,
     "equipSound": {
-      "value": "item.armor.equip_elytra"
+      "value": "CUSTOM:crystallite_step"
     },
     "repairItems": [
       {
