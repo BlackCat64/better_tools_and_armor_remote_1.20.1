@@ -35,8 +35,8 @@ public class CrystallitePickaxeAmethystTooltipProcedure {
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When ability used:"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 50"));
-				tooltip.add(Component.literal("\u00A7cCooldown: 2mins"));
+				tooltip.add(Component.literal("\u00A7cDurability Cost: 40"));
+				tooltip.add(Component.literal("\u00A7cCooldown: 60s"));
 				tooltip.add(Component.literal("\u00A77Range:"));
 				tooltip.add(Component.literal("\u00A7920 Blocks"));
 			} else {
