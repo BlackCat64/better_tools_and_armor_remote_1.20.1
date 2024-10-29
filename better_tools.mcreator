@@ -19798,29 +19798,6 @@
       "path": "~/Crystallite/Sky"
     },
     {
-      "name": "CrystalliteBootsSkyFallTimer",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_boots_sky_fall_timer",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsSkyFallTimerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "ReflectCharmRecipe",
       "type": "recipe",
       "compiles": true,
@@ -29577,6 +29554,48 @@
         ]
       },
       "path": "~/Wood Armor"
+    },
+    {
+      "name": "CrystalliteBootsSkyProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_sky_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsSkyProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "distance",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "LowGravityAdvProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_gravity_adv_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LowGravityAdvProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sky"
     }
   ],
   "variable_elements": [
