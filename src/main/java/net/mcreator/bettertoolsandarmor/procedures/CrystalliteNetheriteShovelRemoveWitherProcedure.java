@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
@@ -21,21 +22,30 @@ public class CrystalliteNetheriteShovelRemoveWitherProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.WITHER)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.WITHER);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(5, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				{
+					ItemStack _ist = itemstack;
+					if (_ist.hurt(5, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
 				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 			}
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.5, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.5, 1, false);
 				}
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+			} else {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.OFF_HAND, true);
 			}
 		}
 	}

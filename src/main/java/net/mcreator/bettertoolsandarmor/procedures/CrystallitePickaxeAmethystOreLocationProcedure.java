@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
@@ -56,7 +57,9 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 		double count = 0;
 		double repeats = 0;
 		if (entity.isShiftKeyDown()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))
+							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 				found = false;
 				radius = 0;
 				for (int index0 = 0; index0 < 19; index0++) {
@@ -207,6 +210,13 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 300);
 					}
+				}
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:echolocation_tools")))) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				} else {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.OFF_HAND, true);
 				}
 			}
 		}

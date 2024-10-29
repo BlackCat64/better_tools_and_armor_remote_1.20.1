@@ -44,6 +44,9 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CrystalliteSwordAmethystEcholocation"
+    }
   }
 }

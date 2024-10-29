@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
@@ -44,7 +45,9 @@ public class CrystalliteHoeEmeraldDirtToGrassProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()
+						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 			if (entity.isShiftKeyDown()) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
@@ -73,6 +76,13 @@ public class CrystalliteHoeEmeraldDirtToGrassProcedure {
 								_ist.setDamageValue(0);
 							}
 						}
+					}
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.MAIN_HAND, true);
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.OFF_HAND, true);
 					}
 				}
 			}
