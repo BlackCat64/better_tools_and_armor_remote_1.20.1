@@ -29903,6 +29903,51 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "BarkOnLogAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bark_on_log_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/bark_on_log_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Progression"
+    },
+    {
+      "name": "EnchantedWoodArmorAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_wood_armor_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/enchanted_wood_armor_adv.json"
+        ]
+      },
+      "path": "~/Advancements/Progression"
+    },
+    {
+      "name": "EnchantedWoodsAdvProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_woods_adv_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnchantedWoodsAdvProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements/Progression"
     }
   ],
   "variable_elements": [
@@ -32685,6 +32730,7 @@
       "jei.better_tools.crystallite_chestplate_amethyst_info": "Absorption Hearts will only be gained if no damage has been taken in the last 10s.",
       "item.copper_tools_and_armor.copper_shovel": "Copper Shovel",
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
+      "advancements.bark_on_log_adv.descr": "Use Bark to un-strip a Stripped Log Block",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
       "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
@@ -33331,6 +33377,7 @@
       "advancements.high_armor_points_adv.descr": "Have an Armor value of at least 30",
       "block.better_tools.polished_redstone_slab": "Metallic Redstone Slab",
       "jei.better_tools.lapis_crystallite_info": "§lCrystallite Upgrades: \n§9Lapis Lazuli§r\n\nTheme:\nMagic and Enchanting\nAll items in this set have very high enchantability!",
+      "advancements.enchanted_wood_armor_adv.descr": "Wear a full set of enchanted Wooden Armor",
       "item.better_tools.diamond_hard_plate": "§bDiamond Hard Plate",
       "advancements.pirate_adv.descr": "Craft an Iron Dagger",
       "item.minecraft.lingering_potion.effect.karma_potion_2": "Lingering Potion of Karma",
@@ -33433,6 +33480,7 @@
       "item.minecraft.tipped_arrow.effect.double_jump_potion_long": "Arrow of Double Jump",
       "item.better_tools.warden_headband": "§3Warden Headband",
       "advancements.ascend_to_top_of_world.descr": "Use an Ascension Potion to teleport from the bottom of the Overworld to the top",
+      "advancements.enchanted_wood_armor_adv.title": "Enchanted Woods",
       "item.better_tools.crystallite_axe_redstone": "Crystallite Axe",
       "item.better_tools.gold_carrot_helmet": "Golden Carrot Hat",
       "advancements.golden_potato_adv.descr": "Eat a Golden Potato",
@@ -33497,6 +33545,7 @@
       "item.copper_tools_and_armor.copper_pickaxe": "Copper Pickaxe",
       "advancements.kill_warden_adv.title": "Master of the Deep",
       "death.attack.freeze_shatter_damage": "%1$s was shattered to pieces by %2$s",
+      "advancements.bark_on_log_adv.title": "Barking up the right tree",
       "jei.better_tools.honey_crystallite_info": "§lCrystallite Upgrades: \n§6Honey§r\n\nTheme:\nCombos and Bees",
       "jei.better_tools.infinite_arrows_info": "When no Arrows are in the user\u0027s inventory, this bow will shoot regular Arrows.\nIf any regular Arrows are in the inventory, they will not be used up.\nTipped Arrows are used up normally.",
       "block.better_tools.light_polished_nether_diamond_slab": "Light Metallic Nether Diamond Slab",
