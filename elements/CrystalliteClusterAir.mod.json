@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "MISCELLANEOUS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": true,
@@ -117,8 +117,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
+    "onNeighbourBlockChanges": {
+      "name": "RemoveCrystalliteClusterAir"
+    },
+    "onRandomUpdateEvent": {
       "name": "CrystalliteClusterParticlesProcedure"
+    },
+    "onDestroyedByExplosion": {
+      "name": "RemoveCrystalliteClusterAir"
+    },
+    "onEntityCollides": {
+      "name": "RemoveCrystalliteClusterAir"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
