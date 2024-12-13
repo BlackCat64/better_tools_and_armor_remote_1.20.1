@@ -29948,24 +29948,6 @@
         ]
       },
       "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "E",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "e",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [
